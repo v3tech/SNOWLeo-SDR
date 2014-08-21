@@ -182,6 +182,7 @@ extern int snowleo_sdr_set_clock(char *i2c_dev);
  */
 extern int snowleo_sdr_set_freq(int fd, unsigned int freq, uint8_t channel);
 extern int snowleo_sdr_set_tx_dc(int fd, uint8_t dci, uint8_t dcq);
+extern int snowleo_sdr_set_rx_dc(int fd, uint8_t dci, uint8_t dcq);
 void snowleo_spi_custom_write(int fd, uint8_t *data, uint8_t data_size);
 void snowleo_spi_custom_read(int fd, uint8_t *reg, uint8_t *data, uint8_t data_size);
 /**

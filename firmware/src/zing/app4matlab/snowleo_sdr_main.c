@@ -34,9 +34,11 @@
 #define  SDR_RF_CTRL_RX_FREQ  0x18
 #define  SDR_RF_CTRL_TX_VGA   0x19
 #define  SDR_RF_CTRL_RX_VGA   0x20
-//#define  SDR_RF_CTRL_TEST_SEQ 0x21
+
+#define SDR_RF_CTRL_TX_DC     0x21
+#define SDR_RF_CTRL_RX_DC     0x23
+
 #define  SDR_CUSTOM_CMD       0x22
-#define SDR_RF_CTRL_TX_DC  0x21
 
 
 /**/
@@ -58,6 +60,8 @@ unsigned char *adc_mem_addr;
 unsigned char *dac_mem_addr;
 unsigned char *dma_reg_addr_wr;
 unsigned char *dma_reg_addr_rd;
+
+unsigned int dac_is_cycle_running = 0;
 
 #define MaxSize 6
 #define BUFFER_MAX_SIZE 2*1024*1024
@@ -253,7 +257,14 @@ void *thread_recv_func(void* temp)
 				}while(len != file_length);
 				dma_dbg(MSG_DEBUG,"recv file complete!\n");
 				len = 0;
-				axi_dma_reset(MM2S_CHANNEL, (unsigned long)dma_reg_addr_rd, FIFO_IP_RESET);
+				if(dac_is_cycle_running == 1){
+					iowrite32(0x11, (unsigned long)dma_reg_addr_rd + MM2S_START);
+					check_dma_done(MM2S_CHANNEL, (unsigned long)dma_reg_addr_rd);
+					iowrite32(0x00, (unsigned long)dma_reg_addr_rd + MM2S_START);
+					dma_dbg(MSG_DEBUG,"DMA_STOP_DAC\n");
+				} else {
+					dac_is_cycle_running = 1;
+				}
 				if(pthread_create(&dac_thread, NULL, &thread_dac_func_single, NULL)<0)
 					dma_dbg(MSG_ERROR,"create dac thread failed!\n");
 			}
@@ -281,6 +292,10 @@ void *thread_recv_func(void* temp)
 			break;
 		case SDR_RF_CTRL_TX_DC:
 			snowleo_sdr_set_tx_dc(spi_fd, (uint8_t)((cmd_buff[0]&0x0000FF00)>>8), (uint8_t)(cmd_buff[0]&0x000000FF));
+			dma_dbg(MSG_DEBUG,"recv SDR_RF_CTRL_TX_DC cmd\n");
+			break;
+		case SDR_RF_CTRL_RX_DC:
+			snowleo_sdr_set_rx_dc(spi_fd, (uint8_t)((cmd_buff[0]&0x0000FF00)>>8), (uint8_t)(cmd_buff[0]&0x000000FF));
 			dma_dbg(MSG_DEBUG,"recv SDR_RF_CTRL_TX_DC cmd\n");
 			break;
 		case SDR_RF_CTRL_RX_FREQ:
