@@ -6,13 +6,13 @@ For further details see the [project page](http://myriadrf.org/snowleo-sdr/).
 ## Structure
 
       docs/ - documentation
-      firmware/ - FPGA RTL, FSBL, U-boot, Linux and Zing application
+      firmware/ - FPGA RTL, FSBL, U-boot, Linux kernel and arm application
           sdimage/ - binaries
           src/ - sources
               fpga/             - SNOWLeoSDR FPGA RTL
               linux-kernel/     - SNOWLeoSDR Linux kernel tree
               u-boot/           - SNOWLeoSDR U-boot bootloader
-              arm-linux/             - SNOWLeoSDR ARM application
+              arm-linux/        - SNOWLeoSDR ARM application
 
       hardware/ - SDR adapter hardware design
           <version>/
