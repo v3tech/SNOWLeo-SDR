@@ -1,0 +1,66 @@
+<block>
+  <name>SnowleoSDR Source</name>
+  <key>zingsdr_source_sync</key>
+  <category>ZINGSDR</category>
+  <import>import zingsdr</import>
+  <make>zingsdr.source_sync($ipaddr, $port, $rx_freq, $rx_vga, $rx_lan, $sample_rate, $dci, $dcq)</make>
+
+	<callback>set_dc_offset($dci, $dcq)</callback>
+	<callback>set_freq($rx_freq)</callback>
+	<callback>set_gain($rx_vga)</callback>
+	<callback>set_sample_rate($sample_rate)</callback>
+  <param>
+    <name>IP Address</name>
+    <key>ipaddr</key>
+	<value>192.168.1.10</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Port</name>
+    <key>port</key>
+	<value>5005</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>RX Freq</name>
+    <key>rx_freq</key>
+	<value>1500000000</value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>RX GAIN</name>
+    <key>rx_vga</key>
+	<value>0</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>RX LAN</name>
+    <key>rx_lan</key>
+	<value>0</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sample Rate</name>
+    <key>sample_rate</key>
+	<value>10000000</value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>DC I</name>
+    <key>dci</key>
+	<value>130</value>
+    <type>int</type>
+  </param>
+ <param>
+    <name>DC Q</name>
+    <key>dcq</key>
+	<value>148</value>
+    <type>int</type>
+  </param>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <nports>MAX_OUT</nports>
+  </source>
+</block>
