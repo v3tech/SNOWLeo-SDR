@@ -36,17 +36,20 @@ namespace gr {
 
         sink_sync::sptr
             sink_sync::make(const std::string &ipaddr, uint32_t port, 
-                    uint32_t tx_freq, uint32_t tx_vga, uint32_t sample_rate, uint32_t dci, uint32_t dcq)
+                    uint32_t tx_freq, uint32_t tx_vga1, uint32_t tx_vga2, 
+                    uint32_t sample_rate, uint32_t dci, uint32_t dcq)
             {
                 return gnuradio::get_initial_sptr
-                    (new sink_sync_impl(ipaddr, port, tx_freq, tx_vga, sample_rate, dci, dcq));
+                    (new sink_sync_impl(ipaddr, port, tx_freq, tx_vga1, tx_vga2, 
+                                        sample_rate, dci, dcq));
             }
 
         /*
          * The private constructor
          */
         sink_sync_impl::sink_sync_impl(const std::string &ipaddr, uint32_t port, 
-                uint32_t tx_freq, uint32_t tx_vga, uint32_t sample_rate, uint32_t dci, uint32_t dcq)
+                uint32_t tx_freq, uint32_t tx_vga1, uint32_t tx_vga2, 
+                uint32_t sample_rate, uint32_t dci, uint32_t dcq)
             : gr::sync_block("sink_sync",
                     gr::io_signature::make(1, 1, sizeof(gr_complex)),
                     gr::io_signature::make(0, 0, sizeof(gr_complex)))
@@ -54,7 +57,8 @@ namespace gr {
             _buf_used = 0;
             d_ipaddr = ipaddr;
             d_port = port;
-            d_tx_vga = tx_vga;
+            d_tx_vga1 = tx_vga1;
+            d_tx_vga2 = tx_vga2;
             d_tx_freq = tx_freq;
             d_sample_rate = sample_rate;
 
@@ -62,7 +66,7 @@ namespace gr {
                 throw std::runtime_error("zingsdr:connect server error!\n");
             this->set_dc_offset(dci, dcq);
             this->set_freq(d_tx_freq);
-            this->set_gain(d_tx_vga);
+            this->set_gain(d_tx_vga1);
             this->set_sample_rate(d_sample_rate);
             this->handshake();
 
@@ -91,8 +95,6 @@ namespace gr {
             for(i = 0; i< RING_BUFFER_MAXSIZE; i++)
                 free(p->data[i]);
             free(p);
-
-            //pthread_cancel(thread_send);
 
             if(this->disconnect_server() < 0)
                 throw std::runtime_error("zingsdr:disconnect server error!\n");
@@ -153,7 +155,6 @@ namespace gr {
         {
             uint32_t cmd_buf[2]={0,0};
             printf("dci = %d, dcq = %d\n", dci, dcq);
-            //cmd_buf[0] = 0xF0210000;
             cmd_buf[0] = 0xF0210000|((dci&0xFF)<<8)|(dcq&0xFF);
             sendto(sock_cmd, cmd_buf, sizeof(cmd_buf), 0, (struct sockaddr *)&cmd_addr, sizeof(cmd_addr));
 
@@ -171,7 +172,7 @@ namespace gr {
         { 
             uint32_t cmd_buf[2]={0,0};
             gain = gain & 0x000000FF;
-            cmd_buf[0] = 0xF0190000 | (gain); //set tx vga
+            cmd_buf[0] = 0xF0190000 | (gain) |(d_tx_vga2 << 8); //set tx vga
             cmd_buf[1] = 0x0b000000;
             sendto(sock_cmd, cmd_buf, sizeof(cmd_buf), 0, (struct sockaddr *)&cmd_addr, sizeof(cmd_addr));
         }

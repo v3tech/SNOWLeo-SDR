@@ -80,15 +80,7 @@ namespace gr {
                 throw std::runtime_error( std::string(__FUNCTION__) + " " +
                         "Failed to allocate a sample FIFO!" );
             }
-#define BOOST_THREAD
-#ifndef BOOST_THREAD
-            _running = true;
-            if(pthread_create(&thread_recv, NULL, creat_recv_thread, this) < 0)
-               throw std::runtime_error("zingsdr:creat recv thread error!\n");
-#else
             this->start();
-#endif
-
         }
 
         /*
@@ -99,12 +91,7 @@ namespace gr {
             if(this->disconnect_server() < 0)
                 throw std::runtime_error("zingsdr:disconnect server error!\n");
 
-#ifndef BOOST_THREAD
-            _running = true;
-            pthread_join(thread_recv, NULL);
-#else
             this->stop();
-#endif
             int i = 0;
             close(sock_source);
             if (_fifo)
@@ -160,8 +147,6 @@ namespace gr {
         void source_sync_impl::set_gain(uint32_t gain)
         { 
             uint32_t cmd_buf[2]={0,0};
-            //d_rx_vga = d_rx_vga & 0x000000FF;
-            //d_rx_lan = d_rx_lan & 0x000000FF;
             cmd_buf[0] = 0xF020D000 | gain;
             cmd_buf[1] = 0x03000000; //set rx vga
             sendto(sock_cmd, cmd_buf, sizeof(cmd_buf), 0, (struct sockaddr *)&cmd_addr, sizeof(cmd_addr));
@@ -174,52 +159,6 @@ namespace gr {
             sendto(sock_cmd, cmd_buf, sizeof(cmd_buf), 0, (struct sockaddr *)&cmd_addr, sizeof(cmd_addr));
         }
 
-        void *source_sync_impl::recv_sample(void *)
-        {
-            int len = 0;
-            while(_running) {
-                pthread_testcancel();
-                len = recv(sock_source, _buf, RX_SAMPLES_NUM, MSG_WAITALL);
-                if(len == 0)
-                    break;
-                pthread_testcancel();
-                size_t i, n_avail, to_copy, num_samples = len/4;
-                short *sample = (short *)_buf;
-                _fifo_lock.lock();
-
-                n_avail = _fifo->capacity() - _fifo->size();
-                to_copy = (n_avail < num_samples ? n_avail : num_samples);
-
-                for (i = 0; i < to_copy; i++ )
-                {
-                    /* Push sample to the fifo */
-                    _fifo->push_back( gr_complex( *sample, *(sample+1) ) );
-
-                    /* offset to the next I+Q sample */
-                    sample += 2;
-                }
-
-                _fifo_lock.unlock();
-
-                /* We have made some new samples available to the consumer in work() */
-                if (to_copy) {
-                    //std::cerr << "+" << std::flush;
-                    _samp_avail.notify_one();
-                }
-
-                /* Indicate overrun, if neccesary */
-                if (to_copy < num_samples)
-                    std::cerr << "O" << std::flush;
-            }
-
-        }
-        void *source_sync_impl::creat_recv_thread(void *param)
-        {
-            //pthread_detach(pthread_self());
-            source_sync_impl *pThis = (source_sync_impl *)param;
-            pThis->recv_sample(NULL);
-            return NULL;
-        }
         bool source_sync_impl::start()
         {
             _running = true;

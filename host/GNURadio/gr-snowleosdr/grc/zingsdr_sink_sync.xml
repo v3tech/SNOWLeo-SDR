@@ -3,11 +3,11 @@
   <key>zingsdr_sink_sync</key>
   <category>ZINGSDR</category>
   <import>import zingsdr</import>
-  <make>zingsdr.sink_sync($ipaddr, $port, $tx_freq, $tx_vga, $sample_rate, $dci, $dcq)</make>
+  <make>zingsdr.sink_sync($ipaddr, $port, $tx_freq, $tx_vga1, $tx_vga2, $sample_rate, $dci, $dcq)</make>
   
 	<callback>set_dc_offset($dci, $dcq)</callback>
 	<callback>set_freq($tx_freq)</callback>
-	<callback>set_gain($tx_vga)</callback>
+	<callback>set_gain($tx_vga1)</callback>
 	<callback>set_sample_rate($sample_rate)</callback>
   <param>
     <name>IP Address</name>
@@ -28,11 +28,18 @@
     <type>real</type>
   </param>
   <param>
-    <name>TX GAIN</name>
-    <key>tx_vga</key>
+    <name>GAIN1</name>
+    <key>tx_vga1</key>
 	<value>18</value>
     <type>int</type>
   </param>
+  <param>
+    <name>GAIN2</name>
+    <key>tx_vga2</key>
+	<value>0</value>
+    <type>int</type>
+  </param>
+
   <param>
     <name>Sample Rate</name>
     <key>sample_rate</key>
@@ -52,6 +59,14 @@
     <type>int</type>
   </param>
 
+	<check>40000000 >= $sample_rate</check>
+	<check>$sample_rate >= 400000</check>
+	<check>3700000000 >= $tx_freq</check>
+	<check>$tx_freq >= 380000000</check>
+	<check>31 >= $tx_vga1</check>
+	<check>$tx_vga1 >= 0</check>
+	<check>31 >= $tx_vga2</check>
+	<check>$tx_vga2 >= 0</check>
   <sink>
     <name>in</name>
     <type>complex</type>

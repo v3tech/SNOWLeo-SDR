@@ -83,8 +83,6 @@ namespace gr {
                 int disconnect_server();
                 int handshake();
 
-                static void *creat_recv_thread(void *);
-                void *recv_sample(void *);
             protected:
                 bool start();
                 bool stop();

@@ -48,7 +48,7 @@ namespace gr {
        * creating new instances.
        */
       static sptr make(const std::string &ipaddr, uint32_t port, 
-              uint32_t tx_freq, uint32_t tx_vga, uint32_t sample_rate, 
+              uint32_t tx_freq, uint32_t tx_vga1, uint32_t tx_vga2, uint32_t sample_rate, 
               uint32_t dci, uint32_t dcq);
 
       virtual void set_dc_offset(uint32_t dci, uint32_t dcq) = 0;

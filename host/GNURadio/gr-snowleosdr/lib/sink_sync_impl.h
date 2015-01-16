@@ -42,7 +42,8 @@ namespace gr {
                 std::string d_ipaddr;
                 uint16_t d_port;
                 uint32_t d_tx_freq;
-                uint32_t d_tx_vga;
+                uint32_t d_tx_vga1;
+                uint32_t d_tx_vga2;
                 uint32_t d_sample_rate;
                 int sock_cmd, sock_sink;
                 struct sockaddr_in cmd_addr;
@@ -73,8 +74,8 @@ namespace gr {
                 void set_sample_rate(uint32_t sample_rate);
 
                 sink_sync_impl(const std::string &ipaddr, uint32_t port, 
-                        uint32_t tx_freq, uint32_t tx_vga, uint32_t sample_rate, 
-                        uint32_t dci, uint32_t dcq);
+                        uint32_t tx_freq, uint32_t tx_vga1, uint32_t tx_vga2, 
+                        uint32_t sample_rate, uint32_t dci, uint32_t dcq);
                 ~sink_sync_impl();
 
                 // Where all the action really happens

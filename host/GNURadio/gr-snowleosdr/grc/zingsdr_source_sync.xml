@@ -33,12 +33,14 @@
 	<value>0</value>
     <type>int</type>
   </param>
+  <hide>
   <param>
     <name>RX LAN</name>
     <key>rx_lan</key>
 	<value>0</value>
     <type>int</type>
   </param>
+  </hide>
   <param>
     <name>Sample Rate</name>
     <key>sample_rate</key>
@@ -57,7 +59,12 @@
 	<value>148</value>
     <type>int</type>
   </param>
-
+  <check>40000000 >= $sample_rate </check>>
+  <check>$sample_rate >= 400000 </check>>
+  <check>3700000000 >= $rx_freq </check>>
+  <check>$rx_freq >= 380000000 </check>>
+  <check>20 >= $rx_vga </check>>
+  <check>$rx_vga >= 0 </check>>
   <source>
     <name>out</name>
     <type>complex</type>
