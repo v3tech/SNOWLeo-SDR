@@ -1,16 +1,7 @@
 ################################################################################
 #       SnowLeo Pin Setup
 ################################################################################
-
-#NET axi_led[0]     LOC = J16  | IOSTANDARD= LVCMOS33;#LED
-#NET axi_led[1]     LOC = G20 | IOSTANDARD= LVCMOS33;#LED
-#NET axi_led[2]     LOC = F20 | IOSTANDARD= LVCMOS33;#LED
-#NET axi_led[3]     LOC = G15 | IOSTANDARD= LVCMOS33;#LED
-#NET mclk					 LOC = N18 | IOSTANDARD= LVCMOS33 ;#SYS_CLK_P
-#NET "mclk" CLOCK_DEDICATED_ROUTE = BACKBONE;
-
 #zipper
-//NET	rxclk				LOC=L16		|	IOSTANDARD=LVCMOS33;
 NET	rxen				LOC=L20		|	IOSTANDARD=LVCMOS33;
 NET	rxiqsel				LOC=N20		|	IOSTANDARD=LVCMOS33;
 NET	rxd<0>				LOC=P19		|	IOSTANDARD=LVCMOS33;
@@ -25,7 +16,6 @@ NET	rxd<8>				LOC=V18		|	IOSTANDARD=LVCMOS33;
 NET	rxd<9>				LOC=J15		|	IOSTANDARD=LVCMOS33;
 NET	rxd<10>				LOC=W20		|	IOSTANDARD=LVCMOS33;
 NET	rxd<11>				LOC=K14		|	IOSTANDARD=LVCMOS33;
-
 
 NET	txclk				LOC=L17		|	IOSTANDARD=LVCMOS33;
 NET	txen				LOC=T15		|	IOSTANDARD=LVCMOS33;
@@ -43,7 +33,6 @@ NET	txd<9>				LOC=L15		|	IOSTANDARD=LVCMOS33;
 NET	txd<10>				LOC=P18		|	IOSTANDARD=LVCMOS33;
 NET	txd<11>				LOC=M15		|	IOSTANDARD=LVCMOS33;
 
-
 NET	rf_reset			LOC=M18		|	IOSTANDARD=LVCMOS33;
 NET	sil5351_scl			LOC=W13		|	IOSTANDARD=LVCMOS33;
 NET	sil5351_sda			LOC=J20		|	IOSTANDARD=LVCMOS33;
@@ -56,40 +45,12 @@ NET	gpio[0]		      LOC=Y18		|	IOSTANDARD=LVCMOS33;
 NET	gpio[1]		      LOC=U17		|	IOSTANDARD=LVCMOS33;
 NET	gpio[2]		      LOC=W15		|	IOSTANDARD=LVCMOS33;
 
+NET mclk             LOC = N18  |      IOSTANDARD=LVCMOS33;  
 #--------------------------- SNOWLeo HDMI interface  -------------------------------
 NET hdmi_clk_pin        LOC = U18  | IOSTANDARD = LVCMOS33;
 NET hdmi_data_e_pin     LOC = T11  | IOSTANDARD = LVCMOS33;
 NET hdmi_hsync_pin      LOC = V12  | IOSTANDARD = LVCMOS33;
 NET hdmi_vsync_pin      LOC = T10  | IOSTANDARD = LVCMOS33;
-# RGB
-##B
-#NET hdmi_data_pin<8>    LOC = W14  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<9>    LOC = Y14  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<10>    LOC = P14  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<11>    LOC = V15  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<12>    LOC = T14  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<13>    LOC = Y17  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<14>    LOC = V16  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<15>    LOC = R16  | IOSTANDARD = LVCMOS33;
-
-##G
-#NET hdmi_data_pin<0>    LOC = Y16  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<1>    LOC = V17  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<2>   LOC = W18 | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<3>   LOC = V20 | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<4>   LOC = W19 | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<5>   LOC = R17 | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<6>   LOC = R19 | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<7>   LOC = T17 | IOSTANDARD = LVCMOS33;
-##R
-#NET hdmi_data_pin<16>   LOC = N17  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<17>   LOC = M14  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<18>   LOC = N16  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<19>   LOC = P15  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<20>   LOC = T20  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<21>   LOC = T16  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<22>   LOC = M17  | IOSTANDARD = LVCMOS33;
-#NET hdmi_data_pin<23>   LOC = R14  | IOSTANDARD = LVCMOS33;
 
 #YCbCr
 ##Y
@@ -111,11 +72,10 @@ NET hdmi_data_pin<13>   LOC = T16  | IOSTANDARD = LVCMOS33;
 NET hdmi_data_pin<14>   LOC = M17  | IOSTANDARD = LVCMOS33;
 NET hdmi_data_pin<15>   LOC = R14  | IOSTANDARD = LVCMOS33;
 
-
-
-PIN "u_pll_tx/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
-PIN "BUFG1.O" CLOCK_DEDICATED_ROUTE = FALSE;
-PIN "BUFG2.O" CLOCK_DEDICATED_ROUTE = FALSE;
+//PIN "u_pll_tx/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
+//PIN "BUFG1.O" CLOCK_DEDICATED_ROUTE = FALSE;
+//NET "txiqsel_OBUF" CLOCK_DEDICATED_ROUTE = FALSE;
+//PIN "BUFG2.O" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "rxiqsel" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "txclk" CLOCK_DEDICATED_ROUTE = FALSE;
-//NET "rxclk" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "mclk" CLOCK_DEDICATED_ROUTE = FALSE;

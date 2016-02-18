@@ -3,13 +3,14 @@ Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: platgen -p xc7z010clg400-1 -lang verilog -intstyle pa -itemplate
--tm cpu0 -lp J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
- 
+-tm cpu0 -lp
+J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs 
 
 Parse
-J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/cpu0.mhs
-...
+J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/c
+pu0.mhs ...
 
 Create merged mhs ...
 
@@ -27,10 +28,10 @@ INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_
    v4_03_a\data\processing_system7_v2_1_0.mpd line 312 
 INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
-   is overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   is overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 3 -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_
    v4_03_a\data\processing_system7_v2_1_0.mpd line 319 
-INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_gp0 - tcl is overriding
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp2 - tcl is overriding
    PARAMETER C_BASEFAMILY value to zynq -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 81 
@@ -38,7 +39,7 @@ INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp0 - tcl is overriding
    PARAMETER C_BASEFAMILY value to zynq -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 81 
-INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp2 - tcl is overriding
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_gp0 - tcl is overriding
    PARAMETER C_BASEFAMILY value to zynq -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 81 

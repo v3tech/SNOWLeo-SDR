@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : icon_v1_06_a_1.v
-// /___/   /\     Timestamp  : Wed May 14 17:10:03 中国标准时间 2014
+// /___/   /\     Timestamp  : Wed Dec 17 15:11:43 中国标准时间 2014
 // \   \  /  \
 //  \___\/\___\
 //
@@ -19,9 +19,11 @@
 `timescale 1ns/1ps
 
 module icon_v1_06_a_1(
-    CONTROL0) /* synthesis syn_black_box syn_noprune=1 */;
+    CONTROL0,
+    CONTROL1) /* synthesis syn_black_box syn_noprune=1 */;
 
 
 inout [35 : 0] CONTROL0;
+inout [35 : 0] CONTROL1;
 
 endmodule

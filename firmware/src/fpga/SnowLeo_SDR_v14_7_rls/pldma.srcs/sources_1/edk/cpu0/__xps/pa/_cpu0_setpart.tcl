@@ -5,12 +5,12 @@
 ######################################################
 
 proc _main_ {} {
-  cd "F:/ZYNQ/ZingNano/Zingnano_test/SNOWLeo_Sdr_Demo/SNOWLeo_Sdr_Demo/pldma.srcs/sources_1/edk/cpu0"
+  cd "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0"
   if { [ catch {xload xmp cpu0.xmp} result ] } {
     exit 10
   }
   xset arch zynq
-  xset dev xc7z010
+  xset dev xc7z020
   xset package clg400
   xset speedgrade -1
 

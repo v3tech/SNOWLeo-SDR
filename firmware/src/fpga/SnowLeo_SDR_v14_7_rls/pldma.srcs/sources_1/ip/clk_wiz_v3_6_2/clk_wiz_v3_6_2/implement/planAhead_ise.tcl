@@ -50,7 +50,7 @@
 set projDir [file dirname [info script]]
 set projName clk_wiz_v3_6_2
 set topName clk_wiz_v3_6_2_exdes
-set device xc7z010clg400-1
+set device xc7z020clg400-1
 
 create_project $projName $projDir/results/$projName -part $device
 

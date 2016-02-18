@@ -12,6 +12,6 @@ PINATTR PinName clk
 PINATTR Polarity IN
 LINE Wide 0 176 32 176
 PIN 0 176 LEFT 36
-PINATTR PinName trig0[59:0]
+PINATTR PinName trig0[39:0]
 PINATTR Polarity IN
 

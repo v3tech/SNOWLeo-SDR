@@ -1,5 +1,11 @@
 The following files were generated for 'ila_v1_05_a_0' in directory
-F:\ZYNQ\ZingNano\Zingnano_test\SNOWLeo_Sdr_Demo\SNOWLeo_Sdr_Demo0509_14.7rls\pldma.srcs\sources_1\ip\chipscope_ila_v1_05_a_0\
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\ip\chipscope_ila_v1_05_a_0\
+
+Generate FLIST file:
+   Text file listing all of the output files produced when a customized core was
+   generated in the CORE Generator.
+
+   * ila_v1_05_a_0_flist.txt
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\bootimage\snowleo_fsbl.elf
+	D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\bootimage\dma_demo.bit
+	D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\bootimage\u-boot-snowleo-nand.elf
+}

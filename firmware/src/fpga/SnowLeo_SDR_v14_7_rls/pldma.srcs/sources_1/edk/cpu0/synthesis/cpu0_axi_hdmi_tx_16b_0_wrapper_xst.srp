@@ -1,10 +1,10 @@
 Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.45 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,10 +35,10 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "cpu0_axi_hdmi_tx_16b_0_wrapper_xst.prj"
-Verilog Include Directory          : {"J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
-Target Device                      : xc7z010clg400-1
+Target Device                      : xc7z020clg400-1
 Output File Name                   : "../implementation/cpu0_axi_hdmi_tx_16b_0_wrapper.ngc"
 
 ---- Source Options
@@ -62,25 +62,25 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_mem.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_mem.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_mem>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_mul.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_mul.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_mul>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_add.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_add.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_add>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_csc_1.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_csc_1.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_csc_1>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_csc_RGB2CrYCb.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_csc_RGB2CrYCb.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_csc_RGB2CrYCb>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_ss_444to422.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_ss_444to422.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_ss_444to422>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_vdma.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_vdma.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_vdma>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_hdmi>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <cf_hdmi_tx_16b>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/user_logic.v" into library axi_hdmi_tx_16b_v1_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/user_logic.v" into library axi_hdmi_tx_16b_v1_00_a
 Parsing module <user_logic>.
 Parsing VHDL file "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
 Parsing package <proc_common_pkg>.
@@ -112,10 +112,10 @@ Parsing architecture <imp> of entity <slave_attachment>.
 Parsing VHDL file "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
 Parsing entity <axi_lite_ipif>.
 Parsing architecture <imp> of entity <axi_lite_ipif>.
-Parsing VHDL file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd" into library axi_hdmi_tx_16b_v1_00_a
+Parsing VHDL file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd" into library axi_hdmi_tx_16b_v1_00_a
 Parsing entity <axi_hdmi_tx_16b>.
 Parsing architecture <IMP> of entity <axi_hdmi_tx_16b>.
-Parsing VHDL file "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_axi_hdmi_tx_16b_0_wrapper.vhd" into library work
+Parsing VHDL file "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_axi_hdmi_tx_16b_0_wrapper.vhd" into library work
 Parsing entity <cpu0_axi_hdmi_tx_16b_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <cpu0_axi_hdmi_tx_16b_0_wrapper>.
 
@@ -202,12 +202,12 @@ Going to verilog side to elaborate module user_logic
 Elaborating module <user_logic(C_NUM_REG=32,C_SLV_DWIDTH=32)>.
 
 Elaborating module <cf_hdmi_tx_16b>.
-WARNING:HDLCompiler:1127 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" Line 157: Assignment to up_rd_s ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" Line 157: Assignment to up_rd_s ignored, since the identifier is never used
 
 Elaborating module <cf_vdma>.
 
 Elaborating module <cf_hdmi>.
-WARNING:HDLCompiler:413 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi.v" Line 317: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi.v" Line 317: Result of 11-bit expression is truncated to fit in 10-bit target.
 
 Elaborating module <cf_mem(DW=48,AW=9)>.
 
@@ -220,8 +220,8 @@ Elaborating module <cf_mul(DELAY_DATA_WIDTH=3)>.
 Elaborating module <cf_add(DELAY_DATA_WIDTH=3)>.
 
 Elaborating module <cf_ss_444to422>.
-WARNING:HDLCompiler:1127 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" Line 339: Assignment to hdmi_debug_data_s ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" Line 340: Assignment to hdmi_debug_trigger_s ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" Line 339: Assignment to hdmi_debug_data_s ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" Line 340: Assignment to hdmi_debug_trigger_s ignored, since the identifier is never used
 
 Elaborating module <ODDR(DDR_CLK_EDGE="OPPOSITE_EDGE",INIT=1'b0,SRTYPE="SYNC")>.
 Back to vhdl to continue elaboration
@@ -231,13 +231,13 @@ Back to vhdl to continue elaboration
 =========================================================================
 
 Synthesizing Unit <cpu0_axi_hdmi_tx_16b_0_wrapper>.
-    Related source file is "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_axi_hdmi_tx_16b_0_wrapper.vhd".
+    Related source file is "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_axi_hdmi_tx_16b_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <cpu0_axi_hdmi_tx_16b_0_wrapper> synthesized.
 
 Synthesizing Unit <axi_hdmi_tx_16b>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd".
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
         C_S_AXI_DATA_WIDTH = 32
@@ -256,9 +256,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
     Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
-INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd" line 165: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd" line 165: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd" line 165: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd" line 165: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd" line 165: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/vhdl/axi_hdmi_tx_16b.vhd" line 165: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <axi_hdmi_tx_16b> synthesized.
@@ -689,7 +689,7 @@ Synthesizing Unit <pselect_f_32>.
 Unit <pselect_f_32> synthesized.
 
 Synthesizing Unit <user_logic>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/user_logic.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/user_logic.v".
         C_NUM_REG = 32
         C_SLV_DWIDTH = 32
 WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -709,9 +709,9 @@ WARNING:Xst:647 - Input <vdma_almost_empty> is never used. This port will be pre
 Unit <user_logic> synthesized.
 
 Synthesizing Unit <cf_hdmi_tx_16b>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v".
-INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" line 311: Output port <debug_data> of the instance <i_hdmi> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" line 311: Output port <debug_trigger> of the instance <i_hdmi> is unconnected or connected to loadless signal.
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v".
+INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" line 311: Output port <debug_data> of the instance <i_hdmi> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi_tx_16b.v" line 311: Output port <debug_trigger> of the instance <i_hdmi> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <up_csc_bypass>.
     Found 1-bit register for signal <up_enable>.
     Found 1-bit register for signal <up_hdmi_tpm_oos_hold>.
@@ -752,7 +752,7 @@ INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/
 Unit <cf_hdmi_tx_16b> synthesized.
 
 Synthesizing Unit <cf_vdma>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_vdma.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_vdma.v".
 WARNING:Xst:647 - Input <vdma_data<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <vdma_data<63:56>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <vdma_fs_toggle_m2>.
@@ -800,7 +800,7 @@ WARNING:Xst:647 - Input <vdma_data<63:56>> is never used. This port will be pres
 Unit <cf_vdma> synthesized.
 
 Synthesizing Unit <cf_hdmi>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_hdmi.v".
     Found 1-bit register for signal <hdmi_up_enable_m2>.
     Found 1-bit register for signal <hdmi_up_enable_m3>.
     Found 1-bit register for signal <hdmi_up_enable>.
@@ -882,7 +882,7 @@ Synthesizing Unit <cf_hdmi>.
 Unit <cf_hdmi> synthesized.
 
 Synthesizing Unit <cf_mem>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_mem.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_mem.v".
         DW = 48
         AW = 9
     Found 512x48-bit dual-port RAM <Mram_m_ram> for signal <m_ram>.
@@ -893,7 +893,7 @@ Synthesizing Unit <cf_mem>.
 Unit <cf_mem> synthesized.
 
 Synthesizing Unit <cf_csc_RGB2CrYCb>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_csc_RGB2CrYCb.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_csc_RGB2CrYCb.v".
     Found 1-bit register for signal <CrYCb_hs>.
     Found 1-bit register for signal <CrYCb_de>.
     Found 24-bit register for signal <CrYCb_data>.
@@ -903,13 +903,13 @@ Synthesizing Unit <cf_csc_RGB2CrYCb>.
 Unit <cf_csc_RGB2CrYCb> synthesized.
 
 Synthesizing Unit <cf_csc_1>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_csc_1.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_csc_1.v".
     Summary:
 	no macro.
 Unit <cf_csc_1> synthesized.
 
 Synthesizing Unit <cf_mul>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_mul.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_mul.v".
         DELAY_DATA_WIDTH = 3
         DW = 2
     Found 3-bit register for signal <p1_ddata>.
@@ -944,7 +944,7 @@ Synthesizing Unit <cf_mul>.
 Unit <cf_mul> synthesized.
 
 Synthesizing Unit <cf_add>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_add.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_add.v".
         DELAY_DATA_WIDTH = 3
         DW = 2
     Found 25-bit register for signal <p1_data_1>.
@@ -973,7 +973,7 @@ Synthesizing Unit <cf_add>.
 Unit <cf_add> synthesized.
 
 Synthesizing Unit <cf_ss_444to422>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_ss_444to422.v".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/axi_hdmi_tx_16b_v1_00_a/hdl/verilog/cf_ss_444to422.v".
     Found 1-bit register for signal <s444_hs_d>.
     Found 1-bit register for signal <s444_de_d>.
     Found 24-bit register for signal <s444_data_d>.
@@ -1756,7 +1756,7 @@ INFO:Xst:2261 - The FF/Latch <axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdm
 Mapping all equations...
 Building and optimizing final netlist ...
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p2_data_0_1> is unconnected in block <cpu0_axi_hdmi_tx_16b_0_wrapper>.
-Found area constraint ratio of 100 (+ 0) on block cpu0_axi_hdmi_tx_16b_0_wrapper, actual ratio is 18.
+Found area constraint ratio of 100 (+ 0) on block cpu0_axi_hdmi_tx_16b_0_wrapper, actual ratio is 6.
 FlipFlop axi_hdmi_tx_16b_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 3 time(s)
 
 Final Macro Processing ...
@@ -2020,14 +2020,14 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 7z010clg400-1 
+Selected Device : 7z020clg400-1 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1717  out of  35200     4%  
- Number of Slice LUTs:                 2368  out of  17600    13%  
-    Number used as Logic:              2174  out of  17600    12%  
-    Number used as Memory:              194  out of   6000     3%  
+ Number of Slice Registers:            1717  out of  106400     1%  
+ Number of Slice LUTs:                 2368  out of  53200     4%  
+    Number used as Logic:              2174  out of  53200     4%  
+    Number used as Memory:              194  out of  17400     1%  
        Number used as SRL:              194
 
 Slice Logic Distribution: 
@@ -2039,10 +2039,10 @@ Slice Logic Distribution:
 
 IO Utilization: 
  Number of IOs:                         329
- Number of bonded IOBs:                   0  out of    100     0%  
+ Number of bonded IOBs:                   0  out of    125     0%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                1  out of     60     1%  
+ Number of Block RAM/FIFO:                1  out of    140     0%  
     Number using Block RAM only:          1
 
 ---------------------------
@@ -2367,12 +2367,12 @@ vdma_clk       |    2.949|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 33.00 secs
-Total CPU time to Xst completion: 32.66 secs
+Total REAL time to Xst completion: 67.00 secs
+Total CPU time to Xst completion: 67.88 secs
  
 --> 
 
-Total memory usage is 320056 kilobytes
+Total memory usage is 316312 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  329 (   0 filtered)

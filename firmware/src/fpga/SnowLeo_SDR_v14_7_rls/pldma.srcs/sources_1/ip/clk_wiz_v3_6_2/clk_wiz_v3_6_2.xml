@@ -16,7 +16,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3953637499</spirit:value>
+            <spirit:value>832393050</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -34,7 +34,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3953637499</spirit:value>
+            <spirit:value>832393050</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -52,7 +52,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3953637499</spirit:value>
+            <spirit:value>832393050</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -70,7 +70,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3953637499</spirit:value>
+            <spirit:value>832393050</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2939,7 +2939,7 @@
       <xilinx:display>
         <xilinx:displayName>Clocking Wizard</xilinx:displayName>
         <xilinx:ipType>Spirit</xilinx:ipType>
-        <xilinx:coreCreationDateTime>2014-05-13T16:12:36</xilinx:coreCreationDateTime>
+        <xilinx:coreCreationDateTime>2015-01-12T14:14:54</xilinx:coreCreationDateTime>
         <xilinx:taxonomies>
           <xilinx:taxonomy>/FPGA_Features_and_Design/Clocking</xilinx:taxonomy>
         </xilinx:taxonomies>

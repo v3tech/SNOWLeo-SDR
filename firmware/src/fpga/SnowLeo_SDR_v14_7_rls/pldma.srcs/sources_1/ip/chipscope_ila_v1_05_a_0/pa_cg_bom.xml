@@ -1,47 +1,68 @@
 <?xml version="1.0"?>
 <BillOfMaterials Version="1" Minor="2">
-  <IPInstance name="ila_v1_05_a_0">
-    <FileSets>
-      <FileSet generator="apply_current_project_options_generator">
-        <File name="./apply_current_project_options_generator.xlog" type="ignore" timestamp="Wed May 14 09:12:58 GMT 2014" checksum="0xFFFFFFFF"></File>
-      </FileSet>
-      <FileSet generator="model_parameter_resolution_generator">
-        <File name="./model_parameter_resolution_generator.xlog" type="ignore" timestamp="Wed May 14 09:12:58 GMT 2014" checksum="0xFFFFFFFF"></File>
-      </FileSet>
-      <FileSet generator="ip_xco_generator">
-        <File name="./ila_v1_05_a_0.xco" type="xco" timestamp="Wed May 14 09:10:36 GMT 2014" checksum="0x631E4E65"></File>
-      </FileSet>
-      <FileSet generator="ngc_netlist_generator">
-        <File name="./ila_v1_05_a_0.cdc" type="unknown" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0xB634AA5F"></File>
-        <File name="./ila_v1_05_a_0.constraints/ila_v1_05_a_0.ucf" type="ucf" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0x1190A37B"></File>
-        <File name="./ila_v1_05_a_0.constraints/ila_v1_05_a_0.xdc" type="xdc" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0x5F4D4543"></File>
-        <File name="./ila_v1_05_a_0.ncf" type="ignore" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0x241A9D00"></File>
-        <File name="./ila_v1_05_a_0.ngc" type="ngc" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0x1AAA22DD"></File>
-        <File name="./ila_v1_05_a_0.ucf" type="ignore" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0x1190A37B"></File>
-        <File name="./ila_v1_05_a_0.v" type="verilog" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0x9353D07F"></File>
-        <File name="./ila_v1_05_a_0.veo" type="veo" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0xB4AB053F"></File>
-        <File name="./ila_v1_05_a_0.xdc" type="ignore" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0x5F4D4543"></File>
-        <File name="./ila_v1_05_a_0_xmdf.tcl" type="tcl" timestamp="Wed May 14 09:10:37 GMT 2014" checksum="0x3CF11D6C"></File>
-      </FileSet>
-      <FileSet generator="instantiation_template_generator">
-        <File name="./instantiation_template_generator.xlog" type="ignore" timestamp="Wed May 14 09:12:58 GMT 2014" checksum="0xFFFFFFFF"></File>
-      </FileSet>
-      <FileSet generator="asy_generator">
-        <File name="./ila_v1_05_a_0.asy" type="asy" timestamp="Wed May 14 09:12:53 GMT 2014" checksum="0x9657E104"></File>
-      </FileSet>
-      <FileSet generator="xmdf_generator">
-        <File name="./xmdf_generator.xlog" type="ignore" timestamp="Wed May 14 09:12:58 GMT 2014" checksum="0xFFFFFFFF"></File>
-      </FileSet>
-      <FileSet generator="ise_generator">
-        <File name="./ila_v1_05_a_0.gise" type="ignore" timestamp="Wed May 14 09:12:58 GMT 2014" checksum="0x0B8CB6CC"></File>
-        <File name="./ila_v1_05_a_0.xise" type="ignore" timestamp="Wed May 14 09:12:58 GMT 2014" checksum="0x98DAE4C7"></File>
-      </FileSet>
-      <FileSet generator="deliver_readme_generator">
-        <File name="./ila_v1_05_a_0_readme.txt" type="ignore" timestamp="Wed May 14 09:12:58 GMT 2014" checksum="0xD7F43FFF"></File>
-      </FileSet>
-      <FileSet generator="flist_generator">
-        <File name="./ila_v1_05_a_0_flist.txt" type="ignore" timestamp="Wed May 14 09:12:58 GMT 2014" checksum="0x366787AE"></File>
-      </FileSet>
-    </FileSets>
-  </IPInstance>
+	<IPInstance name="ila_v1_05_a_0">
+		<FileSets>
+			<FileSet generator="apply_current_project_options_generator">
+				<File name="apply_current_project_options_generator.xlog" type="ignore" timestamp="Wed Dec 17 07:10:47 GMT 2014" checksum="0xFFFFFFFF">
+				</File>
+			</FileSet>
+			<FileSet generator="model_parameter_resolution_generator">
+				<File name="model_parameter_resolution_generator.xlog" type="ignore" timestamp="Wed Dec 17 07:10:47 GMT 2014" checksum="0xFFFFFFFF">
+				</File>
+			</FileSet>
+			<FileSet generator="ip_xco_generator">
+				<File name="ila_v1_05_a_0.xco" type="xco" timestamp="Wed Dec 17 07:07:32 GMT 2014" checksum="0xD9BE136F">
+				</File>
+			</FileSet>
+			<FileSet generator="ngc_netlist_generator">
+				<File name="ila_v1_05_a_0.cdc" type="unknown" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0x585D502C">
+				</File>
+				<File name="ila_v1_05_a_0.constraints/ila_v1_05_a_0.ucf" type="ucf" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0x1190A37B">
+				</File>
+				<File name="ila_v1_05_a_0.constraints/ila_v1_05_a_0.xdc" type="xdc" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0x5F4D4543">
+				</File>
+				<File name="ila_v1_05_a_0.ncf" type="ignore" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0x241A9D00">
+				</File>
+				<File name="ila_v1_05_a_0.ngc" type="ngc" timestamp="Wed Dec 17 07:10:39 GMT 2014" checksum="0x9E2F0631">
+				</File>
+				<File name="ila_v1_05_a_0.ucf" type="ignore" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0x1190A37B">
+				</File>
+				<File name="ila_v1_05_a_0.v" type="verilog" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0xE4734A9B">
+				</File>
+				<File name="ila_v1_05_a_0.veo" type="veo" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0xA76AA754">
+				</File>
+				<File name="ila_v1_05_a_0.xdc" type="ignore" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0x5F4D4543">
+				</File>
+				<File name="ila_v1_05_a_0_xmdf.tcl" type="tcl" timestamp="Wed Dec 17 07:07:34 GMT 2014" checksum="0x3CF11D6C">
+				</File>
+			</FileSet>
+			<FileSet generator="instantiation_template_generator">
+				<File name="instantiation_template_generator.xlog" type="ignore" timestamp="Wed Dec 17 07:10:47 GMT 2014" checksum="0xFFFFFFFF">
+				</File>
+			</FileSet>
+			<FileSet generator="asy_generator">
+				<File name="ila_v1_05_a_0.asy" type="asy" timestamp="Wed Dec 17 07:10:40 GMT 2014" checksum="0x93EBEF4A">
+				</File>
+			</FileSet>
+			<FileSet generator="xmdf_generator">
+				<File name="xmdf_generator.xlog" type="ignore" timestamp="Wed Dec 17 07:10:47 GMT 2014" checksum="0xFFFFFFFF">
+				</File>
+			</FileSet>
+			<FileSet generator="ise_generator">
+				<File name="ila_v1_05_a_0.gise" type="ignore" timestamp="Wed Dec 17 07:10:47 GMT 2014" checksum="0x0B8CB6CC">
+				</File>
+				<File name="ila_v1_05_a_0.xise" type="ignore" timestamp="Wed Dec 17 07:10:47 GMT 2014" checksum="0x3C34661D">
+				</File>
+			</FileSet>
+			<FileSet generator="deliver_readme_generator">
+				<File name="ila_v1_05_a_0_readme.txt" type="ignore" timestamp="Wed Dec 17 07:10:47 GMT 2014" checksum="0xCE0B9ED5">
+				</File>
+			</FileSet>
+			<FileSet generator="flist_generator">
+				<File name="ila_v1_05_a_0_flist.txt" type="ignore" timestamp="Wed Dec 17 07:10:47 GMT 2014" checksum="0x366787AE">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
 </BillOfMaterials>
+

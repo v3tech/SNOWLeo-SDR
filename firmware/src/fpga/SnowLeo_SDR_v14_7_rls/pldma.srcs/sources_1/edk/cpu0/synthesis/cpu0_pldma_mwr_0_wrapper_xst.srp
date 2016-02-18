@@ -1,10 +1,10 @@
 Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,10 +35,10 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "cpu0_pldma_mwr_0_wrapper_xst.prj"
-Verilog Include Directory          : {"J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
-Target Device                      : xc7z010clg400-1
+Target Device                      : xc7z020clg400-1
 Output File Name                   : "../implementation/cpu0_pldma_mwr_0_wrapper.ngc"
 
 ---- Source Options
@@ -62,11 +62,11 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/verilog/user_logic.v" into library pldma_mwr_v2_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/verilog/user_logic.v" into library pldma_mwr_v2_00_a
 Parsing module <user_logic>.
-Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/verilog/fifo_16384x32_8192x64.v" into library pldma_mwr_v2_00_a
+Analyzing Verilog file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/verilog/fifo_16384x32_8192x64.v" into library pldma_mwr_v2_00_a
 Parsing module <fifo_16384x32_8192x64>.
-Analyzing Verilog file "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" into library work
+Analyzing Verilog file "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" into library work
 Parsing module <cpu0_pldma_mwr_0_wrapper>.
 Parsing VHDL file "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
 Parsing package <family>.
@@ -671,7 +671,7 @@ Parsing architecture <implementation> of entity <axi_master_burst_wr_llink>.
 Parsing VHDL file "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst.vhd" into library axi_master_burst_v1_00_a
 Parsing entity <axi_master_burst>.
 Parsing architecture <implementation> of entity <axi_master_burst>.
-Parsing VHDL file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd" into library pldma_mwr_v2_00_a
+Parsing VHDL file "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd" into library pldma_mwr_v2_00_a
 Parsing entity <pldma_mwr>.
 Parsing architecture <IMP> of entity <pldma_mwr>.
 
@@ -689,6 +689,14 @@ Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from libra
 Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
 
 Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
 
 Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
 
@@ -779,8 +787,11 @@ Elaborating entity <axi_master_burst_rd_llink> (architecture <implementation>) w
 Elaborating entity <axi_master_burst_wr_llink> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
 Going to verilog side to elaborate module user_logic
 
-Elaborating module <user_logic(C_MST_NATIVE_DATA_WIDTH=64,C_LENGTH_WIDTH=12,C_MST_AWIDTH=32,C_NUM_REG=8,C_SLV_DWIDTH=32)>.
-WARNING:HDLCompiler:1499 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/verilog/user_logic.v" Line 30: Empty module <user_logic(C_MST_NATIVE_DATA_WIDTH=64,C_LENGTH_WIDTH=12,C_MST_AWIDTH=32,C_NUM_REG=8,C_SLV_DWIDTH=32)> remains a black box.
+Elaborating module <user_logic(C_MST_NATIVE_DATA_WIDTH=64,C_LENGTH_WIDTH=12,C_MST_AWIDTH=32,C_NUM_REG=6,C_SLV_DWIDTH=32)>.
+WARNING:HDLCompiler:413 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/verilog/user_logic.v" Line 219: Result of 16-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <fifo_16384x32_8192x64>.
+WARNING:HDLCompiler:1499 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/verilog/fifo_16384x32_8192x64.v" Line 39: Empty module <fifo_16384x32_8192x64> remains a black box.
 Back to vhdl to continue elaboration
 Back to verilog to continue elaboration
 
@@ -789,19 +800,28 @@ Back to verilog to continue elaboration
 =========================================================================
 
 Synthesizing Unit <cpu0_pldma_mwr_0_wrapper>.
-    Related source file is "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v".
-INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 148: Output port <u_ctrl2> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 148: Output port <u_ctrl3> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
+    Related source file is "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v".
+INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 181: Output port <u_ctrl0_T> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 181: Output port <u_ctrl1_T> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 181: Output port <u_ctrl2_T> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 181: Output port <u_ctrl3_T> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 181: Output port <u_ctrl4_T> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 181: Output port <u_ctrl5_T> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 181: Output port <u_ctrl6_T> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_pldma_mwr_0_wrapper.v" line 181: Output port <u_ctrl7_T> of the instance <pldma_mwr_0> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <cpu0_pldma_mwr_0_wrapper> synthesized.
 
 Synthesizing Unit <pldma_mwr>.
-    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd".
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd".
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_ENABLE_INT = 1
+        C_ENABLE_DGB = 0
+        C_DIRECT_REG = "00011111"
         C_S_AXI_DATA_WIDTH = 32
         C_S_AXI_ADDR_WIDTH = 32
         C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
@@ -810,7 +830,7 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
         C_BASEADDR = "01000001001000010000000000000000"
         C_HIGHADDR = "01000001001000011111111111111111"
         C_FAMILY = "zynq"
-        C_NUM_REG = 8
+        C_NUM_REG = 6
         C_NUM_MEM = 1
         C_SLV_AWIDTH = 32
         C_SLV_DWIDTH = 32
@@ -828,9 +848,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
     Set property "MAX_FANOUT = 10000" for signal <m_axi_aresetn>.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
-INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd" line 431: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd" line 431: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd" line 431: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd" line 475: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd" line 475: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/vhdl/pldma_mwr.vhd" line 475: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <pldma_mwr> synthesized.
@@ -843,7 +863,7 @@ Synthesizing Unit <axi_lite_ipif>.
         C_USE_WSTRB = 1
         C_DPHASE_TIMEOUT = 8
         C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001000001001000010000000000000000","0000000000000000000000000000000001000001001000010000000011111111")
-        C_ARD_NUM_CE_ARRAY = (8)
+        C_ARD_NUM_CE_ARRAY = (12)
         C_FAMILY = "zynq"
     Summary:
 	no macro.
@@ -852,7 +872,7 @@ Unit <axi_lite_ipif> synthesized.
 Synthesizing Unit <slave_attachment>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd".
         C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001000001001000010000000000000000","0000000000000000000000000000000001000001001000010000000011111111")
-        C_ARD_NUM_CE_ARRAY = (8)
+        C_ARD_NUM_CE_ARRAY = (12)
         C_IPIF_ABUS_WIDTH = 32
         C_IPIF_DBUS_WIDTH = 32
         C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
@@ -897,9 +917,9 @@ Synthesizing Unit <address_decoder>.
         C_BUS_AWIDTH = 9
         C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
         C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001000001001000010000000000000000","0000000000000000000000000000000001000001001000010000000011111111")
-        C_ARD_NUM_CE_ARRAY = (8)
+        C_ARD_NUM_CE_ARRAY = (12)
         C_FAMILY = "nofamily"
-WARNING:Xst:647 - Input <Address_In_Erly<0:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_In_Erly<0:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <Bus_RNW_reg>.
     Found 1-bit register for signal <ce_out_i<0>>.
@@ -910,16 +930,20 @@ WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and
     Found 1-bit register for signal <ce_out_i<5>>.
     Found 1-bit register for signal <ce_out_i<6>>.
     Found 1-bit register for signal <ce_out_i<7>>.
+    Found 1-bit register for signal <ce_out_i<8>>.
+    Found 1-bit register for signal <ce_out_i<9>>.
+    Found 1-bit register for signal <ce_out_i<10>>.
+    Found 1-bit register for signal <ce_out_i<11>>.
     Found 1-bit register for signal <cs_out_i>.
     Summary:
-	inferred  10 D-type flip-flop(s).
+	inferred  14 D-type flip-flop(s).
 Unit <address_decoder> synthesized.
 
 Synthesizing Unit <pselect_f_1>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-        C_AB = 3
-        C_AW = 3
-        C_BAR = "000"
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0000"
         C_FAMILY = "nofamily"
     Summary:
 	inferred   1 Multiplexer(s).
@@ -927,9 +951,9 @@ Unit <pselect_f_1> synthesized.
 
 Synthesizing Unit <pselect_f_2>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-        C_AB = 3
-        C_AW = 3
-        C_BAR = "001"
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0001"
         C_FAMILY = "nofamily"
     Summary:
 	inferred   1 Multiplexer(s).
@@ -937,9 +961,9 @@ Unit <pselect_f_2> synthesized.
 
 Synthesizing Unit <pselect_f_3>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-        C_AB = 3
-        C_AW = 3
-        C_BAR = "010"
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0010"
         C_FAMILY = "nofamily"
     Summary:
 	inferred   1 Multiplexer(s).
@@ -947,9 +971,9 @@ Unit <pselect_f_3> synthesized.
 
 Synthesizing Unit <pselect_f_4>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-        C_AB = 3
-        C_AW = 3
-        C_BAR = "011"
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0011"
         C_FAMILY = "nofamily"
     Summary:
 	inferred   1 Multiplexer(s).
@@ -957,9 +981,9 @@ Unit <pselect_f_4> synthesized.
 
 Synthesizing Unit <pselect_f_5>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-        C_AB = 3
-        C_AW = 3
-        C_BAR = "100"
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0100"
         C_FAMILY = "nofamily"
     Summary:
 	inferred   1 Multiplexer(s).
@@ -967,9 +991,9 @@ Unit <pselect_f_5> synthesized.
 
 Synthesizing Unit <pselect_f_6>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-        C_AB = 3
-        C_AW = 3
-        C_BAR = "101"
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0101"
         C_FAMILY = "nofamily"
     Summary:
 	inferred   1 Multiplexer(s).
@@ -977,9 +1001,9 @@ Unit <pselect_f_6> synthesized.
 
 Synthesizing Unit <pselect_f_7>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-        C_AB = 3
-        C_AW = 3
-        C_BAR = "110"
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0110"
         C_FAMILY = "nofamily"
     Summary:
 	inferred   1 Multiplexer(s).
@@ -987,13 +1011,53 @@ Unit <pselect_f_7> synthesized.
 
 Synthesizing Unit <pselect_f_8>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-        C_AB = 3
-        C_AW = 3
-        C_BAR = "111"
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0111"
         C_FAMILY = "nofamily"
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <pselect_f_8> synthesized.
+
+Synthesizing Unit <pselect_f_9>.
+    Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_9> synthesized.
+
+Synthesizing Unit <pselect_f_10>.
+    Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_10> synthesized.
+
+Synthesizing Unit <pselect_f_11>.
+    Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_11> synthesized.
+
+Synthesizing Unit <pselect_f_12>.
+    Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_12> synthesized.
 
 Synthesizing Unit <axi_master_burst>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst.vhd".
@@ -1067,7 +1131,7 @@ WARNING:Xst:647 - Input <ip2bus_mst_reset> is never used. This port will be pres
     Found 1-bit register for signal <sig_init_reg1>.
     Found 1-bit register for signal <sig_init_reg2>.
     Found 1-bit register for signal <sig_cmdack_reg>.
-    Found 4-bit adder for signal <sig_tag_counter[3]_GND_25_o_add_21_OUT> created at line 787.
+    Found 4-bit adder for signal <sig_tag_counter[3]_GND_29_o_add_21_OUT> created at line 787.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  72 D-type flip-flop(s).
@@ -1209,13 +1273,13 @@ WARNING:Xst:647 - Input <cmd2mstr_command<23:12>> is never used. This port will 
     Found 16-bit adder for signal <sig_adjusted_addr_incr> created at line 1195.
     Found 16-bit adder for signal <sig_predict_addr_lsh> created at line 1342.
     Found 16-bit adder for signal <sig_predict_addr_lsh_im> created at line 1379.
-    Found 16-bit adder for signal <sig_addr_cntr_msh[15]_GND_31_o_add_106_OUT> created at line 1544.
-    Found 12-bit subtractor for signal <GND_31_o_GND_31_o_sub_64_OUT<11:0>> created at line 1147.
+    Found 16-bit adder for signal <sig_addr_cntr_msh[15]_GND_35_o_add_106_OUT> created at line 1544.
+    Found 12-bit subtractor for signal <GND_35_o_GND_35_o_sub_64_OUT<11:0>> created at line 1147.
     Found 16-bit subtractor for signal <sig_byte_change_minus1> created at line 585.
     Found 16-bit subtractor for signal <sig_bytes_to_mbaa> created at line 609.
     Found 16-bit comparator lessequal for signal <n0191> created at line 1271
-    Found 16-bit comparator greater for signal <GND_31_o_sig_bytes_to_mbaa[15]_LessThan_86_o> created at line 1318
-    Found 16-bit comparator equal for signal <GND_31_o_sig_bytes_to_mbaa[15]_equal_87_o> created at line 1325
+    Found 16-bit comparator greater for signal <GND_35_o_sig_bytes_to_mbaa[15]_LessThan_86_o> created at line 1318
+    Found 16-bit comparator equal for signal <GND_35_o_sig_bytes_to_mbaa[15]_equal_87_o> created at line 1325
     Summary:
 	inferred   7 Adder/Subtractor(s).
 	inferred 231 D-type flip-flop(s).
@@ -1232,8 +1296,8 @@ Synthesizing Unit <axi_master_burst_strb_gen_1>.
         C_NUM_BYTES_WIDTH = 4
     Found 6-bit adder for signal <GEN_OFFSET_MODE.sig_end_addr_us> created at line 172.
     Found 6-bit subtractor for signal <GEN_OFFSET_MODE.sig_incr_offset_bytes_us> created at line 152.
-    Found 32-bit comparator greater for signal <GEN_OFFSET_MODE.sig_strt_addr_int[31]_GND_32_o_LessThan_8_o> created at line 202
-    Found 32-bit comparator greater for signal <GEN_OFFSET_MODE.sig_end_addr_int[31]_GND_32_o_LessThan_10_o> created at line 217
+    Found 32-bit comparator greater for signal <GEN_OFFSET_MODE.sig_strt_addr_int[31]_GND_36_o_LessThan_8_o> created at line 202
+    Found 32-bit comparator greater for signal <GEN_OFFSET_MODE.sig_end_addr_int[31]_GND_36_o_LessThan_10_o> created at line 217
     Found 32-bit comparator lessequal for signal <n0011> created at line 232
     Found 32-bit comparator lessequal for signal <n0013> created at line 233
     Found 32-bit comparator lessequal for signal <n0016> created at line 232
@@ -1263,7 +1327,7 @@ Synthesizing Unit <axi_master_burst_strb_gen_2>.
         C_OFFSET_WIDTH = 3
         C_NUM_BYTES_WIDTH = 3
     Found 3-bit subtractor for signal <GEN_ADDR_MODE.sig_end_addr_us> created at line 287.
-    Found 32-bit comparator greater for signal <GEN_ADDR_MODE.sig_end_addr_int[31]_GND_85_o_LessThan_10_o> created at line 353
+    Found 32-bit comparator greater for signal <GEN_ADDR_MODE.sig_end_addr_int[31]_GND_89_o_LessThan_10_o> created at line 353
     Found 32-bit comparator lessequal for signal <n0011> created at line 369
     Found 32-bit comparator lessequal for signal <n0013> created at line 370
     Found 32-bit comparator lessequal for signal <n0016> created at line 369
@@ -1325,8 +1389,8 @@ Synthesizing Unit <axi_master_burst_rddata_cntl>.
         C_STREAM_DWIDTH = 64
         C_TAG_WIDTH = 4
         C_FAMILY = "zynq"
-    Register <sig_halt_reg_dly1> equivalent to <sig_halt_reg> has been removed
     Register <sig_rd_xfer_cmplt> equivalent to <sig_last_mmap_dbeat_reg> has been removed
+    Register <sig_halt_reg_dly1> equivalent to <sig_halt_reg> has been removed
     Register <sig_halt_reg_dly2> equivalent to <sig_halt_reg> has been removed
     Register <sig_halt_reg_dly3> equivalent to <sig_halt_reg> has been removed
     Found 1-bit register for signal <sig_last_mmap_dbeat_reg>.
@@ -1353,9 +1417,9 @@ Synthesizing Unit <axi_master_burst_rddata_cntl>.
     Found 1-bit register for signal <sig_coelsc_okay_reg>.
     Found 1-bit register for signal <sig_coelsc_reg_full>.
     Found 1-bit register for signal <sig_halt_reg>.
-    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_149_o_add_30_OUT> created at line 1155.
-    Found 3-bit subtractor for signal <GND_149_o_GND_149_o_sub_32_OUT<2:0>> created at line 1161.
-    Found 8-bit subtractor for signal <GND_149_o_GND_149_o_sub_41_OUT<7:0>> created at line 1308.
+    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_153_o_add_30_OUT> created at line 1155.
+    Found 3-bit subtractor for signal <GND_153_o_GND_153_o_sub_32_OUT<2:0>> created at line 1161.
+    Found 8-bit subtractor for signal <GND_153_o_GND_153_o_sub_41_OUT<7:0>> created at line 1308.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  55 D-type flip-flop(s).
@@ -1468,9 +1532,9 @@ WARNING:Xst:647 - Input <mstr2data_drr> is never used. This port will be preserv
     Found 8-bit register for signal <sig_dbeat_cntr>.
     Found 1-bit register for signal <sig_halt_reg>.
     Found 1-bit register for signal <sig_wr_xfer_cmplt>.
-    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_153_o_add_41_OUT> created at line 1844.
-    Found 3-bit subtractor for signal <GND_153_o_GND_153_o_sub_43_OUT<2:0>> created at line 1850.
-    Found 8-bit subtractor for signal <GND_153_o_GND_153_o_sub_52_OUT<7:0>> created at line 1308.
+    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_157_o_add_41_OUT> created at line 1844.
+    Found 3-bit subtractor for signal <GND_157_o_GND_157_o_sub_43_OUT<2:0>> created at line 1850.
+    Found 8-bit subtractor for signal <GND_157_o_GND_157_o_sub_52_OUT<7:0>> created at line 1308.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  66 D-type flip-flop(s).
@@ -1507,10 +1571,10 @@ INFO:Xst:3210 - "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_m
     Found 3-bit register for signal <sig_addr_posted_cntr>.
     Found 1-bit register for signal <sig_halt_reg>.
     Found 1-bit register for signal <sig_wdc_status_going_full>.
-    Found 3-bit adder for signal <sig_wdc_statcnt[2]_GND_154_o_add_10_OUT> created at line 731.
-    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_154_o_add_25_OUT> created at line 1306.
-    Found 3-bit subtractor for signal <GND_154_o_GND_154_o_sub_12_OUT<2:0>> created at line 737.
-    Found 3-bit subtractor for signal <GND_154_o_GND_154_o_sub_27_OUT<2:0>> created at line 1312.
+    Found 3-bit adder for signal <sig_wdc_statcnt[2]_GND_158_o_add_10_OUT> created at line 731.
+    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_158_o_add_25_OUT> created at line 1306.
+    Found 3-bit subtractor for signal <GND_158_o_GND_158_o_sub_12_OUT<2:0>> created at line 737.
+    Found 3-bit subtractor for signal <GND_158_o_GND_158_o_sub_27_OUT<2:0>> created at line 1312.
     Found 3-bit comparator lessequal for signal <n0028> created at line 679
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -1710,50 +1774,143 @@ WARNING:Xst:647 - Input <ip2bus_mstwr_src_dsc_n> is never used. This port will b
 	inferred   5 D-type flip-flop(s).
 Unit <axi_master_burst_wr_llink> synthesized.
 
+Synthesizing Unit <user_logic>.
+    Related source file is "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/pcores/pldma_mwr_v2_00_a/hdl/verilog/user_logic.v".
+        C_MST_NATIVE_DATA_WIDTH = 64
+        C_LENGTH_WIDTH = 12
+        C_MST_AWIDTH = 32
+        C_NUM_REG = 6
+        C_SLV_DWIDTH = 32
+WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus2ip_mstrd_d> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus2ip_mstrd_rem> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus2ip_mst_rearbitrate> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus2ip_mstrd_sof_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus2ip_mstrd_eof_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus2ip_mstrd_src_rdy_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus2ip_mstrd_src_dsc_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <ip2bus_mstwr_sof_n>.
+    Found 1-bit register for signal <ip2bus_mstwr_eof_n>.
+    Found 1-bit register for signal <ip2bus_mstwr_src_rdy_n>.
+    Found 32-bit register for signal <slv_reg1>.
+    Found 32-bit register for signal <slv_reg2>.
+    Found 32-bit register for signal <slv_reg3>.
+    Found 32-bit register for signal <IP2Bus_Data>.
+    Found 32-bit register for signal <slv_reg0>.
+    Found 12-bit register for signal <ip2bus_mst_length>.
+    Found 12-bit register for signal <write_cnt>.
+    Found 12-bit register for signal <write_len1>.
+    Found 32-bit register for signal <app_wr_addr>.
+    Found 32-bit register for signal <dma_cyc_cnt>.
+    Found 5-bit register for signal <state>.
+    Found 5-bit register for signal <state_wr>.
+    Found 64-bit register for signal <ip2bus_mstwr_d>.
+    Found 64-bit register for signal <data_reg>.
+    Found 1-bit register for signal <ip2bus_mstwr_req>.
+    Found 1-bit register for signal <ip2bus_mst_type>.
+    Found 1-bit register for signal <dma_done>.
+    Found 1-bit register for signal <write_data_start>.
+    Found 1-bit register for signal <rd_en>.
+    Found 1-bit register for signal <write_data_end>.
+    Found 1-bit register for signal <IP2Bus_WrAck>.
+    Found 32-bit register for signal <u_ctrl0_O>.
+    Found 32-bit register for signal <u_ctrl1_O>.
+    Found 32-bit register for signal <u_ctrl2_O>.
+    Found 32-bit register for signal <u_ctrl3_O>.
+    Found 32-bit register for signal <u_ctrl4_O>.
+    Found 1-bit register for signal <IP2Bus_RdAck>.
+    Found 1-bit register for signal <rst>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 11                                             |
+    | Clock              | m_axi_aclk (rising_edge)                       |
+    | Reset              | rst (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <state_wr>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 26                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 13                                             |
+    | Clock              | m_axi_aclk (rising_edge)                       |
+    | Reset              | rst (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit subtractor for signal <GND_177_o_GND_177_o_sub_121_OUT> created at line 330.
+    Found 32-bit adder for signal <dma_cyc_cnt[31]_GND_177_o_add_90_OUT> created at line 285.
+    Found 32-bit adder for signal <app_wr_addr[31]_GND_177_o_add_91_OUT> created at line 286.
+    Found 12-bit adder for signal <write_cnt[11]_GND_177_o_add_124_OUT> created at line 348.
+    Found 14-bit comparator greater for signal <n0095> created at line 239
+    Found 32-bit comparator equal for signal <n0106> created at line 283
+    Found 12-bit comparator equal for signal <n0170> created at line 370
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 560 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  20 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <user_logic> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
  256x4-bit single-port Read Only RAM                   : 1
-# Adders/Subtractors                                   : 18
+# Adders/Subtractors                                   : 22
+ 10-bit subtractor                                     : 1
+ 12-bit adder                                          : 1
  12-bit subtractor                                     : 1
  16-bit adder                                          : 4
  16-bit subtractor                                     : 2
  3-bit addsub                                          : 4
  3-bit subtractor                                      : 1
+ 32-bit adder                                          : 2
  4-bit adder                                           : 2
  6-bit adder                                           : 1
  6-bit subtractor                                      : 1
  8-bit subtractor                                      : 2
-# Registers                                            : 242
- 1-bit register                                        : 177
- 12-bit register                                       : 3
+# Registers                                            : 275
+ 1-bit register                                        : 193
+ 12-bit register                                       : 6
  16-bit register                                       : 5
  2-bit register                                        : 3
  3-bit register                                        : 9
- 32-bit register                                       : 4
+ 32-bit register                                       : 16
  4-bit register                                        : 11
  6-bit register                                        : 2
- 64-bit register                                       : 6
+ 64-bit register                                       : 8
  8-bit register                                        : 22
-# Comparators                                          : 41
+# Comparators                                          : 44
+ 12-bit comparator equal                               : 1
+ 14-bit comparator greater                             : 1
  16-bit comparator equal                               : 1
  16-bit comparator greater                             : 1
  16-bit comparator lessequal                           : 1
  3-bit comparator lessequal                            : 3
+ 32-bit comparator equal                               : 1
  32-bit comparator greater                             : 3
  32-bit comparator lessequal                           : 32
-# Multiplexers                                         : 85
- 1-bit 2-to-1 multiplexer                              : 56
- 12-bit 2-to-1 multiplexer                             : 2
+# Multiplexers                                         : 109
+ 1-bit 2-to-1 multiplexer                              : 73
+ 12-bit 2-to-1 multiplexer                             : 5
  16-bit 2-to-1 multiplexer                             : 4
  3-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 5
  4-bit 2-to-1 multiplexer                              : 2
- 64-bit 2-to-1 multiplexer                             : 3
+ 64-bit 2-to-1 multiplexer                             : 6
  8-bit 2-to-1 multiplexer                              : 13
-# FSMs                                                 : 2
+# FSMs                                                 : 4
 # Xors                                                 : 6
  1-bit xor2                                            : 6
 
@@ -1805,6 +1962,41 @@ Unit <axi_master_burst_wrdata_cntl> synthesized (advanced).
 Synthesizing (advanced) Unit <slave_attachment>.
 The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
 Unit <slave_attachment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <user_logic>.
+The following registers are absorbed into accumulator <app_wr_addr>: 1 register on signal <app_wr_addr>.
+The following registers are absorbed into counter <dma_cyc_cnt>: 1 register on signal <dma_cyc_cnt>.
+Unit <user_logic> synthesized (advanced).
+WARNING:Xst:2677 - Node <slv_reg0_1> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_2> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_3> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_5> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_6> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_7> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_8> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_9> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_10> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_11> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_12> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_13> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_14> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_15> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_16> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_17> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_18> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_19> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_20> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_21> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_22> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_23> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_24> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_25> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_26> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_27> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_28> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_29> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_30> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg0_31> of sequential type is unconnected in block <user_logic>.
 WARNING:Xst:2677 - Node <sig_input_dsa_reg_1> of sequential type is unconnected in block <axi_master_burst_pcc>.
 WARNING:Xst:2677 - Node <sig_input_dsa_reg_2> of sequential type is unconnected in block <axi_master_burst_pcc>.
 WARNING:Xst:2677 - Node <sig_input_dsa_reg_3> of sequential type is unconnected in block <axi_master_burst_pcc>.
@@ -1827,40 +2019,47 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  256x4-bit single-port distributed Read Only RAM       : 1
-# Adders/Subtractors                                   : 8
+# Adders/Subtractors                                   : 10
+ 10-bit subtractor                                     : 1
  11-bit subtractor                                     : 1
+ 12-bit adder                                          : 1
  16-bit adder                                          : 2
  16-bit subtractor                                     : 1
  3-bit adder                                           : 1
  3-bit subtractor                                      : 1
  6-bit adder                                           : 1
  6-bit subtractor                                      : 1
-# Counters                                             : 9
+# Counters                                             : 10
  16-bit up counter                                     : 1
  3-bit updown counter                                  : 4
+ 32-bit up counter                                     : 1
  4-bit up counter                                      : 2
  8-bit down counter                                    : 2
-# Accumulators                                         : 1
+# Accumulators                                         : 2
  12-bit down loadable accumulator                      : 1
-# Registers                                            : 997
- Flip-Flops                                            : 997
-# Comparators                                          : 41
+ 32-bit up loadable accumulator                        : 1
+# Registers                                            : 1467
+ Flip-Flops                                            : 1467
+# Comparators                                          : 44
+ 12-bit comparator equal                               : 1
+ 14-bit comparator greater                             : 1
  16-bit comparator equal                               : 1
  16-bit comparator greater                             : 1
  16-bit comparator lessequal                           : 1
  3-bit comparator lessequal                            : 3
+ 32-bit comparator equal                               : 1
  32-bit comparator greater                             : 3
  32-bit comparator lessequal                           : 32
-# Multiplexers                                         : 88
- 1-bit 2-to-1 multiplexer                              : 64
- 12-bit 2-to-1 multiplexer                             : 1
+# Multiplexers                                         : 233
+ 1-bit 2-to-1 multiplexer                              : 205
+ 12-bit 2-to-1 multiplexer                             : 4
  16-bit 2-to-1 multiplexer                             : 2
  3-bit 2-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 4
  4-bit 2-to-1 multiplexer                              : 2
- 64-bit 2-to-1 multiplexer                             : 3
+ 64-bit 2-to-1 multiplexer                             : 4
  8-bit 2-to-1 multiplexer                              : 11
-# FSMs                                                 : 2
+# FSMs                                                 : 4
 # Xors                                                 : 6
  1-bit xor2                                            : 6
 
@@ -1876,10 +2075,39 @@ WARNING:Xst:1293 - FF/Latch <sig_halt_reg> has a constant value of 0 in block <a
 WARNING:Xst:1293 - FF/Latch <sig_halt_reg> has a constant value of 0 in block <axi_master_burst_wr_status_cntl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1426 - The value init of the FF/Latch sig_axi_por_reg1 hinder the constant cleaning in the block axi_master_burst_reset.
    You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <write_len1_9> in Unit <user_logic> is equivalent to the following 2 FFs/Latches, which will be removed : <write_len1_10> <write_len1_11> 
 INFO:Xst:2261 - The FF/Latch <sig_coelsc_cmd_cmplt_reg> in Unit <axi_master_burst_rddata_cntl> is equivalent to the following FF/Latch, which will be removed : <sig_coelsc_reg_full> 
 WARNING:Xst:2677 - Node <sig_ls_addr_cntr_0> of sequential type is unconnected in block <axi_master_burst_rddata_cntl>.
 WARNING:Xst:2677 - Node <sig_ls_addr_cntr_1> of sequential type is unconnected in block <axi_master_burst_rddata_cntl>.
 WARNING:Xst:2677 - Node <sig_ls_addr_cntr_2> of sequential type is unconnected in block <axi_master_burst_rddata_cntl>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <pldma_mwr_0/USER_LOGIC_I/FSM_3> on signal <state_wr[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 000
+ 00001 | 001
+ 00010 | 010
+ 00011 | 011
+ 00100 | 100
+ 00101 | 101
+ 00110 | 110
+ 00111 | 111
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <pldma_mwr_0/USER_LOGIC_I/FSM_2> on signal <state[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 000
+ 00001 | 001
+ 00010 | 010
+ 00011 | 011
+ 00100 | 100
+ 00101 | 101
+ 00110 | 110
+ 00111 | 111
+-------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <state[1:2]> with user encoding.
 ----------------------
@@ -1909,6 +2137,8 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_imreg_15> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <cpu0_pldma_mwr_0_wrapper> ...
+
+Optimizing unit <user_logic> ...
 
 Optimizing unit <slave_attachment> ...
 
@@ -1949,22 +2179,24 @@ Optimizing unit <axi_master_burst_cmd_status> ...
 Optimizing unit <axi_master_burst_rd_llink> ...
 
 Optimizing unit <axi_master_burst_wr_llink> ...
-WARNING:Xst:1293 - FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_burst_reg_1> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_size_reg_2> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_mvalid_stop_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sready_stop_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_stop_request> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_mvalid_stop_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sready_stop_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_LLINK_ADAPTER/sig_allow_rd_requests> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_LLINK_ADAPTER/sig_llink_busy> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mstrd_req> (without init value) has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_stop_request> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_7> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_6> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_5> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_4> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_3> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_2> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_1> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_0> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sready_stop_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_mvalid_stop_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_stop_request> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sready_stop_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_mvalid_stop_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_ld_new_cmd_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_cmd_cmplt_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_size_reg_2> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_burst_reg_1> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_doing_read_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_rd_addr_valid_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/sig_doing_read_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_11> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_10> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
@@ -1987,7 +2219,24 @@ WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_R
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_tag_reg_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_tag_reg_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_tag_reg_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_first_dbeat> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_okay_reg> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_7> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_6> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_5> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_4> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_7> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_6> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_5> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_4> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_tag_reg_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_tag_reg_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_tag_reg_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
@@ -2021,6 +2270,158 @@ WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_W
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sstrb_stop_mask_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sstrb_stop_mask_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sstrb_stop_mask_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_7> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_6> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_5> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_4> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_63> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_62> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_61> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_60> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_59> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_58> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_57> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_56> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_55> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_54> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_53> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_52> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_51> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_50> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_49> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_48> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_47> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_46> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_45> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_44> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_43> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_42> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_41> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_40> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_39> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_38> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_37> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_36> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_35> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_34> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_33> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_32> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_31> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_30> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_29> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_28> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_27> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_26> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_25> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_24> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_23> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_22> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_21> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_20> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_19> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_18> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_17> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_16> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_15> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_14> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_13> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_12> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_11> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_10> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_9> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_8> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_7> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_6> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_5> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_4> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_reg_out_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_7> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_6> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_5> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_4> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_63> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_62> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_61> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_60> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_59> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_58> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_57> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_56> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_55> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_54> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_53> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_52> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_51> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_50> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_49> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_48> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_47> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_46> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_45> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_44> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_43> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_42> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_41> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_40> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_39> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_38> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_37> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_36> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_35> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_34> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_33> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_32> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_31> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_30> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_29> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_28> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_27> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_26> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_25> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_24> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_23> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_22> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_21> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_20> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_19> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_18> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_17> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_16> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_15> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_14> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_13> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_12> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_11> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_10> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_9> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_8> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_7> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_6> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_5> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_4> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_data_skid_reg_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_7> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_6> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_5> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_4> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_ls_addr_cntr_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_ls_addr_cntr_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_ls_addr_cntr_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
@@ -2043,19 +2444,53 @@ WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_W
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/underflow_i> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/overflow_i> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/underflow_i> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_LLINK_ADAPTER/sig_stream_sof> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_reg_full> is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_last_dbeat> is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_sequential_reg> is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_eof_reg> is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_last_skid_reg> is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_last_reg_out> is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:1293 - FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_slverr_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_decerr_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_interr_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_calc_error_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dqual_reg_full> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_slverr_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_decerr_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_interr_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_cmd_cmplt_reg> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_7> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_6> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_5> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_4> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_3> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dqual_reg_empty> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_LLINK_ADAPTER/sig_rd_error_reg> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_LLINK_ADAPTER/sig_rd_discontinue> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_reg_empty> is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_1> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_0> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
+WARNING:Xst:2677 - Node <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_last_mmap_dbeat_reg> of sequential type is unconnected in block <cpu0_pldma_mwr_0_wrapper>.
 WARNING:Xst:1293 - FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_wdc_statcnt_2> has a constant value of 0 in block <cpu0_pldma_mwr_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_inhibit_rdy_n> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/sig_inhibit_rdy_n> 
+INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/USER_LOGIC_I/ip2bus_mstwr_req> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <pldma_mwr_0/USER_LOGIC_I/ip2bus_mst_type> 
 INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_done> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/sig_init_done> 
 INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_reset_reg> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_reset_reg> <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg> <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/sig_init_reg> <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_MMAP_SKID_BUF/sig_reset_reg> 
 INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_input_eof_reg> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_input_burst_type_reg> 
 INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_size_reg_1> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following 2 FFs/Latches, which will be removed : <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_size_reg_0> <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_addr_reg_full> 
-INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_LLINK_ADAPTER/sig_rd_error_reg> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <pldma_mwr_0/AXI_MASTER_BURST_I/I_WR_LLINK_ADAPTER/sig_wr_error_reg> 
+INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_type_req> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following 10 FFs/Latches, which will be removed : <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mstwr_req> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_full_reg> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mst_be_7> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mst_be_6> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mst_be_5> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mst_be_4> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mst_be_3> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mst_be_2> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mst_be_1> <pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_cmd_mst_be_0> 
 INFO:Xst:2261 - The FF/Latch <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg2> in Unit <cpu0_pldma_mwr_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/sig_init_reg2> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block cpu0_pldma_mwr_0_wrapper, actual ratio is 8.
-FlipFlop pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_doing_write_reg has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 0) on block cpu0_pldma_mwr_0_wrapper, actual ratio is 3.
+FlipFlop pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6 has been replicated 1 time(s)
+FlipFlop pldma_mwr_0/AXI_MASTER_BURST_I/I_CMD_STATUS_MODULE/sig_doing_write_reg has been replicated 2 time(s)
 FlipFlop pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_0 has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -2064,8 +2499,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 946
- Flip-Flops                                            : 946
+# Registers                                            : 1273
+ Flip-Flops                                            : 1273
 
 =========================================================================
 
@@ -2088,56 +2523,59 @@ Top Level Output File Name         : cpu0_pldma_mwr_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 982
+# BELS                             : 1449
 #      GND                         : 1
-#      INV                         : 32
-#      LUT1                        : 6
-#      LUT2                        : 78
-#      LUT3                        : 272
-#      LUT4                        : 86
-#      LUT5                        : 137
-#      LUT6                        : 194
-#      MUXCY                       : 73
+#      INV                         : 20
+#      LUT1                        : 47
+#      LUT2                        : 109
+#      LUT3                        : 273
+#      LUT4                        : 105
+#      LUT5                        : 140
+#      LUT6                        : 428
+#      MUXCY                       : 155
 #      MUXCY_L                     : 6
 #      MUXF7                       : 16
 #      MUXF8                       : 3
 #      VCC                         : 1
-#      XORCY                       : 77
-# FlipFlops/Latches                : 946
-#      FD                          : 116
-#      FDE                         : 384
-#      FDR                         : 59
-#      FDRE                        : 373
+#      XORCY                       : 145
+# FlipFlops/Latches                : 1273
+#      FD                          : 122
+#      FDC                         : 43
+#      FDCE                        : 324
+#      FDE                         : 418
+#      FDP                         : 3
+#      FDR                         : 46
+#      FDRE                        : 304
 #      FDS                         : 8
-#      FDSE                        : 6
+#      FDSE                        : 5
 # Shift Registers                  : 9
 #      SRLC16E                     : 9
 # Others                           : 1
-#      user_logic                  : 1
+#      fifo_16384x32_8192x64       : 1
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 7z010clg400-1 
+Selected Device : 7z020clg400-1 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             946  out of  35200     2%  
- Number of Slice LUTs:                  814  out of  17600     4%  
-    Number used as Logic:               805  out of  17600     4%  
-    Number used as Memory:                9  out of   6000     0%  
+ Number of Slice Registers:            1273  out of  106400     1%  
+ Number of Slice LUTs:                 1131  out of  53200     2%  
+    Number used as Logic:              1122  out of  53200     2%  
+    Number used as Memory:                9  out of  17400     0%  
        Number used as SRL:                9
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1190
-   Number with an unused Flip Flop:     244  out of   1190    20%  
-   Number with an unused LUT:           376  out of   1190    31%  
-   Number of fully used LUT-FF pairs:   570  out of   1190    47%  
-   Number of unique control sets:        44
+ Number of LUT Flip Flop pairs used:   1741
+   Number with an unused Flip Flop:     468  out of   1741    26%  
+   Number with an unused LUT:           610  out of   1741    35%  
+   Number of fully used LUT-FF pairs:   663  out of   1741    38%  
+   Number of unique control sets:        49
 
 IO Utilization: 
- Number of IOs:                         647
- Number of bonded IOBs:                   0  out of    100     0%  
+ Number of IOs:                        1096
+ Number of bonded IOBs:                   0  out of    125     0%  
 
 Specific Feature Utilization:
 
@@ -2159,12 +2597,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+-------------------------------------------------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                                                               | Load  |
------------------------------------+-------------------------------------------------------------------------------------+-------+
-S_AXI_ACLK                         | NONE(pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3)| 52    |
-m_axi_aclk                         | NONE(pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/sig_doing_read_reg)        | 903   |
------------------------------------+-------------------------------------------------------------------------------------+-------+
+-----------------------------------+----------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                        | Load  |
+-----------------------------------+----------------------------------------------+-------+
+m_axi_aclk                         | NONE(pldma_mwr_0/USER_LOGIC_I/app_wr_addr_31)| 935   |
+S_AXI_ACLK                         | NONE(pldma_mwr_0/USER_LOGIC_I/IP2Bus_RdAck)  | 347   |
+-----------------------------------+----------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -2175,42 +2613,19 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 4.016ns (Maximum Frequency: 249.019MHz)
-   Minimum input arrival time before clock: 2.705ns
-   Maximum output required time after clock: 1.444ns
-   Maximum combinational path delay: 0.558ns
+   Minimum period: 4.016ns (Maximum Frequency: 249.033MHz)
+   Minimum input arrival time before clock: 2.187ns
+   Maximum output required time after clock: 0.964ns
+   Maximum combinational path delay: 0.000ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
-  Clock period: 2.013ns (frequency: 496.771MHz)
-  Total number of paths / destination ports: 188 / 109
--------------------------------------------------------------------------
-Delay:               2.013ns (Levels of Logic = 2)
-  Source:            pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1 (FF)
-  Destination:       pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6 (FF)
-  Source Clock:      S_AXI_ACLK rising
-  Destination Clock: S_AXI_ACLK rising
-
-  Data Path: pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1 to pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q             11   0.282   0.791  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1 (pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)
-     LUT5:I0->O           16   0.053   0.823  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_start11 (pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start)
-     LUT6:I1->O            1   0.053   0.000  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i<3>1 (pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i<3>)
-     FDRE:D                    0.011          pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_3
-    ----------------------------------------
-    Total                      2.013ns (0.399ns logic, 1.614ns route)
-                                       (19.8% logic, 80.2% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'm_axi_aclk'
-  Clock period: 4.016ns (frequency: 249.019MHz)
-  Total number of paths / destination ports: 39177 / 1859
+  Clock period: 4.016ns (frequency: 249.033MHz)
+  Total number of paths / destination ports: 41473 / 2177
 -------------------------------------------------------------------------
 Delay:               4.016ns (Levels of Logic = 17)
   Source:            pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_5 (FF)
@@ -2225,9 +2640,9 @@ Delay:               4.016ns (Levels of Logic = 17)
      FDRE:C->Q             8   0.282   0.785  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_5 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_5)
      LUT6:I0->O            5   0.053   0.440  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Msub_sig_bytes_to_mbaa_xor<6>111 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Msub_sig_bytes_to_mbaa_xor<6>11)
      LUT4:I3->O            6   0.053   0.668  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Msub_sig_bytes_to_mbaa_xor<8>11 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_bytes_to_mbaa<8>)
-     LUT4:I0->O            1   0.053   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_31_o_sig_bytes_to_mbaa[15]_LessThan_86_o_lut<4> (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_31_o_sig_bytes_to_mbaa[15]_LessThan_86_o_lut<4>)
-     MUXCY:S->O            1   0.291   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_31_o_sig_bytes_to_mbaa[15]_LessThan_86_o_cy<4> (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_31_o_sig_bytes_to_mbaa[15]_LessThan_86_o_cy<4>)
-     MUXCY:CI->O          33   0.015   0.566  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_31_o_sig_bytes_to_mbaa[15]_LessThan_86_o_cy<5> (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_31_o_sig_bytes_to_mbaa[15]_LessThan_86_o_cy<5>)
+     LUT4:I0->O            1   0.053   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_35_o_sig_bytes_to_mbaa[15]_LessThan_86_o_lut<4> (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_35_o_sig_bytes_to_mbaa[15]_LessThan_86_o_lut<4>)
+     MUXCY:S->O            1   0.291   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_35_o_sig_bytes_to_mbaa[15]_LessThan_86_o_cy<4> (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_35_o_sig_bytes_to_mbaa[15]_LessThan_86_o_cy<4>)
+     MUXCY:CI->O          32   0.015   0.566  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_35_o_sig_bytes_to_mbaa[15]_LessThan_86_o_cy<5> (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mcompar_GND_35_o_sig_bytes_to_mbaa[15]_LessThan_86_o_cy<5>)
      LUT5:I4->O            1   0.053   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_lut<0>1 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_lut<0>1)
      MUXCY:S->O            1   0.291   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_cy<0> (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_cy<0>)
      MUXCY:CI->O           1   0.015   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_cy<1> (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_cy<1>)
@@ -2246,106 +2661,129 @@ Delay:               4.016ns (Levels of Logic = 17)
                                        (38.8% logic, 61.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 196 / 64
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 3.807ns (frequency: 262.691MHz)
+  Total number of paths / destination ports: 8099 / 444
 -------------------------------------------------------------------------
-Offset:              1.495ns (Levels of Logic = 3)
-  Source:            pldma_mwr_0/USER_LOGIC_I:IP2Bus_RdAck (PAD)
-  Destination:       pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1 (FF)
+Delay:               3.807ns (Levels of Logic = 6)
+  Source:            pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6_1 (FF)
+  Destination:       pldma_mwr_0/USER_LOGIC_I/IP2Bus_WrAck (FF)
+  Source Clock:      S_AXI_ACLK rising
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: pldma_mwr_0/USER_LOGIC_I:IP2Bus_RdAck to pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1
+  Data Path: pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6_1 to pldma_mwr_0/USER_LOGIC_I/IP2Bus_WrAck
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    user_logic:IP2Bus_RdAck    3   0.000   0.499  pldma_mwr_0/USER_LOGIC_I (pldma_mwr_0/user_IP2Bus_RdAck)
-     LUT2:I0->O            1   0.053   0.413  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rd_done1 (S_AXI_ARREADY)
-     LUT6:I5->O            1   0.053   0.413  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In3_SW0 (N71)
-     LUT6:I5->O            1   0.053   0.000  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In3 (pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In)
-     FDR:D                     0.011          pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1
+     FDRE:C->Q             1   0.282   0.725  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6_1 (pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_6_1)
+     LUT5:I0->O            4   0.053   0.419  pldma_mwr_0/USER_LOGIC_I/Bus2IP_WrCE[11]_GND_177_o_equal_10_o<11>111 (pldma_mwr_0/USER_LOGIC_I/Bus2IP_WrCE[11]_GND_177_o_equal_10_o<11>11)
+     MUXF7:S->O            4   0.280   0.433  pldma_mwr_0/USER_LOGIC_I/Bus2IP_WrCE[11]_GND_177_o_equal_10_o<11>11 (pldma_mwr_0/USER_LOGIC_I/Bus2IP_WrCE[11]_GND_177_o_equal_10_o<11>1)
+     LUT5:I4->O           33   0.053   0.566  pldma_mwr_0/USER_LOGIC_I/Bus2IP_WrCE[11]_GND_177_o_equal_10_o<11>1 (pldma_mwr_0/USER_LOGIC_I/Bus2IP_WrCE[11]_GND_177_o_equal_10_o)
+     LUT6:I5->O            1   0.053   0.413  pldma_mwr_0/USER_LOGIC_I/out72_SW0 (N70)
+     LUT6:I5->O            1   0.053   0.413  pldma_mwr_0/USER_LOGIC_I/out72 (pldma_mwr_0/USER_LOGIC_I/out71)
+     LUT6:I5->O            1   0.053   0.000  pldma_mwr_0/USER_LOGIC_I/out76 (pldma_mwr_0/USER_LOGIC_I/Bus2IP_WrCE[11]_INV_238_o)
+     FDE:D                     0.011          pldma_mwr_0/USER_LOGIC_I/IP2Bus_WrAck
     ----------------------------------------
-    Total                      1.495ns (0.170ns logic, 1.325ns route)
-                                       (11.4% logic, 88.6% route)
+    Total                      3.807ns (0.838ns logic, 2.969ns route)
+                                       (22.0% logic, 78.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'm_axi_aclk'
-  Total number of paths / destination ports: 1029 / 793
+  Total number of paths / destination ports: 316 / 263
 -------------------------------------------------------------------------
-Offset:              2.705ns (Levels of Logic = 4)
-  Source:            m_axi_rvalid (PAD)
-  Destination:       pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_end_strb_reg_7 (FF)
+Offset:              2.187ns (Levels of Logic = 4)
+  Source:            pldma_mwr_0/USER_LOGIC_I/fifo_16384x32_8192x64:rd_data_count<9> (PAD)
+  Destination:       pldma_mwr_0/USER_LOGIC_I/state_FSM_FFd2 (FF)
   Destination Clock: m_axi_aclk rising
 
-  Data Path: m_axi_rvalid to pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_end_strb_reg_7
+  Data Path: pldma_mwr_0/USER_LOGIC_I/fifo_16384x32_8192x64:rd_data_count<9> to pldma_mwr_0/USER_LOGIC_I/state_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT3:I0->O            2   0.053   0.608  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_push_dqual_reg2 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_push_dqual_reg1)
-     LUT6:I3->O            1   0.053   0.485  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_push_dqual_reg3_1 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_push_dqual_reg3)
-     LUT4:I2->O            3   0.053   0.427  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/Mmux_sig_data2pcc_cmd_ready11 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/sig_data2pcc_cmd_ready)
-     LUT6:I5->O            8   0.053   0.445  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/mmap_reset_sig_pop_xfer_reg_OR_107_o2_1 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/mmap_reset_sig_pop_xfer_reg_OR_107_o2)
-     FDR:R                     0.325          pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_end_strb_reg_7
+    fifo_16384x32_8192x64:rd_data_count<9>    2   0.000   0.731  pldma_mwr_0/USER_LOGIC_I/fifo_16384x32_8192x64 (u_debug<101>)
+     LUT5:I0->O            1   0.053   0.000  pldma_mwr_0/USER_LOGIC_I/Mcompar_n0095_lut<4> (pldma_mwr_0/USER_LOGIC_I/Mcompar_n0095_lut<4>)
+     MUXCY:S->O            2   0.454   0.419  pldma_mwr_0/USER_LOGIC_I/Mcompar_n0095_cy<4> (pldma_mwr_0/USER_LOGIC_I/Mcompar_n0095_cy<4>)
+     LUT5:I4->O            1   0.053   0.413  pldma_mwr_0/USER_LOGIC_I/state_FSM_FFd2-In_SW0 (N8)
+     LUT6:I5->O            1   0.053   0.000  pldma_mwr_0/USER_LOGIC_I/state_FSM_FFd2-In (pldma_mwr_0/USER_LOGIC_I/state_FSM_FFd2-In)
+     FDC:D                     0.011          pldma_mwr_0/USER_LOGIC_I/state_FSM_FFd2
     ----------------------------------------
-    Total                      2.705ns (0.740ns logic, 1.965ns route)
-                                       (27.4% logic, 72.6% route)
+    Total                      2.187ns (0.624ns logic, 1.563ns route)
+                                       (28.5% logic, 71.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 907 / 627
+-------------------------------------------------------------------------
+Offset:              1.511ns (Levels of Logic = 3)
+  Source:            u_ctrl5_I<31> (PAD)
+  Destination:       pldma_mwr_0/USER_LOGIC_I/IP2Bus_Data_31 (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: u_ctrl5_I<31> to pldma_mwr_0/USER_LOGIC_I/IP2Bus_Data_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I3->O            1   0.053   0.725  pldma_mwr_0/USER_LOGIC_I/_n1089<31>1 (pldma_mwr_0/USER_LOGIC_I/_n1089<31>1)
+     LUT6:I1->O            1   0.053   0.413  pldma_mwr_0/USER_LOGIC_I/_n1089<31>5 (pldma_mwr_0/USER_LOGIC_I/_n1089<31>5)
+     LUT5:I4->O            1   0.053   0.000  pldma_mwr_0/USER_LOGIC_I/_n1089<31>6 (pldma_mwr_0/USER_LOGIC_I/_n1089<31>)
+     FDC:D                     0.011          pldma_mwr_0/USER_LOGIC_I/IP2Bus_Data_31
+    ----------------------------------------
+    Total                      1.511ns (0.373ns logic, 1.138ns route)
+                                       (24.7% logic, 75.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 71 / 55
+  Total number of paths / destination ports: 213 / 210
 -------------------------------------------------------------------------
-Offset:              0.926ns (Levels of Logic = 1)
-  Source:            pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (FF)
-  Destination:       pldma_mwr_0/USER_LOGIC_I:Bus2IP_WrCE<7> (PAD)
+Offset:              0.840ns (Levels of Logic = 1)
+  Source:            pldma_mwr_0/USER_LOGIC_I/IP2Bus_WrAck (FF)
+  Destination:       S_AXI_WREADY (PAD)
   Source Clock:      S_AXI_ACLK rising
 
-  Data Path: pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg to pldma_mwr_0/USER_LOGIC_I:Bus2IP_WrCE<7>
+  Data Path: pldma_mwr_0/USER_LOGIC_I/IP2Bus_WrAck to S_AXI_WREADY
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              17   0.282   0.591  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg)
-     LUT2:I0->O            0   0.053   0.000  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i<7>1 (pldma_mwr_0/ipif_Bus2IP_WrCE<0>)
-    user_logic:Bus2IP_WrCE<0>        0.000          pldma_mwr_0/USER_LOGIC_I
+     FDE:C->Q              4   0.282   0.505  pldma_mwr_0/USER_LOGIC_I/IP2Bus_WrAck (pldma_mwr_0/USER_LOGIC_I/IP2Bus_WrAck)
+     LUT2:I0->O            0   0.053   0.000  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_AWREADY)
     ----------------------------------------
-    Total                      0.926ns (0.335ns logic, 0.591ns route)
-                                       (36.2% logic, 63.8% route)
+    Total                      0.840ns (0.335ns logic, 0.505ns route)
+                                       (39.9% logic, 60.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'm_axi_aclk'
-  Total number of paths / destination ports: 260 / 246
+  Total number of paths / destination ports: 264 / 261
 -------------------------------------------------------------------------
-Offset:              1.444ns (Levels of Logic = 2)
-  Source:            pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2 (FF)
-  Destination:       m_axi_rready (PAD)
+Offset:              0.964ns (Levels of Logic = 1)
+  Source:            pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_s_ready_out (FF)
+  Destination:       u_debug<65> (PAD)
   Source Clock:      m_axi_aclk rising
 
-  Data Path: pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2 to m_axi_rready
+  Data Path: pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_s_ready_out to u_debug<65>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             5   0.282   0.629  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2)
-     LUT3:I0->O            3   0.053   0.427  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_eq_0<2>1 (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_eq_0)
-     LUT5:I4->O            8   0.053   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_data2mmap_ready1 (m_axi_rready)
+     FD:C->Q               5   0.282   0.629  pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_s_ready_out (pldma_mwr_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_s_ready_out)
+     LUT3:I0->O            7   0.053   0.000  pldma_mwr_0/AXI_MASTER_BURST_I/I_WR_LLINK_ADAPTER/sig_llink_dst_ready_n1 (u_debug<65>)
     ----------------------------------------
-    Total                      1.444ns (0.388ns logic, 1.056ns route)
-                                       (26.9% logic, 73.1% route)
+    Total                      0.964ns (0.335ns logic, 0.629ns route)
+                                       (34.8% logic, 65.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 286 / 282
+  Total number of paths / destination ports: 68 / 68
 -------------------------------------------------------------------------
-Delay:               0.558ns (Levels of Logic = 1)
-  Source:            pldma_mwr_0/USER_LOGIC_I:IP2Bus_WrAck (PAD)
-  Destination:       S_AXI_WREADY (PAD)
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            pldma_mwr_0/USER_LOGIC_I/fifo_16384x32_8192x64:full (PAD)
+  Destination:       u_debug<139> (PAD)
 
-  Data Path: pldma_mwr_0/USER_LOGIC_I:IP2Bus_WrAck to S_AXI_WREADY
+  Data Path: pldma_mwr_0/USER_LOGIC_I/fifo_16384x32_8192x64:full to u_debug<139>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    user_logic:IP2Bus_WrAck    4   0.000   0.505  pldma_mwr_0/USER_LOGIC_I (pldma_mwr_0/user_IP2Bus_WrAck)
-     LUT2:I0->O            0   0.053   0.000  pldma_mwr_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_AWREADY)
+    fifo_16384x32_8192x64:full    0   0.000   0.000  pldma_mwr_0/USER_LOGIC_I/fifo_16384x32_8192x64 (u_debug<139>)
     ----------------------------------------
-    Total                      0.558ns (0.053ns logic, 0.505ns route)
-                                       (9.5% logic, 90.5% route)
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
 
 =========================================================================
 
@@ -2357,7 +2795,8 @@ Clock to Setup on destination clock S_AXI_ACLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |    2.013|         |         |         |
+S_AXI_ACLK     |    3.807|         |         |         |
+m_axi_aclk     |    2.103|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock m_axi_aclk
@@ -2365,20 +2804,21 @@ Clock to Setup on destination clock m_axi_aclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    3.131|         |         |         |
 m_axi_aclk     |    4.016|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 24.42 secs
+Total REAL time to Xst completion: 73.00 secs
+Total CPU time to Xst completion: 73.52 secs
  
 --> 
 
-Total memory usage is 350648 kilobytes
+Total memory usage is 383128 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  178 (   0 filtered)
-Number of infos    :   63 (   0 filtered)
+Number of warnings :  420 (   0 filtered)
+Number of infos    :   71 (   0 filtered)
 

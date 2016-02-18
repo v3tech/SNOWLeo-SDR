@@ -5,7 +5,7 @@
 ######################################################
 
 proc _main_ {} {
-  cd "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0"
+  cd "D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.srcs/sources_1/edk/cpu0"
   if { [ catch {xload xmp cpu0.xmp} result ] } {
     exit 10
   }

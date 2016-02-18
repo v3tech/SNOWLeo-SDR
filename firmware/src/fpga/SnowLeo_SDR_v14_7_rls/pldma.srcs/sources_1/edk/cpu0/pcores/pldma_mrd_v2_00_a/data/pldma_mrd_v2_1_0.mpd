@@ -97,11 +97,14 @@ PORT m_axi_bready = BREADY, DIR = O, BUS = M_AXI
 PORT m_axi_bvalid = BVALID, DIR = I, BUS = M_AXI
 PORT m_axi_bresp = BRESP, DIR = I, VEC = [1:0], BUS = M_AXI
 ######################
-PORT u_debug = "", DIR = O, VEC = [139:0]
+PARAMETER C_ENABLE_INT = 0, DT = integer, RANGE = (0,1)
+PORT dma_done_irq = "", DIR = O, SIGIS = INTERRUPT, SENSITIVITY = EDGE_RISING,ISVALID = (C_ENABLE_INT == 1),DESC = "Interrupt"
+PARAMETER C_ENABLE_DGB = 1, DT = integer, RANGE = (0,1)
+PORT u_debug = "", DIR = O, VEC = [139:0],ISVALID = (C_ENABLE_DGB == 1)
 PORT rd_clk = "", DIR = I
 PORT data_rd = "", DIR = O, VEC = [31:0]
 PORT rd_en = "", DIR = I 
 PORT aempty = "", DIR = O 
-#PORT rd_fifo_cnt = "", DIR = O, VEC = [14:0]
+PORT rd_fifo_cnt = "", DIR = O, VEC = [14:0]
 PORT rst = "", DIR = O
 END

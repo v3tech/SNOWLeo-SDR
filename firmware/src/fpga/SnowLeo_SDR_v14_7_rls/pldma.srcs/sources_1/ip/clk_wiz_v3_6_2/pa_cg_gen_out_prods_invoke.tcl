@@ -2,30 +2,30 @@
 
 set reloadAllCoreGenRepositories false
 
-set tclUtilsPath "c:/xilinx14.7/14.7/ISE_DS/PlanAhead/scripts/pa_cg_utils.tcl"
+set tclUtilsPath "h:/IDE14_7/14.7/ISE_DS/PlanAhead/scripts/pa_cg_utils.tcl"
 
 set repoPaths ""
 
-set cgIndexMapPath "F:/ZYNQ/ZingNano/Zingnano_test/SNOWLeo_Sdr_Demo/SNOWLeo_Sdr_Demo0509_14.7rls/pldma.srcs/sources_1/ip/cg_nt_index_map.xml"
+set cgIndexMapPath "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/ip/cg_nt_index_map.xml"
 
-set cgProjectPath "f:/ZYNQ/ZingNano/Zingnano_test/SNOWLeo_Sdr_Demo/SNOWLeo_Sdr_Demo0509_14.7rls/pldma.srcs/sources_1/ip/clk_wiz_v3_6_2/coregen.cgc"
+set cgProjectPath "j:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/ip/clk_wiz_v3_6_2/coregen.cgc"
 
-set ipFile "f:/ZYNQ/ZingNano/Zingnano_test/SNOWLeo_Sdr_Demo/SNOWLeo_Sdr_Demo0509_14.7rls/pldma.srcs/sources_1/ip/clk_wiz_v3_6_2/clk_wiz_v3_6_2.xco"
+set ipFile "j:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/ip/clk_wiz_v3_6_2/clk_wiz_v3_6_2.xco"
 
 set ipName "clk_wiz_v3_6_2"
 
 set hdlType "Verilog"
 
-set cgPartSpec "xc7z010-1clg400"
+set cgPartSpec "xc7z020-1clg400"
 
 set chains "GENERATE_CURRENT_CHAIN"
 
 set params ""
 
-set bomFilePath "f:/ZYNQ/ZingNano/Zingnano_test/SNOWLeo_Sdr_Demo/SNOWLeo_Sdr_Demo0509_14.7rls/pldma.srcs/sources_1/ip/clk_wiz_v3_6_2/pa_cg_bom.xml"
+set bomFilePath "j:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/ip/clk_wiz_v3_6_2/pa_cg_bom.xml"
 
 # generate the IP
-set result [source "c:/xilinx14.7/14.7/ISE_DS/PlanAhead/scripts/pa_cg_gen_out_prods.tcl"]
+set result [source "h:/IDE14_7/14.7/ISE_DS/PlanAhead/scripts/pa_cg_gen_out_prods.tcl"]
 
 exit $result
 

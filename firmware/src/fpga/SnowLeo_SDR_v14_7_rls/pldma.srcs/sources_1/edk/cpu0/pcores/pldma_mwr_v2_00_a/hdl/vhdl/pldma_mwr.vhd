@@ -125,6 +125,9 @@ entity pldma_mwr is
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol parameters, do not add to or delete
+	  C_ENABLE_INT						  : integer					 := 0;
+	  C_ENABLE_DGB						  : integer					 := 1;
+	  C_DIRECT_REG						  : std_logic_vector(7 downto 0)		 := X"FF";
     C_S_AXI_DATA_WIDTH             : integer              := 32;
     C_S_AXI_ADDR_WIDTH             : integer              := 32;
     C_S_AXI_MIN_SIZE               : std_logic_vector     := X"000001FF";
@@ -133,7 +136,7 @@ entity pldma_mwr is
     C_BASEADDR                     : std_logic_vector     := X"FFFFFFFF";
     C_HIGHADDR                     : std_logic_vector     := X"00000000";
     C_FAMILY                       : string               := "virtex6";
-    C_NUM_REG                      : integer              := 8;
+    C_NUM_REG                      : integer              := 8;					--only for user regs,that is the CtrlReg(PS&PL),not include the DMA regs
     C_NUM_MEM                      : integer              := 1;
     C_SLV_AWIDTH                   : integer              := 32;
     C_SLV_DWIDTH                   : integer              := 32;
@@ -148,11 +151,32 @@ entity pldma_mwr is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
+	 dma_done_irq						 : out std_logic;
 	 u_debug								 : out std_logic_vector(139 downto 0);
-	 u_ctrl0								 : out std_logic_vector(31 downto 0);
-	 u_ctrl1								 : out std_logic_vector(31 downto 0);
-	 u_ctrl2								 : out std_logic_vector(31 downto 0);
-	 u_ctrl3								 : out std_logic_vector(31 downto 0);
+	 u_ctrl0_I							 : in  std_logic_vector(31 downto 0);
+	 u_ctrl0_O							 : out std_logic_vector(31 downto 0);
+	 u_ctrl0_T							 : out  std_logic;
+	 u_ctrl1_I							 : in  std_logic_vector(31 downto 0);
+	 u_ctrl1_O							 : out std_logic_vector(31 downto 0);
+	 u_ctrl1_T							 : out  std_logic;
+	 u_ctrl2_I							 : in  std_logic_vector(31 downto 0);
+	 u_ctrl2_O							 : out std_logic_vector(31 downto 0);
+	 u_ctrl2_T							 : out  std_logic;
+	 u_ctrl3_I							 : in  std_logic_vector(31 downto 0);
+	 u_ctrl3_O							 : out std_logic_vector(31 downto 0);
+	 u_ctrl3_T							 : out  std_logic;
+	 u_ctrl4_I							 : in  std_logic_vector(31 downto 0);
+	 u_ctrl4_O							 : out std_logic_vector(31 downto 0);
+	 u_ctrl4_T							 : out  std_logic;
+	 u_ctrl5_I							 : in  std_logic_vector(31 downto 0);
+	 u_ctrl5_O							 : out std_logic_vector(31 downto 0);
+	 u_ctrl5_T							 : out  std_logic;
+	 u_ctrl6_I							 : in  std_logic_vector(31 downto 0);
+	 u_ctrl6_O							 : out std_logic_vector(31 downto 0);
+	 u_ctrl6_T							 : out  std_logic;
+	 u_ctrl7_I							 : in  std_logic_vector(31 downto 0);
+	 u_ctrl7_O							 : out std_logic_vector(31 downto 0);
+	 u_ctrl7_T							 : out  std_logic;
 	 wr_clk								 : in  std_logic;
 	 data_wr								 : in  std_logic_vector(31 downto 0);
 	 wr_en								 : in  std_logic;
@@ -242,8 +266,6 @@ architecture IMP of pldma_mwr is
   constant ZERO_ADDR_PAD                  : std_logic_vector(0 to 31) := (others => '0');
   constant USER_SLV_BASEADDR              : std_logic_vector     := C_BASEADDR or X"00000000";
   constant USER_SLV_HIGHADDR              : std_logic_vector     := C_BASEADDR or X"000000FF";
---  constant USER_MST_BASEADDR              : std_logic_vector     := C_BASEADDR or X"00000100";
---  constant USER_MST_HIGHADDR              : std_logic_vector     := C_BASEADDR or X"000001FF";
 
   constant IPIF_ARD_ADDR_RANGE_ARRAY      : SLV64_ARRAY_TYPE     := 
     (
@@ -252,13 +274,10 @@ architecture IMP of pldma_mwr is
 
     );
 
-  constant USER_SLV_NUM_REG               : integer              := C_NUM_REG;
-  constant USER_NUM_REG                   : integer              := USER_SLV_NUM_REG;--+USER_MST_NUM_REG;
-  constant TOTAL_IPIF_CE                  : integer              := USER_NUM_REG;
-
+  constant USER_NUM_REG                   : integer              := 12;--C_NUM_REG+4;
   constant IPIF_ARD_NUM_CE_ARRAY          : INTEGER_ARRAY_TYPE   := 
     (
-      0  => (USER_SLV_NUM_REG)	          -- number of ce for user logic slave space
+      0  => (USER_NUM_REG)	          -- number of ce for user logic slave space
     );
 
   ------------------------------------------
@@ -336,16 +355,27 @@ architecture IMP of pldma_mwr is
   signal ipif_ip2bus_mstwr_eof_n        : std_logic;
   signal ipif_bus2ip_mstwr_dst_rdy_n    : std_logic;
   signal ipif_bus2ip_mstwr_dst_dsc_n    : std_logic;
-  signal user_Bus2IP_RdCE               : std_logic_vector(USER_NUM_REG-1 downto 0);
-  signal user_Bus2IP_WrCE               : std_logic_vector(USER_NUM_REG-1 downto 0);
+  signal user_Bus2IP_RdCE               : std_logic_vector(11 downto 0);
+  signal user_Bus2IP_WrCE               : std_logic_vector(11 downto 0);
   signal user_IP2Bus_Data               : std_logic_vector(USER_SLV_DWIDTH-1 downto 0);
   signal user_IP2Bus_RdAck              : std_logic;
   signal user_IP2Bus_WrAck              : std_logic;
   signal user_IP2Bus_Error              : std_logic;
 
+  signal direct_reg                  : std_logic_vector(7 downto 0);
+  signal u_ctrl0								: std_logic_vector(31 downto 0);
+  signal u_ctrl1								: std_logic_vector(31 downto 0);
+  signal u_ctrl2								: std_logic_vector(31 downto 0);
+  signal u_ctrl3								: std_logic_vector(31 downto 0);
+  signal u_ctrl4								: std_logic_vector(31 downto 0);
+  signal u_ctrl5								: std_logic_vector(31 downto 0);
+  signal u_ctrl6								: std_logic_vector(31 downto 0);
+  signal u_ctrl7								: std_logic_vector(31 downto 0);
   ------------------------------------------
   -- Component declaration for verilog user logic
   ------------------------------------------
+
+  
   component user_logic is
     generic
     (
@@ -372,10 +402,24 @@ architecture IMP of pldma_mwr is
       wr_en													 : in  std_logic;
       afull													 : out std_logic;
       rst														 : out std_logic;
-		u_ctrl0								 : out std_logic_vector(31 downto 0);
-	   u_ctrl1								 : out std_logic_vector(31 downto 0);
-	   u_ctrl2								 : out std_logic_vector(31 downto 0);
-	   u_ctrl3								 : out std_logic_vector(31 downto 0);
+		u_ctrl0_I						 : in std_logic_vector(31 downto 0);
+		u_ctrl1_I						 : in std_logic_vector(31 downto 0);
+		u_ctrl2_I						 : in std_logic_vector(31 downto 0);
+		u_ctrl3_I						 : in std_logic_vector(31 downto 0);
+		u_ctrl4_I						 : in std_logic_vector(31 downto 0);
+		u_ctrl5_I						 : in std_logic_vector(31 downto 0);
+		u_ctrl6_I						 : in std_logic_vector(31 downto 0);
+		u_ctrl7_I						 : in std_logic_vector(31 downto 0);
+		u_ctrl0_O						 : out std_logic_vector(31 downto 0);
+		u_ctrl1_O						 : out std_logic_vector(31 downto 0);
+		u_ctrl2_O						 : out std_logic_vector(31 downto 0);
+		u_ctrl3_O						 : out std_logic_vector(31 downto 0);
+		u_ctrl4_O						 : out std_logic_vector(31 downto 0);
+		u_ctrl5_O						 : out std_logic_vector(31 downto 0);
+		u_ctrl6_O						 : out std_logic_vector(31 downto 0);
+		u_ctrl7_O						 : out std_logic_vector(31 downto 0);
+		u_direct							 : in std_logic_vector(7 downto 0);
+	   dma_done_irq					 : out std_logic;
       -- ADD USER PORTS ABOVE THIS LINE ------------------
 
       -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -384,8 +428,8 @@ architecture IMP of pldma_mwr is
       Bus2IP_Resetn                  : in  std_logic;
       Bus2IP_Data                    : in  std_logic_vector(C_SLV_DWIDTH-1 downto 0);
       Bus2IP_BE                      : in  std_logic_vector(C_SLV_DWIDTH/8-1 downto 0);
-      Bus2IP_RdCE                    : in  std_logic_vector(C_NUM_REG-1 downto 0);
-      Bus2IP_WrCE                    : in  std_logic_vector(C_NUM_REG-1 downto 0);
+      Bus2IP_RdCE                    : in  std_logic_vector(USER_NUM_REG-1 downto 0);
+      Bus2IP_WrCE                    : in  std_logic_vector(USER_NUM_REG-1 downto 0);
       IP2Bus_Data                    : out std_logic_vector(C_SLV_DWIDTH-1 downto 0);
       IP2Bus_RdAck                   : out std_logic;
       IP2Bus_WrAck                   : out std_logic;
@@ -568,23 +612,37 @@ begin
       C_MST_NATIVE_DATA_WIDTH        => USER_MST_NATIVE_DATA_WIDTH,
       C_LENGTH_WIDTH                 => USER_LENGTH_WIDTH,
       C_MST_AWIDTH                   => USER_MST_AWIDTH,
-      C_NUM_REG                      => USER_NUM_REG,
+      C_NUM_REG                      => C_NUM_REG,
       C_SLV_DWIDTH                   => USER_SLV_DWIDTH
     )
     port map
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
-      m_axi_aclk							 => m_axi_aclk,
-      u_debug								 => u_debug,
-      wr_clk								 => wr_clk,
-      data_wr								 => data_wr,
-      wr_en									 => wr_en,
-      afull									 => afull,
-      rst									 => rst,
-		u_ctrl0								 => u_ctrl0,
-	   u_ctrl1								 => u_ctrl1,
-	   u_ctrl2								 => u_ctrl2,
-	   u_ctrl3								 => u_ctrl3,
+      m_axi_aclk							=> m_axi_aclk,
+      u_debug								 	=> u_debug,
+      wr_clk								 	=> wr_clk,
+      data_wr								 	=> data_wr,
+      wr_en									 	=> wr_en,
+      afull									 	=> afull,
+      rst									 		=> rst,
+		u_ctrl0_I								 	=> u_ctrl0_I,
+	   u_ctrl1_I								 	=> u_ctrl1_I,
+	   u_ctrl2_I								 	=> u_ctrl2_I,
+	   u_ctrl3_I								 	=> u_ctrl3_I,
+	   u_ctrl4_I								 	=> u_ctrl4_I,
+	   u_ctrl5_I								 	=> u_ctrl5_I,
+	   u_ctrl6_I								 	=> u_ctrl6_I,
+	   u_ctrl7_I								 	=> u_ctrl7_I,
+		u_ctrl0_O							=> u_ctrl0_O,
+		u_ctrl1_O							=> u_ctrl1_O,
+		u_ctrl2_O							=> u_ctrl2_O,
+		u_ctrl3_O							=> u_ctrl3_O,
+		u_ctrl4_O							=> u_ctrl4_O,
+		u_ctrl5_O							=> u_ctrl5_O,
+		u_ctrl6_O							=> u_ctrl6_O,
+		u_ctrl7_O							=> u_ctrl7_O,
+	   	dma_done_irq						=> dma_done_irq,
+	   	u_direct								=> C_DIRECT_REG,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,
@@ -631,36 +689,26 @@ begin
   ------------------------------------------
   -- connect internal signals
   ------------------------------------------
+
+  direct_reg(7 downto 0) <= C_DIRECT_REG(7 downto 0);
+  
+  u_ctrl0_T <= (NOT direct_reg(0));
+  u_ctrl1_T <= (NOT direct_reg(1));
+  u_ctrl2_T <= (NOT direct_reg(2));
+  u_ctrl3_T <= (NOT direct_reg(3));
+  u_ctrl4_T <= (NOT direct_reg(4));
+  u_ctrl5_T <= (NOT direct_reg(5));
+  u_ctrl6_T <= (NOT direct_reg(6));
+  u_ctrl7_T <= (NOT direct_reg(7));
+  
+
+  
   ipif_IP2Bus_Data <= user_IP2Bus_Data;
   ipif_IP2Bus_WrAck <= user_IP2Bus_WrAck;
   ipif_IP2Bus_RdAck <= user_IP2Bus_RdAck;
   ipif_IP2Bus_Error <= user_IP2Bus_Error;
 
-  user_Bus2IP_RdCE <= ipif_Bus2IP_RdCE(USER_NUM_REG-1 downto 0);
-  user_Bus2IP_WrCE <= ipif_Bus2IP_WrCE(USER_NUM_REG-1 downto 0);
+  user_Bus2IP_RdCE <= ipif_Bus2IP_RdCE(11 downto 0);
+  user_Bus2IP_WrCE <= ipif_Bus2IP_WrCE(11 downto 0);
 
-
-
-  
---  IP2BUS_DATA_MUX_PROC : process( ipif_Bus2IP_CS, user_IP2Bus_Data ) is
---  begin
---
---    case ipif_Bus2IP_CS (1 downto 0)  is
---      when "01" => ipif_IP2Bus_Data <= user_IP2Bus_Data;
---      when "10" => ipif_IP2Bus_Data <= user_IP2Bus_Data;
---      when others => ipif_IP2Bus_Data <= (others => '0');
---    end case;
---
---  end process IP2BUS_DATA_MUX_PROC;
---
---  ipif_IP2Bus_WrAck <= user_IP2Bus_WrAck;
---  ipif_IP2Bus_RdAck <= user_IP2Bus_RdAck;
---  ipif_IP2Bus_Error <= user_IP2Bus_Error;
---
---  user_Bus2IP_RdCE(USER_SLV_NUM_REG-1 downto 0) <= ipif_Bus2IP_RdCE(TOTAL_IPIF_CE -USER_SLV_CE_INDEX -1 downto TOTAL_IPIF_CE - USER_SLV_CE_INDEX -USER_SLV_NUM_REG);
---  user_Bus2IP_WrCE(USER_SLV_NUM_REG-1 downto 0) <= ipif_Bus2IP_WrCE(TOTAL_IPIF_CE -USER_SLV_CE_INDEX -1 downto TOTAL_IPIF_CE - USER_SLV_CE_INDEX -USER_SLV_NUM_REG);
---  user_Bus2IP_RdCE(USER_NUM_REG -1 downto USER_NUM_REG - USER_MST_NUM_REG) <= ipif_Bus2IP_RdCE(TOTAL_IPIF_CE - USER_MST_CE_INDEX -1 downto TOTAL_IPIF_CE - USER_MST_CE_INDEX -USER_MST_NUM_REG);
---  user_Bus2IP_WrCE(USER_NUM_REG -1 downto USER_NUM_REG - USER_MST_NUM_REG) <= ipif_Bus2IP_WrCE(TOTAL_IPIF_CE - USER_MST_CE_INDEX -1 downto TOTAL_IPIF_CE - USER_MST_CE_INDEX -USER_MST_NUM_REG);
---
--- 
 end IMP;

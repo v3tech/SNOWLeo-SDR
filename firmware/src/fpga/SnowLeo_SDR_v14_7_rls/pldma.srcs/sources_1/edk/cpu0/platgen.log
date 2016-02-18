@@ -2,13 +2,13 @@ Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
  (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: platgen -p xc7z010clg400-1 -lang verilog -intstyle pa -lp
-J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/ -toplevel no
--ti cpu0_i -msg __xps/ise/xmsgprops.lst cpu0.mhs 
+Command Line: platgen -p xc7z020clg400-1 -lang verilog -intstyle pa -lp
+J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/
+-toplevel no -ti cpu0_i -msg __xps/ise/xmsgprops.lst cpu0.mhs 
 
 Parse
-J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/cpu0.mhs
-...
+J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/c
+pu0.mhs ...
 
 Read MPD definitions ...
 
@@ -26,10 +26,10 @@ INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_
    v4_03_a\data\processing_system7_v2_1_0.mpd line 312 
 INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
-   is overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   is overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 3 -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_
    v4_03_a\data\processing_system7_v2_1_0.mpd line 319 
-INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_gp0 - tcl is overriding
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp2 - tcl is overriding
    PARAMETER C_BASEFAMILY value to zynq -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 81 
@@ -37,7 +37,7 @@ INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp0 - tcl is overriding
    PARAMETER C_BASEFAMILY value to zynq -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 81 
-INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp2 - tcl is overriding
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_gp0 - tcl is overriding
    PARAMETER C_BASEFAMILY value to zynq -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 81 
@@ -71,9 +71,9 @@ Address Map for Processor processing_system7_0
 Checking platform address map ...
 
 Checking platform configuration ...
-IPNAME: axi_interconnect, INSTANCE: axi_gp0 - 1 master(s) : 4 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi_hp0 - 2 master(s) : 1 slave(s) 
 IPNAME: axi_interconnect, INSTANCE: axi_hp2 - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_hp0 - 2 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_gp0 - 1 master(s) : 4 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4181 - PORT: m_axis_mm2s_tuser, CONNECTOR:
@@ -91,9 +91,10 @@ INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\processing_system7_
    v4_03_a\data\processing_system7_v2_1_0.mpd line 353 
 
-INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_gp0.
-INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_gp0 - tcl is overriding
-   PARAMETER C_RANGE_CHECK value to 1 -
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi_hp2; no DECERR
+checking will be performed.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp2 - tcl is overriding
+   PARAMETER C_RANGE_CHECK value to 0 -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 149 
 
@@ -104,10 +105,9 @@ INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp0 - tcl is overriding
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 149 
 
-INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi_hp2; no DECERR
-checking will be performed.
-INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_hp2 - tcl is overriding
-   PARAMETER C_RANGE_CHECK value to 0 -
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_gp0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_gp0 - tcl is overriding
+   PARAMETER C_RANGE_CHECK value to 1 -
    H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1
    _06_a\data\axi_interconnect_v2_1_0.mpd line 149 
 
@@ -122,10 +122,10 @@ Performing System level DRCs on properties...
 Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
 
 Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
-INFO: No asynchronous clock conversions in axi_interconnect axi_gp0.
-INFO: No asynchronous clock conversions in axi_interconnect axi_hp0.
 INFO: Generating core-level timing constraints for asynchronous clock
 conversions in axi_interconnect axi_hp2.
+INFO: No asynchronous clock conversions in axi_interconnect axi_hp0.
+INFO: No asynchronous clock conversions in axi_interconnect axi_gp0.
 
 Modify defaults ...
 
@@ -138,23 +138,50 @@ Creating hardware output directories ...
 
 Managing hardware (BBD-specified) netlist files ...
 IPNAME:pldma_mwr INSTANCE:pldma_mwr_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 196 - Copying (BBD-specified) netlist files.
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 182 - Copying (BBD-specified) netlist files.
 IPNAME:pldma_mrd INSTANCE:pldma_mrd_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 218 - Copying (BBD-specified) netlist files.
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 210 - Copying (BBD-specified) netlist files.
 
 Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:sys_reset_n -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 56 - Copying cache implementation netlist
+IPNAME:processing_system7 INSTANCE:processing_system7_0 -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 66 - Copying cache implementation netlist
+IPNAME:pldma_mwr INSTANCE:pldma_mwr_0 -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 182 - Copying cache implementation netlist
+IPNAME:pldma_mrd INSTANCE:pldma_mrd_0 -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 210 - Copying cache implementation netlist
+IPNAME:axi_vdma INSTANCE:axi_vdma_0 -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 232 - Copying cache implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi_hp2 -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 255 - Copying cache implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi_hp0 -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 262 - Copying cache implementation netlist
+IPNAME:axi_hdmi_tx_16b INSTANCE:axi_hdmi_tx_16b_0 -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 270 - Copying cache implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi_gp0 -
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 291 - Copying cache implementation netlist
 
 Elaborating instances ...
 
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 2.00 seconds
 
 Constructing platform-level connectivity ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Writing (top-level) BMM ...
 
@@ -167,57 +194,27 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:processing_system7_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 54 - Running XST synthesis
-INSTANCE:axi_gp0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 170 - Running XST synthesis
-INSTANCE:axi_hp0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 178 - Running XST synthesis
-INSTANCE:sys_reset_n -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 186 - Running XST synthesis
 INSTANCE:pldma_mwr_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 196 - Running XST synthesis
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 182 - Running XST synthesis
 INSTANCE:pldma_mrd_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 218 - Running XST synthesis
-INSTANCE:axi_vdma_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 238 - Running XST synthesis
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 210 - Running XST synthesis
 INSTANCE:axi_hdmi_tx_16b_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 261 - Running XST synthesis
-INSTANCE:axi_hp2 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 282 - Running XST synthesis
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 270 - Running XST synthesis
 
 Running NGCBUILD ...
-IPNAME:cpu0_axi_gp0_wrapper INSTANCE:axi_gp0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 170 - Running NGCBUILD
-IPNAME:cpu0_axi_hp0_wrapper INSTANCE:axi_hp0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 178 - Running NGCBUILD
 IPNAME:cpu0_pldma_mwr_0_wrapper INSTANCE:pldma_mwr_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 196 - Running NGCBUILD
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 182 - Running NGCBUILD
 IPNAME:cpu0_pldma_mrd_0_wrapper INSTANCE:pldma_mrd_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 218 - Running NGCBUILD
-IPNAME:cpu0_axi_vdma_0_wrapper INSTANCE:axi_vdma_0 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 238 - Running NGCBUILD
-IPNAME:cpu0_axi_hp2_wrapper INSTANCE:axi_hp2 -
-J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\cpu0.mhs
-line 282 - Running NGCBUILD
+J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\c
+pu0.mhs line 210 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/cpu0.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 1374.00 seconds
+Total run time: 383.00 seconds

@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : ila_v1_05_a_0.veo
-// /___/   /\     Timestamp  : Wed May 14 17:12:53 中国标准时间 2014
+// /___/   /\     Timestamp  : Wed Dec 17 15:10:40 中国标准时间 2014
 // \   \  /  \
 //  \___\/\___\
 //
@@ -23,7 +23,7 @@
 ila_v1_05_a_0 YourInstanceName (
     .CONTROL(CONTROL), // INOUT BUS [35:0]
     .CLK(CLK), // IN
-    .TRIG0(TRIG0) // IN BUS [59:0]
+    .TRIG0(TRIG0) // IN BUS [39:0]
 );
 
 // INST_TAG_END ------ End INSTANTIATION Template ---------

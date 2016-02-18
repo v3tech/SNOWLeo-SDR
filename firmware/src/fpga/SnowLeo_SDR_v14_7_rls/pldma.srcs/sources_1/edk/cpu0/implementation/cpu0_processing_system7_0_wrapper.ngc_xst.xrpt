@@ -5,18 +5,18 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed May 28 11:08:20 2014">
+  <application stringID="Xst" timeStamp="Fri Dec 26 10:14:24 2014">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="H:\IDE14_7\14.7\ISE_DS\ISE\\lib\nt;H:/IDE14_7/14.7/ISE_DS/EDK\lib\nt;H:\IDE14_7\14.7\ISE_DS\ISE\\bin\nt;H:/IDE14_7/14.7/ISE_DS/EDK\bin\nt;H:/IDE14_7/14.7/ISE_DS/EDK\gnu\microblaze\nt\bin;H:/IDE14_7/14.7/ISE_DS/EDK\gnu\powerpc-eabi\nt\bin;H:/IDE14_7/14.7/ISE_DS/EDK\gnuwin\bin;H:/IDE14_7/14.7/ISE_DS/EDK\\bin\nt;H:/IDE14_7/14.7/ISE_DS/EDK\\lib\nt;H:/IDE14_7/14.7/ISE_DS/PlanAhead/bin;H:/IDE14_7/14.7/ISE_DS/PlanAhead/lib/win32.o;H:/IDE14_7/14.7/ISE_DS/PlanAhead/tps/win32/jre/bin/server;H:/IDE14_7/14.7/ISE_DS/PlanAhead/tps/win32/jre/bin;H:/IDE14_7/14.7/ISE_DS/ISE/bin/nt;H:/IDE14_7/14.7/ISE_DS/ISE/lib/nt;H:/IDE14_7/14.7/ISE_DS/common/bin/nt;H:/IDE14_7/14.7/ISE_DS/common/lib/nt;C:\Users\Administrator\AppData\Roaming\Tencent\QPlus\4.4.2025.0\QPlusRes\features\mirrorscreen\bin\;C:\Users\Administrator\AppData\Roaming\Tencent\QPlus\4.4.2025.0\QPlusRes\features\backgroundtool\bin\"/>
+          <item stringID="value" value="H:\IDE14_7\14.7\ISE_DS\ISE\\lib\nt;H:/IDE14_7/14.7/ISE_DS/EDK\lib\nt;H:\IDE14_7\14.7\ISE_DS\ISE\\bin\nt;H:/IDE14_7/14.7/ISE_DS/EDK\bin\nt;H:/IDE14_7/14.7/ISE_DS/EDK\gnu\microblaze\nt\bin;H:/IDE14_7/14.7/ISE_DS/EDK\gnu\powerpc-eabi\nt\bin;H:/IDE14_7/14.7/ISE_DS/EDK\gnuwin\bin;H:/IDE14_7/14.7/ISE_DS/EDK\\bin\nt;H:/IDE14_7/14.7/ISE_DS/EDK\\lib\nt;H:/IDE14_7/14.7/ISE_DS/PlanAhead/bin;H:/IDE14_7/14.7/ISE_DS/PlanAhead/lib/win32.o;H:/IDE14_7/14.7/ISE_DS/PlanAhead/tps/win32/jre/bin/server;H:/IDE14_7/14.7/ISE_DS/PlanAhead/tps/win32/jre/bin;H:/IDE14_7/14.7/ISE_DS/ISE/bin/nt;H:/IDE14_7/14.7/ISE_DS/ISE/lib/nt;H:/IDE14_7/14.7/ISE_DS/common/bin/nt;H:/IDE14_7/14.7/ISE_DS/common/lib/nt;F:\Mentor\2007.7EE\SDD_HOME\common\win32\bin;F:\Mentor\2007.7EE\SDD_HOME\common\win32\lib;F:\Tcl\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Common Files\Ulead Systems\MPEG;D:\software\MATLAB\MATLAB Compiler Runtime\v79\runtime\win32;d:\altera\90\quartus\bin;C:\Program Files\Microsoft Windows Performance Toolkit\;E:\software\Cadence\tools\bin;E:\software\Cadence\tools\libutil\bin;E:\software\Cadence\tools\fet\bin;E:\software\Cadence\tools\pcb\bin;E:\software\Cadence\tools\specctra\bin;E:\software\Cadence\tools\PSpice;E:\software\Cadence\tools\PSpice\Library;E:\software\Cadence\tools\Capture;E:\software\Cadence\OpenAccess\bin\win32\opt;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;H:\software\QuickTime\QTSystem\;C:\Cypress\EZ-USB FX3 SDK\1.3\bin\;C:\Cypress\EZ-USB FX3 SDK\1.3\jre7\bin\;C:\Program Files\Windows Live\Shared;D:\software\matlab801\runtime\win32;D:\software\matlab801\bin;C:\Program Files\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;F:/Mentor/2007.7EE/MGC_HOME.ixn/bin;F:/Mentor/2007.7EE/MGC_HOME.ixn/lib;D:\ATMEL Corporation\sam-ba_2.11\drv\;D:\ATMEL Corporation\sam-ba_2.11;C:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files\Microsoft Visual Studio\Common\Tools;C:\Program Files\Microsoft Visual Studio\VC98\bin;D:\modeltech_6.5a\win32;D:\modeltech_65\win32;C:\Program Files\SSH Communications Security\SSH Secure Shell"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
-          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.tcl"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="Pathv33"/>
@@ -35,10 +35,14 @@
           <item stringID="value" value="H:/IDE14_7/14.7/ISE_DS/EDK"/>
         </row>
         <row stringID="row" value="6">
+          <item stringID="variable" value="XILINX_FOR_ALTIUM_OVERRIDE"/>
+          <item stringID="value" value=" "/>
+        </row>
+        <row stringID="row" value="7">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
           <item stringID="value" value="H:/IDE14_7/14.7/ISE_DS/PlanAhead"/>
         </row>
-        <row stringID="row" value="7">
+        <row stringID="row" value="8">
           <item stringID="variable" value="XILINX"/>
           <item stringID="value" value="H:\IDE14_7\14.7\ISE_DS\ISE\;H:/IDE14_7/14.7/ISE_DS/EDK"/>
         </row>
@@ -69,7 +73,7 @@
       <item DEFAULT="/" stringID="XST_HIERARCHYSEPARATOR" value="/"/>
       <item DEFAULT="Yes" label="-iobuf" stringID="XST_IOBUF" value="NO"/>
       <item DEFAULT="" label="-sd" stringID="XST_SD" value="{../implementation}"/>
-      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\pcores\&quot; &quot;H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\&quot; &quot;H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\&quot; }"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\pcores\&quot; &quot;H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\&quot; &quot;H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\&quot; }"/>
     </section>
     <section stringID="XST_UNISIM_SUMMARY">
       <item dataType="int" stringID="XST_NUM_BUFG" value="1"/>
@@ -106,7 +110,7 @@
       <item AVAILABLE="26" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="0"/>
       <item AVAILABLE="26" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="0"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="0"/>
-      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="3069"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="3071"/>
       <item AVAILABLE="100" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="0"/>
       <item AVAILABLE="32" dataType="int" label="Number of BUFG/BUFGCTRLs" stringID="XST_NUMBER_OF_BUFGBUFGCTRLS" value="3"/>
     </section>

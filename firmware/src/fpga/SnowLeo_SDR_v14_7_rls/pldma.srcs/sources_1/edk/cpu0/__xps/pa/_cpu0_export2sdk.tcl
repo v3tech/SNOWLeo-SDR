@@ -5,14 +5,14 @@
 ######################################################
 
 proc _main_ {} {
-  cd "J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0"
+  cd "D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.srcs/sources_1/edk/cpu0"
   if { [ catch {xload xmp cpu0.xmp} result ] } {
     exit 10
   }
   # Set the export bmm/bit 0
   xset sdk_export_bmm_bit 0
   # Set the export dir
-  xset sdk_export_dir J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.sdk
+  xset sdk_export_dir D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.sdk/SDK/SDK_Export
   if { [catch {run exporttosdk} result] } {
     return -1
   }

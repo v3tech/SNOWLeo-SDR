@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Tue May 13 08:12:07 2014
+# Date: Mon Jan 12 06:14:08 2015
 #
 ##############################################################
 #
@@ -22,7 +22,7 @@ SET asysymbol = true
 SET busformat = BusFormatAngleBracketNotRipped
 SET createndf = false
 SET designentry = Verilog
-SET device = xc7z010
+SET device = xc7z020
 SET devicefamily = zynq
 SET flowvendor = Other
 SET formalverification = false
@@ -266,4 +266,4 @@ CSET use_status=false
 MISC pkg_timestamp=2012-05-10T12:44:55Z
 # END Extra information
 GENERATE
-# CRC: 82962592
+# CRC: dcad1339

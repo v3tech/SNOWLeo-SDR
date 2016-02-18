@@ -1,11 +1,11 @@
 -p
-xc7z010clg400-1
+xc7z020clg400-1
 -lang
 verilog
 -intstyle
 pa
 -lp
-J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/
+J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/
 -toplevel
 no
 -ti

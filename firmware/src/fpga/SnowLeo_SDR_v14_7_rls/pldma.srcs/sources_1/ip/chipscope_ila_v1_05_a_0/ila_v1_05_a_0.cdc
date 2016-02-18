@@ -1,6 +1,6 @@
 #ChipScope Core Generator Project File Version 3.0
-#Wed May 14 17:12:53 中国标准时间 2014
-SignalExport.bus<0000>.channelList=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59
+#Wed Dec 17 15:10:40 中国标准时间 2014
+SignalExport.bus<0000>.channelList=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
 SignalExport.bus<0000>.name=TRIG0
 SignalExport.bus<0000>.offset=0.0
 SignalExport.bus<0000>.precision=0
@@ -48,29 +48,9 @@ SignalExport.triggerChannel<0000><0036>=TRIG0[36]
 SignalExport.triggerChannel<0000><0037>=TRIG0[37]
 SignalExport.triggerChannel<0000><0038>=TRIG0[38]
 SignalExport.triggerChannel<0000><0039>=TRIG0[39]
-SignalExport.triggerChannel<0000><0040>=TRIG0[40]
-SignalExport.triggerChannel<0000><0041>=TRIG0[41]
-SignalExport.triggerChannel<0000><0042>=TRIG0[42]
-SignalExport.triggerChannel<0000><0043>=TRIG0[43]
-SignalExport.triggerChannel<0000><0044>=TRIG0[44]
-SignalExport.triggerChannel<0000><0045>=TRIG0[45]
-SignalExport.triggerChannel<0000><0046>=TRIG0[46]
-SignalExport.triggerChannel<0000><0047>=TRIG0[47]
-SignalExport.triggerChannel<0000><0048>=TRIG0[48]
-SignalExport.triggerChannel<0000><0049>=TRIG0[49]
-SignalExport.triggerChannel<0000><0050>=TRIG0[50]
-SignalExport.triggerChannel<0000><0051>=TRIG0[51]
-SignalExport.triggerChannel<0000><0052>=TRIG0[52]
-SignalExport.triggerChannel<0000><0053>=TRIG0[53]
-SignalExport.triggerChannel<0000><0054>=TRIG0[54]
-SignalExport.triggerChannel<0000><0055>=TRIG0[55]
-SignalExport.triggerChannel<0000><0056>=TRIG0[56]
-SignalExport.triggerChannel<0000><0057>=TRIG0[57]
-SignalExport.triggerChannel<0000><0058>=TRIG0[58]
-SignalExport.triggerChannel<0000><0059>=TRIG0[59]
 SignalExport.triggerPort<0000>.name=TRIG0
 SignalExport.triggerPortCount=1
 SignalExport.triggerPortIsData<0000>=true
-SignalExport.triggerPortWidth<0000>=60
+SignalExport.triggerPortWidth<0000>=40
 SignalExport.type=ila
 

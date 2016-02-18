@@ -1,10 +1,10 @@
 Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "cpu0_axi_hp0_wrapper_xst.prj"
-Verilog Include Directory          : {"J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc7z010clg400-1
@@ -183,7 +183,7 @@ Analyzing Verilog file "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcore
 Parsing module <ict106_w_upsizer>.
 Analyzing Verilog file "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/axi_interconnect.v" into library axi_interconnect_v1_06_a
 Parsing module <axi_interconnect>.
-Analyzing Verilog file "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_axi_hp0_wrapper.v" into library work
+Analyzing Verilog file "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_axi_hp0_wrapper.v" into library work
 Parsing module <cpu0_axi_hp0_wrapper>.
 
 =========================================================================
@@ -214,7 +214,7 @@ Elaborating module
 00000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100001011001011010000010111100000,C_M_AXI_IS_ACLK_ASYNC=16'b0,C_INTERCONNECT_ACLK_RATIO=187500000,C_S_AXI_SUPPORTS_WRITE=16'b1111111111111111,C_S_AXI_SUPPORTS_READ=16'b1111111111111111,C_M_AXI_SUPPORTS_WRITE=16'b1111111111111111,C_M_AXI_SUPPORTS_READ=16'b1111111111111111,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_CONNECTIVITY=512'b011,C_S_AXI_SINGLE_THREAD=16'b0,C_M_AXI_SUPPORTS_REORDERING=16'b1111111111111111,C_S_AXI_SUPPORTS_NARROW_BURST=16'b1111111111111111,C_M_AXI_SUPPORTS_NARROW_BURST=16'b1111111111111111,C_S_AXI_WRIT
 E_ACCEPTANCE=512'b01000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001,C_S_AXI_READ_ACCEPTANCE=512'b01000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001,C_M_AXI_WRI
 TE_ISSUING=512'b01000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000001000,C_M_AXI_READ_ISSUING=512'b01000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000001000,C_S_AXI_ARB_PRIO
-RITY=512'b0,C_M_AXI_SECURE=16'b0,C_S_AXI_WRITE_FIFO_DEPTH=512'b0100000000000000000000000000000001000000000,C_S_AXI_WRITE_FIFO_TYPE=16'b1111111111111111,C_S_AXI_WRITE_FIFO_DELAY=16'b0,C_S_AXI_READ_FIFO_DEPTH=512'b0100000000000000000000000000000001000000000,C_S_AXI_READ_FIFO_TYPE=16'b1111111111111111,C_S_AXI_READ_FIFO_DELAY=16'b0,C_M_AXI_WRITE_FIFO_DEPTH=512'b0,C_M_AXI_WRITE_FIFO_TYPE=16'b1111111111111111,C_M_AXI_WRITE_FIFO_DELAY=16'b0,C_M_AXI_READ_FIFO_DEPTH=512'b0,C_M_AXI_READ_FIFO_TYPE=16'b1111111111111111,C_M_AXI_READ_FIFO_DELAY=16'b0,C_S_AXI_AW_REGISTER=512'b0,C_S_AXI_AR_REGISTER=512'b0,C_S_AXI_W_REGISTER=512'b0,C_S_AXI_R_REGISTER=512'b0,C_S_AXI_B_REGISTER=512'b0,C_M_AXI_AW_REGISTER=512'b0,C_M_AXI_AR_REGISTER=512'b0,C_M_AXI_W_REGISTER=512'b0,C_M_AXI_R_REGISTER=512'b0,C_M_AXI_B_REGISTER=512'b0,C_INTERCONNECT_R_REGISTER=0,C_INTERCONNECT_CONNECTIVITY_MODE=1,C_USE_CTRL_PORT=0,C_USE_INTERRUPT=1,C_RANGE_CHECK=0,C_S_AXI_CTRL_ADDR_WIDTH=32,C_S_AXI_CTRL_DATA_WIDTH=32,C_DEBUG=0,C_S_AXI_DEBUG_SLOT=0,C_M_AXI_DEBUG_SLO
+RITY=512'b0,C_M_AXI_SECURE=16'b0,C_S_AXI_WRITE_FIFO_DEPTH=512'b0100000000000000000000000000000000000000000,C_S_AXI_WRITE_FIFO_TYPE=16'b1111111111111111,C_S_AXI_WRITE_FIFO_DELAY=16'b0,C_S_AXI_READ_FIFO_DEPTH=512'b0100000000000000000000000000000000000000000,C_S_AXI_READ_FIFO_TYPE=16'b1111111111111111,C_S_AXI_READ_FIFO_DELAY=16'b0,C_M_AXI_WRITE_FIFO_DEPTH=512'b0,C_M_AXI_WRITE_FIFO_TYPE=16'b1111111111111111,C_M_AXI_WRITE_FIFO_DELAY=16'b0,C_M_AXI_READ_FIFO_DEPTH=512'b0,C_M_AXI_READ_FIFO_TYPE=16'b1111111111111111,C_M_AXI_READ_FIFO_DELAY=16'b0,C_S_AXI_AW_REGISTER=512'b0,C_S_AXI_AR_REGISTER=512'b0,C_S_AXI_W_REGISTER=512'b0,C_S_AXI_R_REGISTER=512'b0,C_S_AXI_B_REGISTER=512'b0,C_M_AXI_AW_REGISTER=512'b0,C_M_AXI_AR_REGISTER=512'b0,C_M_AXI_W_REGISTER=512'b0,C_M_AXI_R_REGISTER=512'b0,C_M_AXI_B_REGISTER=512'b0,C_INTERCONNECT_R_REGISTER=0,C_INTERCONNECT_CONNECTIVITY_MODE=1,C_USE_CTRL_PORT=0,C_USE_INTERRUPT=1,C_RANGE_CHECK=0,C_S_AXI_CTRL_ADDR_WIDTH=32,C_S_AXI_CTRL_DATA_WIDTH=32,C_DEBUG=0,C_S_AXI_DEBUG_SLOT=0,C_M_AXI_DEBUG_SLO
 T=0,C_MAX_DEBUG_THREADS=1>.
 WARNING:HDLCompiler:413 - "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/axi_interconnect.v" Line 1735: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/axi_interconnect.v" Line 1752: Result of 32-bit expression is truncated to fit in 1-bit target.
@@ -291,8 +291,10 @@ Elaborating module
 Elaborating module <ict106_axi_clock_converter(C_FAMILY="zynq",C_AXI_ID_WIDTH=32'b01,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=32'sb01000000,C_AXI_IS_ACLK_ASYNC=1'b0,C_S_AXI_ACLK_RATIO=32'b01011001011010000010111100000,C_M_AXI_ACLK_RATIO=32'b01011001011010000010111100000,C_AXI_PROTOCOL=32'b01,C_AXI_SUPPORTS_WRITE=1'b1,C_AXI_SUPPORTS_READ=1'b1,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1)>.
 
 Elaborating module
-<ict106_data_fifo_bank(C_FAMILY="zynq",C_NUM_SLOTS=2,C_AXI_ID_WIDTH=512'b01000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001,C_AXI_ID_MAX_WIDTH=1,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_MAX_WIDTH=64,C_AXI_DATA_WIDTH=64'b0100000000000000000000000000000001000000,C_AXI_SUPPORTS_WRITE=16'b1111111111111111,C_AXI_SUPPORTS_READ=16'b1111111111111111,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_WRITE_FIFO_DEPTH=512'b0100000000000000000000000000000001000000000,C_AXI_WRITE_FIFO_TYPE=16'b1111111111111111,C_AXI_WRITE
-_FIFO_DELAY=16'b0,C_AXI_READ_FIFO_DEPTH=512'b0100000000000000000000000000000001000000000,C_AXI_READ_FIFO_TYPE=16'b1111111111111111,C_AXI_READ_FIFO_DELAY=16'b0)>.
+<ict106_data_fifo_bank(C_FAMILY="zynq",C_NUM_SLOTS=2,C_AXI_ID_WIDTH=512'b01000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001,C_AXI_ID_MAX_WIDTH=1,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_MAX_WIDTH=64,C_AXI_DATA_WIDTH=64'b0100000000000000000000000000000001000000,C_AXI_SUPPORTS_WRITE=16'b1111111111111111,C_AXI_SUPPORTS_READ=16'b1111111111111111,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_WRITE_FIFO_DEPTH=512'b0100000000000000000000000000000000000000000,C_AXI_WRITE_FIFO_TYPE=16'b1111111111111111,C_AXI_WRITE
+_FIFO_DELAY=16'b0,C_AXI_READ_FIFO_DEPTH=512'b0100000000000000000000000000000000000000000,C_AXI_READ_FIFO_TYPE=16'b1111111111111111,C_AXI_READ_FIFO_DELAY=16'b0)>.
+
+Elaborating module <ict106_axi_data_fifo(C_FAMILY="zynq",C_AXI_ID_WIDTH=32'b01,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=32'b01000000,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_WRITE_FIFO_DEPTH=32'b0,C_AXI_WRITE_FIFO_TYPE="lut",C_AXI_WRITE_FIFO_DELAY=1'b0,C_AXI_READ_FIFO_DEPTH=32'b0,C_AXI_READ_FIFO_TYPE="lut",C_AXI_READ_FIFO_DELAY=1'b0)>.
 
 Elaborating module <ict106_axi_data_fifo(C_FAMILY="zynq",C_AXI_ID_WIDTH=32'b01,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=32'b01000000,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_WRITE_FIFO_DEPTH=32'b01000000000,C_AXI_WRITE_FIFO_TYPE="bram",C_AXI_WRITE_FIFO_DELAY=1'b0,C_AXI_READ_FIFO_DEPTH=32'b01000000000,C_AXI_READ_FIFO_TYPE="bram",C_AXI_READ_FIFO_DELAY=1'b0)>.
 
@@ -306,8 +308,6 @@ PROG_FULL_THRESH_ASSERT_VAL_WDCH=511,C_PROG_FULL_THRESH_ASSERT_VAL_WRCH=15,C_PRO
 Elaborating module
 <ict106_data_fifo_bank(C_FAMILY="zynq",C_NUM_SLOTS=1,C_AXI_ID_WIDTH=512'b01000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001,C_AXI_ID_MAX_WIDTH=1,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_MAX_WIDTH=64,C_AXI_DATA_WIDTH=32'b01000000,C_AXI_SUPPORTS_WRITE=16'b1111111111111111,C_AXI_SUPPORTS_READ=16'b1111111111111111,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_WRITE_FIFO_DEPTH=512'b0,C_AXI_WRITE_FIFO_TYPE=16'b1111111111111111,C_AXI_WRITE_FIFO_DELAY=16'b0,C_AXI_READ_FIFO_DEPTH=512'b0,C_AXI_READ_FIFO_TYPE=16'b11
 11111111111111,C_AXI_READ_FIFO_DELAY=16'b0)>.
-
-Elaborating module <ict106_axi_data_fifo(C_FAMILY="zynq",C_AXI_ID_WIDTH=32'b01,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=32'b01000000,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_WRITE_FIFO_DEPTH=32'b0,C_AXI_WRITE_FIFO_TYPE="lut",C_AXI_WRITE_FIFO_DELAY=1'b0,C_AXI_READ_FIFO_DEPTH=32'b0,C_AXI_READ_FIFO_TYPE="lut",C_AXI_READ_FIFO_DELAY=1'b0)>.
 
 Elaborating module
 <ict106_axi_crossbar(C_MAX_S=16,C_MAX_M=16,C_NUM_ADDR_RANGES=16,C_INTERCONNECT_CONNECTIVITY_MODE=1,C_FAMILY="zynq",C_NUM_SLAVE_SLOTS=2,C_NUM_MASTER_SLOTS=1,C_AXI_ID_WIDTH=1,C_AXI_ADDR_WIDTH=32,C_INTERCONNECT_DATA_WIDTH=64,C_AXI_DATA_MAX_WIDTH=64,C_M_AXI_DATA_WIDTH=512'b0100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000001000000,C_S_AXI_PROTOCOL=512'b0,C_M_AXI_PROTOCOL=512'b01,C_M_AXI_BASE_ADDR=16384'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
@@ -499,7 +499,7 @@ Elaborating module <ict106_mux_enc(C_FAMILY="zynq",C_RATIO=2,C_SEL_WIDTH=32'sb01
 =========================================================================
 
 Synthesizing Unit <cpu0_axi_hp0_wrapper>.
-    Related source file is "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_axi_hp0_wrapper.v".
+    Related source file is "J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\hdl\cpu0_axi_hp0_wrapper.v".
     Summary:
 	no macro.
 Unit <cpu0_axi_hp0_wrapper> synthesized.
@@ -582,10 +582,10 @@ Synthesizing Unit <axi_interconnect>.
         C_M_AXI_READ_ISSUING = 512'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000001000
         C_S_AXI_ARB_PRIORITY = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
         C_M_AXI_SECURE = 16'b0000000000000000
-        C_S_AXI_WRITE_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000
+        C_S_AXI_WRITE_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000
         C_S_AXI_WRITE_FIFO_TYPE = 16'b1111111111111111
         C_S_AXI_WRITE_FIFO_DELAY = 16'b0000000000000000
-        C_S_AXI_READ_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000
+        C_S_AXI_READ_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000
         C_S_AXI_READ_FIFO_TYPE = 16'b1111111111111111
         C_S_AXI_READ_FIFO_DELAY = 16'b0000000000000000
         C_M_AXI_WRITE_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -1459,10 +1459,10 @@ Synthesizing Unit <ict106_data_fifo_bank_1>.
         C_AXI_WUSER_WIDTH = 1
         C_AXI_RUSER_WIDTH = 1
         C_AXI_BUSER_WIDTH = 1
-        C_AXI_WRITE_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000
+        C_AXI_WRITE_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000
         C_AXI_WRITE_FIFO_TYPE = 16'b1111111111111111
         C_AXI_WRITE_FIFO_DELAY = 16'b0000000000000000
-        C_AXI_READ_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000
+        C_AXI_READ_FIFO_DEPTH = 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000
         C_AXI_READ_FIFO_TYPE = 16'b1111111111111111
         C_AXI_READ_FIFO_DELAY = 16'b0000000000000000
     Summary:
@@ -1470,6 +1470,30 @@ Synthesizing Unit <ict106_data_fifo_bank_1>.
 Unit <ict106_data_fifo_bank_1> synthesized.
 
 Synthesizing Unit <ict106_axi_data_fifo_1>.
+    Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/ict106_axi_data_fifo.v".
+        C_FAMILY = "zynq"
+        C_AXI_ID_WIDTH = 1
+        C_AXI_ADDR_WIDTH = 32
+        C_AXI_DATA_WIDTH = 64
+        C_AXI_SUPPORTS_USER_SIGNALS = 0
+        C_AXI_AWUSER_WIDTH = 1
+        C_AXI_ARUSER_WIDTH = 1
+        C_AXI_WUSER_WIDTH = 1
+        C_AXI_RUSER_WIDTH = 1
+        C_AXI_BUSER_WIDTH = 1
+        C_AXI_WRITE_FIFO_DEPTH = 0
+        C_AXI_WRITE_FIFO_TYPE = "lut"
+        C_AXI_WRITE_FIFO_DELAY = 0
+        C_AXI_READ_FIFO_DEPTH = 0
+        C_AXI_READ_FIFO_TYPE = "lut"
+        C_AXI_READ_FIFO_DELAY = 0
+WARNING:Xst:647 - Input <ACLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ARESETN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ict106_axi_data_fifo_1> synthesized.
+
+Synthesizing Unit <ict106_axi_data_fifo_2>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/ict106_axi_data_fifo.v".
         C_FAMILY = "zynq"
         C_AXI_ID_WIDTH = 1
@@ -1558,7 +1582,7 @@ INFO:Xst:3210 - "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_i
 INFO:Xst:3210 - "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/ict106_axi_data_fifo.v" line 1395: Output port <AXIS_UNDERFLOW> of the instance <gen_fifo.fifo_gen_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
-Unit <ict106_axi_data_fifo_1> synthesized.
+Unit <ict106_axi_data_fifo_2> synthesized.
 
 Synthesizing Unit <ict106_data_fifo_bank_2>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/ict106_data_fifo_bank.v".
@@ -1586,30 +1610,6 @@ Synthesizing Unit <ict106_data_fifo_bank_2>.
     Summary:
 	no macro.
 Unit <ict106_data_fifo_bank_2> synthesized.
-
-Synthesizing Unit <ict106_axi_data_fifo_2>.
-    Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/ict106_axi_data_fifo.v".
-        C_FAMILY = "zynq"
-        C_AXI_ID_WIDTH = 1
-        C_AXI_ADDR_WIDTH = 32
-        C_AXI_DATA_WIDTH = 64
-        C_AXI_SUPPORTS_USER_SIGNALS = 0
-        C_AXI_AWUSER_WIDTH = 1
-        C_AXI_ARUSER_WIDTH = 1
-        C_AXI_WUSER_WIDTH = 1
-        C_AXI_RUSER_WIDTH = 1
-        C_AXI_BUSER_WIDTH = 1
-        C_AXI_WRITE_FIFO_DEPTH = 0
-        C_AXI_WRITE_FIFO_TYPE = "lut"
-        C_AXI_WRITE_FIFO_DELAY = 0
-        C_AXI_READ_FIFO_DEPTH = 0
-        C_AXI_READ_FIFO_TYPE = "lut"
-        C_AXI_READ_FIFO_DELAY = 0
-WARNING:Xst:647 - Input <ACLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ARESETN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <ict106_axi_data_fifo_2> synthesized.
 
 Synthesizing Unit <ict106_axi_crossbar>.
     Related source file is "H:/IDE14_7/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/ict106_axi_crossbar.v".
@@ -2722,6 +2722,7 @@ Moving files to output directory...
 Finished moving files to output directory
 Successfully generated unit 'cpu0_axi_hp0_wrapper_fifo_generator_v9_1_3'.
 
+End of process call...
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -3052,7 +3053,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <axi_hp0/mi_converte
 Building and optimizing final netlist ...
 PACKER Warning: Lut axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/Mmux_M_AXI_AADDR_I251 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
 PACKER Warning: Lut axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/Mmux_M_AXI_AADDR_I251 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
-Found area constraint ratio of 100 (+ 0) on block cpu0_axi_hp0_wrapper, actual ratio is 8.
+Found area constraint ratio of 100 (+ 0) on block cpu0_axi_hp0_wrapper, actual ratio is 7.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
@@ -3062,13 +3063,6 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/n
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.rst_d1> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/grstd1.grst_full.rst_d1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
@@ -3085,13 +3079,6 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.rst_d1> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/grstd1.grst_full.rst_d1> 
-INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
@@ -3150,35 +3137,35 @@ Top Level Output File Name         : cpu0_axi_hp0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1236
-#      GND                         : 10
-#      INV                         : 39
+# BELS                             : 1077
+#      GND                         : 7
+#      INV                         : 30
 #      LUT1                        : 3
-#      LUT2                        : 114
-#      LUT3                        : 359
-#      LUT4                        : 161
-#      LUT5                        : 192
-#      LUT6                        : 158
-#      MUXCY                       : 134
-#      MUXF7                       : 3
-#      VCC                         : 7
+#      LUT2                        : 91
+#      LUT3                        : 342
+#      LUT4                        : 116
+#      LUT5                        : 186
+#      LUT6                        : 146
+#      MUXCY                       : 94
+#      MUXF7                       : 2
+#      VCC                         : 4
 #      XORCY                       : 56
-# FlipFlops/Latches                : 1264
-#      FD                          : 65
-#      FDC                         : 26
-#      FDCE                        : 186
-#      FDE                         : 561
-#      FDP                         : 91
-#      FDPE                        : 4
+# FlipFlops/Latches                : 1016
+#      FD                          : 57
+#      FDC                         : 22
+#      FDCE                        : 120
+#      FDE                         : 419
+#      FDP                         : 65
+#      FDPE                        : 2
 #      FDR                         : 58
 #      FDRE                        : 260
-#      FDS                         : 8
-#      FDSE                        : 5
-# RAMS                             : 9
+#      FDS                         : 6
+#      FDSE                        : 7
+# RAMS                             : 6
 #      RAM32M                      : 2
 #      RAM32X1D                    : 1
-#      RAMB18E1                    : 2
-#      RAMB36E1                    : 4
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 2
 # Shift Registers                  : 4
 #      SRLC32E                     : 4
 PACKER Warning: Lut axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/Mmux_M_AXI_AADDR_I251 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
@@ -3191,27 +3178,27 @@ Selected Device : 7z010clg400-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1264  out of  35200     3%  
- Number of Slice LUTs:                 1040  out of  17600     5%  
-    Number used as Logic:              1026  out of  17600     5%  
+ Number of Slice Registers:            1016  out of  35200     2%  
+ Number of Slice LUTs:                  928  out of  17600     5%  
+    Number used as Logic:               914  out of  17600     5%  
     Number used as Memory:               14  out of   6000     0%  
        Number used as RAM:               10
        Number used as SRL:                4
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1650
-   Number with an unused Flip Flop:     386  out of   1650    23%  
-   Number with an unused LUT:           610  out of   1650    36%  
-   Number of fully used LUT-FF pairs:   654  out of   1650    39%  
-   Number of unique control sets:        92
+ Number of LUT Flip Flop pairs used:   1334
+   Number with an unused Flip Flop:     318  out of   1334    23%  
+   Number with an unused LUT:           406  out of   1334    30%  
+   Number of fully used LUT-FF pairs:   610  out of   1334    45%  
+   Number of unique control sets:        78
 
 IO Utilization: 
  Number of IOs:                        3048
  Number of bonded IOBs:                   0  out of    100     0%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                5  out of     60     8%  
-    Number using Block RAM only:          5
+ Number of Block RAM/FIFO:                3  out of     60     5%  
+    Number using Block RAM only:          3
 
 ---------------------------
 Partition Resource Summary:
@@ -3234,7 +3221,7 @@ Clock Information:
 ---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                         | Clock buffer(FF name)                                                                                                                               | Load  |
 ---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK| NONE(axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_pipe_2)                                                        | 852   |
+axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK| NONE(axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_pipe_2)                                                        | 601   |
 axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/S_AXI_ACLK| NONE(axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/s_async_conv_reset)                                                                 | 3     |
 axi_hp0/si_converter_bank/gen_conv_slot[1].clock_conv_inst/S_AXI_ACLK| NONE(axi_hp0/si_converter_bank/gen_conv_slot[1].clock_conv_inst/s_async_conv_reset)                                                                 | 3     |
 axi_hp0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK| NONE(axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/pushed_commands_3)| 419   |
@@ -3246,8 +3233,6 @@ Asynchronous Control Signals Information:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Buffer(FF name)                                                                                                                                                                                                                                                                                        | Load  |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DBITERR(axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND:G)  | NONE(axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM36.ram) | 2     |
-axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DBITERR(axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND:G)| NONE(axi_hp0/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/SDP.WIDE_PRIM36.ram)| 2     |
 axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DBITERR(axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND:G)  | NONE(axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM36.ram) | 2     |
 axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DBITERR(axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND:G)| NONE(axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/SDP.WIDE_PRIM36.ram)| 2     |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -3256,10 +3241,10 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.391ns (Maximum Frequency: 294.898MHz)
-   Minimum input arrival time before clock: 2.704ns
-   Maximum output required time after clock: 2.507ns
-   Maximum combinational path delay: 1.054ns
+   Minimum period: 3.283ns (Maximum Frequency: 304.599MHz)
+   Minimum input arrival time before clock: 2.901ns
+   Maximum output required time after clock: 2.301ns
+   Maximum combinational path delay: 1.313ns
 
 Timing Details:
 ---------------
@@ -3267,30 +3252,30 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK'
-  Clock period: 3.391ns (frequency: 294.898MHz)
-  Total number of paths / destination ports: 6390 / 1541
+  Clock period: 3.283ns (frequency: 304.599MHz)
+  Total number of paths / destination ports: 5112 / 1077
 -------------------------------------------------------------------------
-Delay:               3.391ns (Levels of Logic = 6)
-  Source:            axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i (FF)
-  Destination:       axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/fifoaddr_2 (FF)
+Delay:               3.283ns (Levels of Logic = 5)
+  Source:            axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_0 (FF)
+  Destination:       axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
   Source Clock:      axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK rising
   Destination Clock: axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK rising
 
-  Data Path: axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i to axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/fifoaddr_2
+  Data Path: axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_0 to axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              5   0.282   0.426  U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i (U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i)
-     INV:I->O              4   0.067   0.433  U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.wdch_m_axi_wvalid1_INV_0 (M_AXI_WVALID)
-     end scope: 'axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst:M_AXI_WVALID'
-     LUT3:I2->O            3   0.053   0.427  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[1].gen_si_write.wdata_router_w/M_WVALID<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/wr_tmp_wvalid<2>)
-     LUT6:I5->O           12   0.053   0.485  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_data_inst/cmd_ready_i11 (DEBUG_MC_MP_WDATACONTROL<1>)
-     LUT6:I5->O            6   0.053   0.446  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/m_aready (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/m_aready)
-     LUT6:I5->O            3   0.053   0.413  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/Mxor_push_pop_XOR_86_o_xo<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/push_pop_XOR_86_o)
-     FDSE:CE                   0.200          axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/fifoaddr_0
+     FD:C->Q               4   0.282   0.505  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_0 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_0)
+     LUT3:I1->O            6   0.053   0.446  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/M_WVALID<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/wr_tmp_wvalid<0>)
+     LUT6:I5->O            4   0.053   0.433  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/M_WVALID1 (DEBUG_MC_MP_WDATACONTROL<0>)
+     LUT6:I5->O            4   0.053   0.433  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[1].gen_si_write.wdata_router_w/S_WREADY1 (axi_hp0/sf_cb_wready<1>)
+     begin scope: 'axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst:M_AXI_WREADY'
+     LUT4:I3->O           21   0.053   0.529  U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en1 (U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en)
+     begin scope: 'axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr:ENB'
+     RAMB18E1:ENARDEN          0.443          ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
     ----------------------------------------
-    Total                      3.391ns (0.761ns logic, 2.630ns route)
-                                       (22.4% logic, 77.6% route)
+    Total                      3.283ns (0.937ns logic, 2.346ns route)
+                                       (28.5% logic, 71.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'axi_hp0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK'
@@ -3308,7 +3293,7 @@ Delay:               3.164ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              3   0.282   0.616  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/cmd_b_push_block (axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/cmd_b_push_block)
-     LUT3:I0->O            1   0.053   0.602  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/_n0335212_SW1 (N60)
+     LUT3:I0->O            1   0.053   0.602  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/_n0335212_SW1 (N63)
      LUT6:I3->O           12   0.053   0.557  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/cmd_b_push1 (axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/cmd_b_push)
      begin scope: 'axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst:WR_EN'
      LUT2:I0->O           10   0.053   0.458  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en)
@@ -3363,47 +3348,51 @@ Delay:               1.158ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK'
-  Total number of paths / destination ports: 1265 / 951
+  Total number of paths / destination ports: 1290 / 714
 -------------------------------------------------------------------------
-Offset:              2.704ns (Levels of Logic = 4)
-  Source:            M_AXI_WREADY<0> (PAD)
-  Destination:       axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/fifoaddr_2 (FF)
+Offset:              2.699ns (Levels of Logic = 5)
+  Source:            S_AXI_WVALID<0> (PAD)
+  Destination:       axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
   Destination Clock: axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK rising
 
-  Data Path: M_AXI_WREADY<0> to axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/fifoaddr_2
+  Data Path: S_AXI_WVALID<0> to axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT3:I0->O            2   0.053   0.745  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/M_WVALID1_SW1 (N72)
-     LUT6:I0->O           12   0.053   0.485  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_data_inst/cmd_ready_i11 (DEBUG_MC_MP_WDATACONTROL<1>)
-     LUT6:I5->O            6   0.053   0.446  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/m_aready (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/m_aready)
-     LUT6:I5->O            3   0.053   0.413  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/Mxor_push_pop_XOR_86_o_xo<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/push_pop_XOR_86_o)
-     FDSE:CE                   0.200          axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/fifoaddr_0
+     LUT3:I0->O            6   0.053   0.446  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/M_WVALID<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/wr_tmp_wvalid<0>)
+     LUT6:I5->O            4   0.053   0.433  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/M_WVALID1 (DEBUG_MC_MP_WDATACONTROL<0>)
+     LUT6:I5->O            4   0.053   0.433  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[1].gen_si_write.wdata_router_w/S_WREADY1 (axi_hp0/sf_cb_wready<1>)
+     begin scope: 'axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst:M_AXI_WREADY'
+     LUT4:I3->O           21   0.053   0.529  U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en1 (U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en)
+     begin scope: 'axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr:ENB'
+     RAMB18E1:ENARDEN          0.443          ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
     ----------------------------------------
-    Total                      2.704ns (0.615ns logic, 2.089ns route)
-                                       (22.7% logic, 77.3% route)
+    Total                      2.699ns (0.858ns logic, 1.841ns route)
+                                       (31.8% logic, 68.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'axi_hp0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK'
-  Total number of paths / destination ports: 255 / 208
+  Total number of paths / destination ports: 306 / 208
 -------------------------------------------------------------------------
-Offset:              1.918ns (Levels of Logic = 4)
-  Source:            M_AXI_RLAST<0> (PAD)
-  Destination:       axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i (FF)
+Offset:              2.901ns (Levels of Logic = 6)
+  Source:            S_AXI_WVALID<0> (PAD)
+  Destination:       axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i (FF)
   Destination Clock: axi_hp0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK rising
 
-  Data Path: M_AXI_RLAST<0> to axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
+  Data Path: S_AXI_WVALID<0> to axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT4:I0->O           13   0.053   0.715  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_data_inst/cmd_ready_i1 (axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.rd_cmd_ready)
-     begin scope: 'axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst:RD_EN'
-     LUT4:I0->O           12   0.053   0.797  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/Mmux_RAM_RD_EN_FWFT11 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/ram_rd_en_i)
-     LUT6:I1->O            2   0.053   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb3 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb)
+     LUT3:I0->O            6   0.053   0.446  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/M_WVALID<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/wr_tmp_wvalid<0>)
+     LUT6:I5->O            4   0.053   0.745  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/M_WVALID1 (DEBUG_MC_MP_WDATACONTROL<0>)
+     LUT6:I1->O           14   0.053   0.498  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_data_inst/cmd_ready_i2 (axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.wr_cmd_ready)
+     begin scope: 'axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst:RD_EN'
+     LUT4:I3->O           16   0.053   0.733  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/Mmux_RAM_RD_EN_FWFT11 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/ram_rd_en_i)
+     LUT6:I2->O            2   0.053   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb3 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb)
      FDP:D                     0.011          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
     ----------------------------------------
-    Total                      1.918ns (0.406ns logic, 1.512ns route)
-                                       (21.2% logic, 78.8% route)
+    Total                      2.901ns (0.479ns logic, 2.422ns route)
+                                       (16.5% logic, 83.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'axi_hp0/si_converter_bank/gen_conv_slot[1].clock_conv_inst/S_AXI_ACLK'
@@ -3443,7 +3432,7 @@ Offset:              0.282ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'axi_hp0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK'
-  Total number of paths / destination ports: 1011 / 249
+  Total number of paths / destination ports: 1014 / 252
 -------------------------------------------------------------------------
 Offset:              2.301ns (Levels of Logic = 3)
   Source:            axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/pushed_commands_0 (FF)
@@ -3464,44 +3453,43 @@ Offset:              2.301ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK'
-  Total number of paths / destination ports: 1992 / 1173
+  Total number of paths / destination ports: 1568 / 1098
 -------------------------------------------------------------------------
-Offset:              2.507ns (Levels of Logic = 5)
-  Source:            axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i (FF)
+Offset:              1.897ns (Levels of Logic = 3)
+  Source:            axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_0 (FF)
   Destination:       M_AXI_WVALID<0> (PAD)
   Source Clock:      axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK rising
 
-  Data Path: axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst/U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i to M_AXI_WVALID<0>
+  Data Path: axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_0 to M_AXI_WVALID<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              5   0.282   0.426  U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i (U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i)
-     INV:I->O              4   0.067   0.433  U0/xst_fifo_generator/gaxi_full_lite.gwrite_ch.wdch_m_axi_wvalid1_INV_0 (M_AXI_WVALID)
-     end scope: 'axi_hp0/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst:M_AXI_WVALID'
-     LUT3:I2->O            3   0.053   0.649  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[1].gen_si_write.wdata_router_w/M_WVALID<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/wr_tmp_wvalid<2>)
-     LUT6:I2->O            2   0.053   0.491  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/M_WVALID1 (DEBUG_MC_MP_WDATACONTROL<0>)
+     FD:C->Q               4   0.282   0.505  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_0 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_0)
+     LUT3:I1->O            6   0.053   0.446  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/M_WVALID<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/wr_tmp_wvalid<0>)
+     LUT6:I5->O            4   0.053   0.505  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/M_WVALID1 (DEBUG_MC_MP_WDATACONTROL<0>)
      LUT2:I0->O            0   0.053   0.000  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_data_inst/M_AXI_WVALID_I1 (DEBUG_MP_MR_WDATACONTROL<0>)
     ----------------------------------------
-    Total                      2.507ns (0.508ns logic, 1.999ns route)
-                                       (20.3% logic, 79.7% route)
+    Total                      1.897ns (0.441ns logic, 1.456ns route)
+                                       (23.2% logic, 76.8% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 783 / 780
+  Total number of paths / destination ports: 1236 / 1226
 -------------------------------------------------------------------------
-Delay:               1.054ns (Levels of Logic = 2)
-  Source:            M_AXI_WREADY<0> (PAD)
-  Destination:       DEBUG_CB_MF_WDATACONTROL<1> (PAD)
+Delay:               1.313ns (Levels of Logic = 3)
+  Source:            S_AXI_WVALID<0> (PAD)
+  Destination:       M_AXI_WVALID<0> (PAD)
 
-  Data Path: M_AXI_WREADY<0> to DEBUG_CB_MF_WDATACONTROL<1>
+  Data Path: S_AXI_WVALID<0> to M_AXI_WVALID<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT3:I0->O            2   0.053   0.745  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/M_WVALID1_SW1 (N72)
-     LUT6:I0->O           12   0.053   0.000  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_data_inst/cmd_ready_i11 (DEBUG_MC_MP_WDATACONTROL<1>)
+     LUT3:I0->O            6   0.053   0.446  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_write.wdata_router_w/M_WVALID<0>1 (axi_hp0/crossbar_samd/gen_samd.crossbar_samd/wr_tmp_wvalid<0>)
+     LUT6:I5->O            4   0.053   0.505  axi_hp0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.wdata_mux_w/M_WVALID1 (DEBUG_MC_MP_WDATACONTROL<0>)
+     LUT2:I0->O            0   0.053   0.000  axi_hp0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_data_inst/M_AXI_WVALID_I1 (DEBUG_MP_MR_WDATACONTROL<0>)
     ----------------------------------------
-    Total                      1.054ns (0.309ns logic, 0.745ns route)
-                                       (29.3% logic, 70.7% route)
+    Total                      1.313ns (0.362ns logic, 0.951ns route)
+                                       (27.6% logic, 72.4% route)
 
 =========================================================================
 
@@ -3514,7 +3502,7 @@ Clock to Setup on destination clock axi_hp0/mi_converter_bank/gen_conv_slot[0].c
 Source Clock                                                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------------------+---------+---------+---------+---------+
 axi_hp0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    3.164|         |         |         |
-axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    4.095|         |         |         |
+axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    3.485|         |         |         |
 ---------------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK
@@ -3522,8 +3510,8 @@ Clock to Setup on destination clock axi_hp0/si_converter_bank/gen_conv_slot[0].c
                                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------------------+---------+---------+---------+---------+
-axi_hp0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    3.295|         |         |         |
-axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    3.391|         |         |         |
+axi_hp0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    3.110|         |         |         |
+axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    3.283|         |         |         |
 ---------------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/S_AXI_ACLK
@@ -3531,7 +3519,7 @@ Clock to Setup on destination clock axi_hp0/si_converter_bank/gen_conv_slot[0].c
                                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------------------+---------+---------+---------+---------+
-axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    0.738|         |         |         |
+axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    0.732|         |         |         |
 axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/S_AXI_ACLK|    1.158|         |         |         |
 ---------------------------------------------------------------------+---------+---------+---------+---------+
 
@@ -3540,21 +3528,21 @@ Clock to Setup on destination clock axi_hp0/si_converter_bank/gen_conv_slot[1].c
                                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------------------+---------+---------+---------+---------+
-axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    0.738|         |         |         |
+axi_hp0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/M_AXI_ACLK|    0.732|         |         |         |
 axi_hp0/si_converter_bank/gen_conv_slot[1].clock_conv_inst/S_AXI_ACLK|    1.158|         |         |         |
 ---------------------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 490.00 secs
-Total CPU time to Xst completion: 490.80 secs
+Total REAL time to Xst completion: 396.00 secs
+Total CPU time to Xst completion: 395.71 secs
  
 --> 
 
-Total memory usage is 321832 kilobytes
+Total memory usage is 315656 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  236 (   0 filtered)
-Number of infos    :  444 (   0 filtered)
+Number of infos    :  430 (   0 filtered)
 

@@ -23,15 +23,15 @@
       <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
-      <VARIABLE ID="processing_system7_0" IS_EXPANDED="TRUE" ROW_INDEX="3"/>
-      <VARIABLE ID="axi_gp0" ROW_INDEX="0"/>
-      <VARIABLE ID="axi_hp0" ROW_INDEX="1"/>
       <VARIABLE ID="sys_reset_n" ROW_INDEX="8"/>
+      <VARIABLE ID="processing_system7_0" IS_EXPANDED="TRUE" ROW_INDEX="3"/>
       <VARIABLE ID="pldma_mwr_0" IS_EXPANDED="TRUE" ROW_INDEX="7"/>
       <VARIABLE ID="pldma_mrd_0" IS_EXPANDED="TRUE" ROW_INDEX="6"/>
       <VARIABLE ID="axi_vdma_0" IS_EXPANDED="TRUE" ROW_INDEX="5"/>
-      <VARIABLE ID="axi_hdmi_tx_16b_0" IS_EXPANDED="TRUE" ROW_INDEX="4"/>
       <VARIABLE ID="axi_hp2" ROW_INDEX="2"/>
+      <VARIABLE ID="axi_hp0" ROW_INDEX="1"/>
+      <VARIABLE ID="axi_hdmi_tx_16b_0" IS_EXPANDED="TRUE" ROW_INDEX="4"/>
+      <VARIABLE ID="axi_gp0" ROW_INDEX="0"/>
     </SEQUENCES>
   </SET>
 
@@ -77,7 +77,7 @@
   </SET>
 
   <SET CLASS="PROJECT" DISPLAYMODE="TREE" VIEW_ID="PORT">
-    <HEADERS HSCROLL="0" VSCROLL="563">
+    <HEADERS HSCROLL="0" VSCROLL="0">
       <VARIABLE COL_INDEX="0" COL_WIDTH="485" IS_VISIBLE="TRUE" VIEWDISP="Name" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="1" COL_WIDTH="431" IS_VISIBLE="TRUE" VIEWDISP="Connected Port" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="2" COL_WIDTH="336" IS_VISIBLE="TRUE" VIEWDISP="Net" VIEWTYPE="HEADER"/>
@@ -93,27 +93,20 @@
       <VARIABLE COL_INDEX="11" COL_WIDTH="280" IS_VISIBLE="FALSE" VIEWDISP="Differential Polarity" VIEWTYPE="HEADER"/>
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="108,895,200" VERSION="0"/>
-    <SET ID="ExternalPorts" IS_EXPANDED="TRUE"/>
-    <SET ID="processing_system7_0" IS_EXPANDED="TRUE">
-      <SET ID="S_AXI_HP2" IS_EXPANDED="TRUE"/>
-    </SET>
-    <SET ID="pldma_mwr_0" IS_EXPANDED="TRUE"/>
-    <SET ID="pldma_mrd_0" IS_EXPANDED="TRUE"/>
-    <SET ID="axi_hp2" IS_EXPANDED="TRUE"/>
     <STATUS>
       <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
-      <VARIABLE ID="ExternalPorts" IS_EXPANDED="TRUE" ROW_INDEX="0"/>
-      <VARIABLE ID="processing_system7_0" IS_EXPANDED="TRUE" ROW_INDEX="4"/>
-      <VARIABLE ID="axi_gp0" ROW_INDEX="1"/>
-      <VARIABLE ID="axi_hp0" ROW_INDEX="2"/>
+      <VARIABLE ID="ExternalPorts" ROW_INDEX="0"/>
       <VARIABLE ID="sys_reset_n" ROW_INDEX="9"/>
-      <VARIABLE ID="pldma_mwr_0" IS_EXPANDED="TRUE" ROW_INDEX="8"/>
-      <VARIABLE ID="pldma_mrd_0" IS_EXPANDED="TRUE" ROW_INDEX="7"/>
+      <VARIABLE ID="processing_system7_0" ROW_INDEX="4"/>
+      <VARIABLE ID="pldma_mwr_0" ROW_INDEX="8"/>
+      <VARIABLE ID="pldma_mrd_0" ROW_INDEX="7"/>
       <VARIABLE ID="axi_vdma_0" ROW_INDEX="6"/>
+      <VARIABLE ID="axi_hp2" ROW_INDEX="3"/>
+      <VARIABLE ID="axi_hp0" ROW_INDEX="2"/>
       <VARIABLE ID="axi_hdmi_tx_16b_0" ROW_INDEX="5"/>
-      <VARIABLE ID="axi_hp2" IS_EXPANDED="TRUE" ROW_INDEX="3"/>
+      <VARIABLE ID="axi_gp0" ROW_INDEX="1"/>
     </SEQUENCES>
   </SET>
 

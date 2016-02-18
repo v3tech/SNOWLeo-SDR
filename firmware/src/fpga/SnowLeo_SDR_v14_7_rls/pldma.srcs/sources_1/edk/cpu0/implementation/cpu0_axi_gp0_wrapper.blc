@@ -6,8 +6,8 @@ xc7z010clg400-1 -intstyle silent -i -sd .. cpu0_axi_gp0_wrapper.ngc
 ../cpu0_axi_gp0_wrapper
 
 Reading NGO file
-"J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/impleme
-ntation/axi_gp0_wrapper/cpu0_axi_gp0_wrapper.ngc" ...
+"J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/
+implementation/axi_gp0_wrapper/cpu0_axi_gp0_wrapper.ngc" ...
 
 Partition Implementation Status
 -------------------------------
@@ -20,7 +20,7 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 141336 kilobytes
+Total memory usage is 139128 kilobytes
 
 Writing NGC file "../cpu0_axi_gp0_wrapper.ngc" ...
 Total REAL time to NGCBUILD completion:  5 sec

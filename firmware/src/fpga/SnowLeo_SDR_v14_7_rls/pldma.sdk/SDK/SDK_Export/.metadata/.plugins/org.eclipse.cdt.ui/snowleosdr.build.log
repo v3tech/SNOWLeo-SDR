@@ -1,0 +1,31 @@
+12:58:09 **** Build of configuration Release for project snowleosdr ****
+make all 
+'Building file: ../src/si5351.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MMD -MP -MF"src/si5351.d" -MT"src/si5351.d" -o "src/si5351.o" "../src/si5351.c"
+'Finished building: ../src/si5351.c'
+' '
+'Building file: ../src/snowleo_hw.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_hw.d" -MT"src/snowleo_hw.d" -o "src/snowleo_hw.o" "../src/snowleo_hw.c"
+'Finished building: ../src/snowleo_hw.c'
+' '
+'Building file: ../src/snowleo_i2c_ops.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_i2c_ops.d" -MT"src/snowleo_i2c_ops.d" -o "src/snowleo_i2c_ops.o" "../src/snowleo_i2c_ops.c"
+'Finished building: ../src/snowleo_i2c_ops.c'
+' '
+'Building file: ../src/snowleo_spi_ops.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_spi_ops.d" -MT"src/snowleo_spi_ops.d" -o "src/snowleo_spi_ops.o" "../src/snowleo_spi_ops.c"
+'Finished building: ../src/snowleo_spi_ops.c'
+' '
+'Building target: libsnowleosdr.a'
+'Invoking: ARM Linux archiver'
+arm-xilinx-linux-gnueabi-ar -r  "libsnowleosdr.a"  ./src/si5351.o ./src/snowleo_hw.o ./src/snowleo_i2c_ops.o ./src/snowleo_spi_ops.o   
+arm-xilinx-linux-gnueabi-ar: creating libsnowleosdr.a
+'Finished building target: libsnowleosdr.a'
+' '
+
+12:58:10 Build Finished (took 1s.194ms)
+

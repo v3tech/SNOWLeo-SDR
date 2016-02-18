@@ -120,7 +120,8 @@ entity pldma_mrd is
   generic
   (
     -- ADD USER GENERICS BELOW THIS LINE ---------------
-    --USER generics added here
+    C_ENABLE_INT						  : integer					 := 0;
+	  C_ENABLE_DGB						  : integer					 := 1;
     -- ADD USER GENERICS ABOVE THIS LINE ---------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -133,7 +134,7 @@ entity pldma_mrd is
     C_BASEADDR                     : std_logic_vector     := X"FFFFFFFF";
     C_HIGHADDR                     : std_logic_vector     := X"00000000";
     C_FAMILY                       : string               := "virtex6";
-    C_NUM_REG                      : integer              := 8;
+    C_NUM_REG                      : integer              := 4;
     C_NUM_MEM                      : integer              := 1;
     C_SLV_AWIDTH                   : integer              := 32;
     C_SLV_DWIDTH                   : integer              := 32;
@@ -148,13 +149,14 @@ entity pldma_mrd is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
+   dma_done_irq						 : out std_logic;
 	 u_debug								  : out std_logic_vector(139 downto 0);
-	 rd_clk								  	: in  std_logic;
+	 rd_clk								  : in  std_logic;
 	 data_rd								  : out std_logic_vector(31 downto 0);
-	 rd_en								  	: in  std_logic;
-	 aempty								  	: out std_logic;
+	 rd_en								  : in  std_logic;
+	 aempty								  : out std_logic;
 	 rd_fifo_cnt						  : out std_logic_vector(14 downto 0);
-	 rst									  	: out std_logic;
+	 rst									  : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -215,15 +217,15 @@ entity pldma_mrd is
 
   attribute MAX_FANOUT : string;
   attribute SIGIS : string;
-  attribute MAX_FANOUT of S_AXI_ACLK      : signal is "10000";
-  attribute MAX_FANOUT of S_AXI_ARESETN   : signal is "10000";
-  attribute SIGIS of S_AXI_ACLK       		: signal is "Clk";
-  attribute SIGIS of S_AXI_ARESETN       	: signal is "Rst";
+  attribute MAX_FANOUT of S_AXI_ACLK       : signal is "10000";
+  attribute MAX_FANOUT of S_AXI_ARESETN       : signal is "10000";
+  attribute SIGIS of S_AXI_ACLK       : signal is "Clk";
+  attribute SIGIS of S_AXI_ARESETN       : signal is "Rst";
 
-  attribute MAX_FANOUT of m_axi_aclk      : signal is "10000";
-  attribute MAX_FANOUT of m_axi_aresetn   : signal is "10000";
-  attribute SIGIS of m_axi_aclk       		: signal is "Clk";
-  attribute SIGIS of m_axi_aresetn       	: signal is "Rst";
+  attribute MAX_FANOUT of m_axi_aclk       : signal is "10000";
+  attribute MAX_FANOUT of m_axi_aresetn       : signal is "10000";
+  attribute SIGIS of m_axi_aclk       : signal is "Clk";
+  attribute SIGIS of m_axi_aresetn       : signal is "Rst";
 end entity pldma_mrd;
 
 ------------------------------------------------------------------------------
@@ -239,21 +241,26 @@ architecture IMP of pldma_mrd is
   constant ZERO_ADDR_PAD                  : std_logic_vector(0 to 31) := (others => '0');
   constant USER_SLV_BASEADDR              : std_logic_vector     := C_BASEADDR or X"00000000";
   constant USER_SLV_HIGHADDR              : std_logic_vector     := C_BASEADDR or X"000000FF";
+  constant USER_MST_BASEADDR              : std_logic_vector     := C_BASEADDR or X"00000100";
+  constant USER_MST_HIGHADDR              : std_logic_vector     := C_BASEADDR or X"000001FF";
 
   constant IPIF_ARD_ADDR_RANGE_ARRAY      : SLV64_ARRAY_TYPE     := 
     (
       ZERO_ADDR_PAD & USER_SLV_BASEADDR,  -- user logic slave space base address
-      ZERO_ADDR_PAD & USER_SLV_HIGHADDR  -- user logic slave space high address
+      ZERO_ADDR_PAD & USER_SLV_HIGHADDR,  -- user logic slave space high address
+      ZERO_ADDR_PAD & USER_MST_BASEADDR,  -- user logic master space base address
+      ZERO_ADDR_PAD & USER_MST_HIGHADDR   -- user logic master space high address
     );
 
   constant USER_SLV_NUM_REG               : integer              := C_NUM_REG;
-  constant USER_NUM_REG                   : integer              := USER_SLV_NUM_REG;--+USER_MST_NUM_REG;
+  constant USER_MST_NUM_REG               : integer              := 4;
+  constant USER_NUM_REG                   : integer              := USER_SLV_NUM_REG+USER_MST_NUM_REG;
   constant TOTAL_IPIF_CE                  : integer              := USER_NUM_REG;
 
   constant IPIF_ARD_NUM_CE_ARRAY          : INTEGER_ARRAY_TYPE   := 
     (
-      0  => (USER_SLV_NUM_REG)           -- number of ce for user logic slave space
-
+      0  => (USER_SLV_NUM_REG),           -- number of ce for user logic slave space
+      1  =>  USER_MST_NUM_REG             -- number of ce for user logic master space
     );
 
   ------------------------------------------
@@ -353,7 +360,7 @@ architecture IMP of pldma_mrd is
       C_MST_NATIVE_DATA_WIDTH        : integer              := 64;
       C_LENGTH_WIDTH                 : integer              := 12;
       C_MST_AWIDTH                   : integer              := 32;
-      C_NUM_REG                      : integer              := 8;
+      C_NUM_REG                      : integer              := 4;
       C_SLV_DWIDTH                   : integer              := 32
       -- DO NOT EDIT ABOVE THIS LINE ---------------------
     );
@@ -368,6 +375,7 @@ architecture IMP of pldma_mrd is
       aempty								: out std_logic;
       rd_fifo_cnt							: out std_logic_vector(14 downto 0);
       rst									: out std_logic;
+      dma_done_irq					 : out std_logic;
       -- ADD USER PORTS ABOVE THIS LINE ------------------
 
       -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -574,6 +582,7 @@ begin
       aempty												 => aempty,
       rd_fifo_cnt										 => rd_fifo_cnt,
       rst														 => rst,
+      dma_done_irq						=> dma_done_irq,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,
@@ -620,13 +629,25 @@ begin
   ------------------------------------------
   -- connect internal signals
   ------------------------------------------
-  ipif_IP2Bus_Data  <= user_IP2Bus_Data;
+  IP2BUS_DATA_MUX_PROC : process( ipif_Bus2IP_CS, user_IP2Bus_Data ) is
+  begin
+
+    case ipif_Bus2IP_CS (1 downto 0)  is
+      when "01" => ipif_IP2Bus_Data <= user_IP2Bus_Data;
+      when "10" => ipif_IP2Bus_Data <= user_IP2Bus_Data;
+      when others => ipif_IP2Bus_Data <= (others => '0');
+    end case;
+
+  end process IP2BUS_DATA_MUX_PROC;
+
   ipif_IP2Bus_WrAck <= user_IP2Bus_WrAck;
   ipif_IP2Bus_RdAck <= user_IP2Bus_RdAck;
   ipif_IP2Bus_Error <= user_IP2Bus_Error;
 
-  user_Bus2IP_RdCE <= ipif_Bus2IP_RdCE(USER_NUM_REG-1 downto 0);
-  user_Bus2IP_WrCE <= ipif_Bus2IP_WrCE(USER_NUM_REG-1 downto 0);
- 
+  user_Bus2IP_RdCE(USER_SLV_NUM_REG-1 downto 0) <= ipif_Bus2IP_RdCE(TOTAL_IPIF_CE -USER_SLV_CE_INDEX -1 downto TOTAL_IPIF_CE - USER_SLV_CE_INDEX -USER_SLV_NUM_REG);
+  user_Bus2IP_WrCE(USER_SLV_NUM_REG-1 downto 0) <= ipif_Bus2IP_WrCE(TOTAL_IPIF_CE -USER_SLV_CE_INDEX -1 downto TOTAL_IPIF_CE - USER_SLV_CE_INDEX -USER_SLV_NUM_REG);
+  user_Bus2IP_RdCE(USER_NUM_REG -1 downto USER_NUM_REG - USER_MST_NUM_REG) <= ipif_Bus2IP_RdCE(TOTAL_IPIF_CE - USER_MST_CE_INDEX -1 downto TOTAL_IPIF_CE - USER_MST_CE_INDEX -USER_MST_NUM_REG);
+  user_Bus2IP_WrCE(USER_NUM_REG -1 downto USER_NUM_REG - USER_MST_NUM_REG) <= ipif_Bus2IP_WrCE(TOTAL_IPIF_CE - USER_MST_CE_INDEX -1 downto TOTAL_IPIF_CE - USER_MST_CE_INDEX -USER_MST_NUM_REG);
+
  
 end IMP;

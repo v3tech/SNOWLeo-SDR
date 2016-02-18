@@ -1,0 +1,21 @@
+12:57:19 **** Auto Build of configuration Debug for project snowleo_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../snowleo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building target: snowleo_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\snowleo_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../snowleo_bsp/ps7_cortexa9_0/lib -o "snowleo_fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: snowleo_fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size snowleo_fsbl.elf  |tee "snowleo_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78644	  11712	  96716	 187072	  2dac0	snowleo_fsbl.elf
+'Finished building: snowleo_fsbl.elf.size'
+' '
+
+12:57:20 Build Finished (took 1s.109ms)
+

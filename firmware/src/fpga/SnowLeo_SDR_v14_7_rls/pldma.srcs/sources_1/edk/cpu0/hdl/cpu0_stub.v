@@ -25,21 +25,11 @@ module cpu0_stub
     processing_system7_0_DDR_DQS_n,
     processing_system7_0_DDR_VRN,
     processing_system7_0_DDR_VRP,
-    pldma_0_u_debug_pin,
-    pldma_0_wr_clk_pin,
-    pldma_0_data_wr_pin,
-    pldma_0_wr_en_pin,
-    pldma_0_afull_pin,
-    pldma_0_rst_pin,
-    pldma_mrd_0_u_debug_pin,
     pldma_mrd_0_rd_clk_pin,
     pldma_mrd_0_data_rd_pin,
     pldma_mrd_0_rd_en_pin,
     pldma_mrd_0_aempty_pin,
     pldma_mrd_0_rst_pin,
-    mstclk_0,
-    pldma_mwr_0_u_ctrl0_pin,
-    pldma_mwr_0_u_ctrl1_pin,
     SPI0_SS_O_pin,
     SPI0_MOSI_O_pin,
     SPI0_MISO_I_pin,
@@ -50,7 +40,19 @@ module cpu0_stub
     axi_hdmi_tx_16b_0_hdmi_hsync_pin,
     axi_hdmi_tx_16b_0_hdmi_data_e_pin,
     processing_system7_0_I2C1_SDA,
-    processing_system7_0_I2C1_SCL
+    processing_system7_0_I2C1_SCL,
+    pldma_mwr_0_afull_pin,
+    pldma_mwr_0_rst_pin,
+    pldma_mwr_0_data_wr_pin,
+    pldma_mwr_0_wr_en_pin,
+    pldma_mwr_0_wr_clk_pin,
+    pldma_mwr_0_u_ctrl0,
+    pldma_mwr_0_u_ctrl1,
+    pldma_mwr_0_u_ctrl2,
+    pldma_mwr_0_u_ctrl3,
+    pldma_mwr_0_u_ctrl4,
+    pldma_mwr_0_u_ctrl5,
+    fclk0
   );
   inout [53:0] processing_system7_0_MIO;
   input processing_system7_0_PS_SRSTB_pin;
@@ -73,21 +75,11 @@ module cpu0_stub
   inout [3:0] processing_system7_0_DDR_DQS_n;
   inout processing_system7_0_DDR_VRN;
   inout processing_system7_0_DDR_VRP;
-  output [139:0] pldma_0_u_debug_pin;
-  input pldma_0_wr_clk_pin;
-  input [31:0] pldma_0_data_wr_pin;
-  input pldma_0_wr_en_pin;
-  output pldma_0_afull_pin;
-  output pldma_0_rst_pin;
-  output [139:0] pldma_mrd_0_u_debug_pin;
   input pldma_mrd_0_rd_clk_pin;
   output [31:0] pldma_mrd_0_data_rd_pin;
   input pldma_mrd_0_rd_en_pin;
   output pldma_mrd_0_aempty_pin;
   output pldma_mrd_0_rst_pin;
-  output mstclk_0;
-  output [31:0] pldma_mwr_0_u_ctrl0_pin;
-  output [31:0] pldma_mwr_0_u_ctrl1_pin;
   output SPI0_SS_O_pin;
   output SPI0_MOSI_O_pin;
   input SPI0_MISO_I_pin;
@@ -99,6 +91,18 @@ module cpu0_stub
   output axi_hdmi_tx_16b_0_hdmi_data_e_pin;
   inout processing_system7_0_I2C1_SDA;
   inout processing_system7_0_I2C1_SCL;
+  output pldma_mwr_0_afull_pin;
+  output pldma_mwr_0_rst_pin;
+  input [31:0] pldma_mwr_0_data_wr_pin;
+  input pldma_mwr_0_wr_en_pin;
+  input pldma_mwr_0_wr_clk_pin;
+  output [31:0] pldma_mwr_0_u_ctrl0;
+  output [31:0] pldma_mwr_0_u_ctrl1;
+  output [31:0] pldma_mwr_0_u_ctrl2;
+  output [31:0] pldma_mwr_0_u_ctrl3;
+  output [31:0] pldma_mwr_0_u_ctrl4;
+  input [31:0] pldma_mwr_0_u_ctrl5;
+  output fclk0;
 
   (* BOX_TYPE = "user_black_box" *)
   cpu0
@@ -124,21 +128,11 @@ module cpu0_stub
       .processing_system7_0_DDR_DQS_n ( processing_system7_0_DDR_DQS_n ),
       .processing_system7_0_DDR_VRN ( processing_system7_0_DDR_VRN ),
       .processing_system7_0_DDR_VRP ( processing_system7_0_DDR_VRP ),
-      .pldma_0_u_debug_pin ( pldma_0_u_debug_pin ),
-      .pldma_0_wr_clk_pin ( pldma_0_wr_clk_pin ),
-      .pldma_0_data_wr_pin ( pldma_0_data_wr_pin ),
-      .pldma_0_wr_en_pin ( pldma_0_wr_en_pin ),
-      .pldma_0_afull_pin ( pldma_0_afull_pin ),
-      .pldma_0_rst_pin ( pldma_0_rst_pin ),
-      .pldma_mrd_0_u_debug_pin ( pldma_mrd_0_u_debug_pin ),
       .pldma_mrd_0_rd_clk_pin ( pldma_mrd_0_rd_clk_pin ),
       .pldma_mrd_0_data_rd_pin ( pldma_mrd_0_data_rd_pin ),
       .pldma_mrd_0_rd_en_pin ( pldma_mrd_0_rd_en_pin ),
       .pldma_mrd_0_aempty_pin ( pldma_mrd_0_aempty_pin ),
       .pldma_mrd_0_rst_pin ( pldma_mrd_0_rst_pin ),
-      .mstclk_0 ( mstclk_0 ),
-      .pldma_mwr_0_u_ctrl0_pin ( pldma_mwr_0_u_ctrl0_pin ),
-      .pldma_mwr_0_u_ctrl1_pin ( pldma_mwr_0_u_ctrl1_pin ),
       .SPI0_SS_O_pin ( SPI0_SS_O_pin ),
       .SPI0_MOSI_O_pin ( SPI0_MOSI_O_pin ),
       .SPI0_MISO_I_pin ( SPI0_MISO_I_pin ),
@@ -149,7 +143,19 @@ module cpu0_stub
       .axi_hdmi_tx_16b_0_hdmi_hsync_pin ( axi_hdmi_tx_16b_0_hdmi_hsync_pin ),
       .axi_hdmi_tx_16b_0_hdmi_data_e_pin ( axi_hdmi_tx_16b_0_hdmi_data_e_pin ),
       .processing_system7_0_I2C1_SDA ( processing_system7_0_I2C1_SDA ),
-      .processing_system7_0_I2C1_SCL ( processing_system7_0_I2C1_SCL )
+      .processing_system7_0_I2C1_SCL ( processing_system7_0_I2C1_SCL ),
+      .pldma_mwr_0_afull_pin ( pldma_mwr_0_afull_pin ),
+      .pldma_mwr_0_rst_pin ( pldma_mwr_0_rst_pin ),
+      .pldma_mwr_0_data_wr_pin ( pldma_mwr_0_data_wr_pin ),
+      .pldma_mwr_0_wr_en_pin ( pldma_mwr_0_wr_en_pin ),
+      .pldma_mwr_0_wr_clk_pin ( pldma_mwr_0_wr_clk_pin ),
+      .pldma_mwr_0_u_ctrl0 ( pldma_mwr_0_u_ctrl0 ),
+      .pldma_mwr_0_u_ctrl1 ( pldma_mwr_0_u_ctrl1 ),
+      .pldma_mwr_0_u_ctrl2 ( pldma_mwr_0_u_ctrl2 ),
+      .pldma_mwr_0_u_ctrl3 ( pldma_mwr_0_u_ctrl3 ),
+      .pldma_mwr_0_u_ctrl4 ( pldma_mwr_0_u_ctrl4 ),
+      .pldma_mwr_0_u_ctrl5 ( pldma_mwr_0_u_ctrl5 ),
+      .fclk0 ( fclk0 )
     );
 
 endmodule
@@ -177,21 +183,11 @@ module cpu0
     processing_system7_0_DDR_DQS_n,
     processing_system7_0_DDR_VRN,
     processing_system7_0_DDR_VRP,
-    pldma_0_u_debug_pin,
-    pldma_0_wr_clk_pin,
-    pldma_0_data_wr_pin,
-    pldma_0_wr_en_pin,
-    pldma_0_afull_pin,
-    pldma_0_rst_pin,
-    pldma_mrd_0_u_debug_pin,
     pldma_mrd_0_rd_clk_pin,
     pldma_mrd_0_data_rd_pin,
     pldma_mrd_0_rd_en_pin,
     pldma_mrd_0_aempty_pin,
     pldma_mrd_0_rst_pin,
-    mstclk_0,
-    pldma_mwr_0_u_ctrl0_pin,
-    pldma_mwr_0_u_ctrl1_pin,
     SPI0_SS_O_pin,
     SPI0_MOSI_O_pin,
     SPI0_MISO_I_pin,
@@ -202,7 +198,19 @@ module cpu0
     axi_hdmi_tx_16b_0_hdmi_hsync_pin,
     axi_hdmi_tx_16b_0_hdmi_data_e_pin,
     processing_system7_0_I2C1_SDA,
-    processing_system7_0_I2C1_SCL
+    processing_system7_0_I2C1_SCL,
+    pldma_mwr_0_afull_pin,
+    pldma_mwr_0_rst_pin,
+    pldma_mwr_0_data_wr_pin,
+    pldma_mwr_0_wr_en_pin,
+    pldma_mwr_0_wr_clk_pin,
+    pldma_mwr_0_u_ctrl0,
+    pldma_mwr_0_u_ctrl1,
+    pldma_mwr_0_u_ctrl2,
+    pldma_mwr_0_u_ctrl3,
+    pldma_mwr_0_u_ctrl4,
+    pldma_mwr_0_u_ctrl5,
+    fclk0
   );
   inout [53:0] processing_system7_0_MIO;
   input processing_system7_0_PS_SRSTB_pin;
@@ -225,21 +233,11 @@ module cpu0
   inout [3:0] processing_system7_0_DDR_DQS_n;
   inout processing_system7_0_DDR_VRN;
   inout processing_system7_0_DDR_VRP;
-  output [139:0] pldma_0_u_debug_pin;
-  input pldma_0_wr_clk_pin;
-  input [31:0] pldma_0_data_wr_pin;
-  input pldma_0_wr_en_pin;
-  output pldma_0_afull_pin;
-  output pldma_0_rst_pin;
-  output [139:0] pldma_mrd_0_u_debug_pin;
   input pldma_mrd_0_rd_clk_pin;
   output [31:0] pldma_mrd_0_data_rd_pin;
   input pldma_mrd_0_rd_en_pin;
   output pldma_mrd_0_aempty_pin;
   output pldma_mrd_0_rst_pin;
-  output mstclk_0;
-  output [31:0] pldma_mwr_0_u_ctrl0_pin;
-  output [31:0] pldma_mwr_0_u_ctrl1_pin;
   output SPI0_SS_O_pin;
   output SPI0_MOSI_O_pin;
   input SPI0_MISO_I_pin;
@@ -251,5 +249,17 @@ module cpu0
   output axi_hdmi_tx_16b_0_hdmi_data_e_pin;
   inout processing_system7_0_I2C1_SDA;
   inout processing_system7_0_I2C1_SCL;
+  output pldma_mwr_0_afull_pin;
+  output pldma_mwr_0_rst_pin;
+  input [31:0] pldma_mwr_0_data_wr_pin;
+  input pldma_mwr_0_wr_en_pin;
+  input pldma_mwr_0_wr_clk_pin;
+  output [31:0] pldma_mwr_0_u_ctrl0;
+  output [31:0] pldma_mwr_0_u_ctrl1;
+  output [31:0] pldma_mwr_0_u_ctrl2;
+  output [31:0] pldma_mwr_0_u_ctrl3;
+  output [31:0] pldma_mwr_0_u_ctrl4;
+  input [31:0] pldma_mwr_0_u_ctrl5;
+  output fclk0;
 endmodule
 

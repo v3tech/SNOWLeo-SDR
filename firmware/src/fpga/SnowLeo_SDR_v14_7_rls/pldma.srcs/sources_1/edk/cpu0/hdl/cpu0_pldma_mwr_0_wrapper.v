@@ -55,9 +55,24 @@ module cpu0_pldma_mwr_0_wrapper
     m_axi_bready,
     m_axi_bvalid,
     m_axi_bresp,
+    dma_done_irq,
     u_debug,
-    u_ctrl0,
-    u_ctrl1,
+    u_ctrl0_O,
+    u_ctrl1_O,
+    u_ctrl2_O,
+    u_ctrl3_O,
+    u_ctrl4_O,
+    u_ctrl5_O,
+    u_ctrl6_O,
+    u_ctrl7_O,
+    u_ctrl0_I,
+    u_ctrl1_I,
+    u_ctrl2_I,
+    u_ctrl3_I,
+    u_ctrl4_I,
+    u_ctrl5_I,
+    u_ctrl6_I,
+    u_ctrl7_I,
     wr_clk,
     data_wr,
     wr_en,
@@ -115,9 +130,24 @@ module cpu0_pldma_mwr_0_wrapper
   output m_axi_bready;
   input m_axi_bvalid;
   input [1:0] m_axi_bresp;
+  output dma_done_irq;
   output [139:0] u_debug;
-  output [31:0] u_ctrl0;
-  output [31:0] u_ctrl1;
+  output [31:0] u_ctrl0_O;
+  output [31:0] u_ctrl1_O;
+  output [31:0] u_ctrl2_O;
+  output [31:0] u_ctrl3_O;
+  output [31:0] u_ctrl4_O;
+  output [31:0] u_ctrl5_O;
+  output [31:0] u_ctrl6_O;
+  output [31:0] u_ctrl7_O;
+  input [31:0] u_ctrl0_I;
+  input [31:0] u_ctrl1_I;
+  input [31:0] u_ctrl2_I;
+  input [31:0] u_ctrl3_I;
+  input [31:0] u_ctrl4_I;
+  input [31:0] u_ctrl5_I;
+  input [31:0] u_ctrl6_I;
+  input [31:0] u_ctrl7_I;
   input wr_clk;
   input [31:0] data_wr;
   input wr_en;
@@ -132,9 +162,9 @@ module cpu0_pldma_mwr_0_wrapper
       .C_USE_WSTRB ( 1 ),
       .C_DPHASE_TIMEOUT ( 8 ),
       .C_BASEADDR ( 32'h41210000 ),
-      .C_HIGHADDR ( 32'h4121ffff ),
+      .C_HIGHADDR ( 32'h4121FFFF ),
       .C_FAMILY ( "zynq" ),
-      .C_NUM_REG ( 8 ),
+      .C_NUM_REG ( 6 ),
       .C_NUM_MEM ( 1 ),
       .C_SLV_AWIDTH ( 32 ),
       .C_SLV_DWIDTH ( 32 ),
@@ -143,7 +173,10 @@ module cpu0_pldma_mwr_0_wrapper
       .C_MAX_BURST_LEN ( 256 ),
       .C_NATIVE_DATA_WIDTH ( 64 ),
       .C_LENGTH_WIDTH ( 12 ),
-      .C_ADDR_PIPE_DEPTH ( 1 )
+      .C_ADDR_PIPE_DEPTH ( 1 ),
+      .C_ENABLE_INT ( 1 ),
+      .C_ENABLE_DGB ( 0 ),
+      .C_DIRECT_REG ( 8'h1f )
     )
     pldma_mwr_0 (
       .S_AXI_ACLK ( S_AXI_ACLK ),
@@ -197,9 +230,24 @@ module cpu0_pldma_mwr_0_wrapper
       .m_axi_bready ( m_axi_bready ),
       .m_axi_bvalid ( m_axi_bvalid ),
       .m_axi_bresp ( m_axi_bresp ),
+      .dma_done_irq ( dma_done_irq ),
       .u_debug ( u_debug ),
-      .u_ctrl0 ( u_ctrl0 ),
-      .u_ctrl1 ( u_ctrl1 ),
+      .u_ctrl0_O ( u_ctrl0_O ),
+      .u_ctrl1_O ( u_ctrl1_O ),
+      .u_ctrl2_O ( u_ctrl2_O ),
+      .u_ctrl3_O ( u_ctrl3_O ),
+      .u_ctrl4_O ( u_ctrl4_O ),
+      .u_ctrl5_O ( u_ctrl5_O ),
+      .u_ctrl6_O ( u_ctrl6_O ),
+      .u_ctrl7_O ( u_ctrl7_O ),
+      .u_ctrl0_I ( u_ctrl0_I ),
+      .u_ctrl1_I ( u_ctrl1_I ),
+      .u_ctrl2_I ( u_ctrl2_I ),
+      .u_ctrl3_I ( u_ctrl3_I ),
+      .u_ctrl4_I ( u_ctrl4_I ),
+      .u_ctrl5_I ( u_ctrl5_I ),
+      .u_ctrl6_I ( u_ctrl6_I ),
+      .u_ctrl7_I ( u_ctrl7_I ),
       .wr_clk ( wr_clk ),
       .data_wr ( data_wr ),
       .wr_en ( wr_en ),

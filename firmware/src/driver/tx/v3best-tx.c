@@ -41,12 +41,7 @@
 
 #define DEVICE_NAME         "v3best-tx"
 
-#define V3BEST_YUNSDR
-#ifdef V3BEST_YUNSDR
-#define AXI_DMA_MM2S_IRQ    91
-#else
 #define AXI_DMA_MM2S_IRQ    89
-#endif
 
 #define  XDMA_MAGIC              'D'
 #define  XDMA_IOCTL_RESET          _IO(XDMA_MAGIC, 1)

@@ -1,0 +1,21 @@
+12:58:07 **** Build of configuration Debug for project snowleosdr_tx ****
+make all 
+'Building file: ../src/snowleo_tx_main.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_tx_main.d" -MT"src/snowleo_tx_main.d" -o "src/snowleo_tx_main.o" "../src/snowleo_tx_main.c"
+'Finished building: ../src/snowleo_tx_main.c'
+' '
+'Building target: snowleosdr_tx.elf'
+'Invoking: ARM Linux gcc linker'
+arm-xilinx-linux-gnueabi-gcc -L"D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\snowleosdr\Release" -o "snowleosdr_tx.elf"  ./src/snowleo_tx_main.o   -lpthread -lsnowleosdr -lm
+'Finished building target: snowleosdr_tx.elf'
+' '
+'Invoking: ARM Linux Print Size'
+arm-xilinx-linux-gnueabi-size snowleosdr_tx.elf  |tee "snowleosdr_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8573	    440	    168	   9181	   23dd	snowleosdr_tx.elf
+'Finished building: snowleosdr_tx.elf.size'
+' '
+
+12:58:08 Build Finished (took 660ms)
+

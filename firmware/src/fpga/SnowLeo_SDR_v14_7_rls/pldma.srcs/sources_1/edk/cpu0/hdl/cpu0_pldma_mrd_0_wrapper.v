@@ -55,11 +55,13 @@ module cpu0_pldma_mrd_0_wrapper
     m_axi_bready,
     m_axi_bvalid,
     m_axi_bresp,
+    dma_done_irq,
     u_debug,
     rd_clk,
     data_rd,
     rd_en,
     aempty,
+    rd_fifo_cnt,
     rst
   );
   input S_AXI_ACLK;
@@ -113,11 +115,13 @@ module cpu0_pldma_mrd_0_wrapper
   output m_axi_bready;
   input m_axi_bvalid;
   input [1:0] m_axi_bresp;
+  output dma_done_irq;
   output [139:0] u_debug;
   input rd_clk;
   output [31:0] data_rd;
   input rd_en;
   output aempty;
+  output [14:0] rd_fifo_cnt;
   output rst;
 
   pldma_mrd
@@ -139,7 +143,9 @@ module cpu0_pldma_mrd_0_wrapper
       .C_MAX_BURST_LEN ( 256 ),
       .C_NATIVE_DATA_WIDTH ( 64 ),
       .C_LENGTH_WIDTH ( 12 ),
-      .C_ADDR_PIPE_DEPTH ( 1 )
+      .C_ADDR_PIPE_DEPTH ( 1 ),
+      .C_ENABLE_INT ( 1 ),
+      .C_ENABLE_DGB ( 0 )
     )
     pldma_mrd_0 (
       .S_AXI_ACLK ( S_AXI_ACLK ),
@@ -193,11 +199,13 @@ module cpu0_pldma_mrd_0_wrapper
       .m_axi_bready ( m_axi_bready ),
       .m_axi_bvalid ( m_axi_bvalid ),
       .m_axi_bresp ( m_axi_bresp ),
+      .dma_done_irq ( dma_done_irq ),
       .u_debug ( u_debug ),
       .rd_clk ( rd_clk ),
       .data_rd ( data_rd ),
       .rd_en ( rd_en ),
       .aempty ( aempty ),
+      .rd_fifo_cnt ( rd_fifo_cnt ),
       .rst ( rst )
     );
 

@@ -1,4 +1,4 @@
-KERN_SRC=/home/eric/Work/linux-xlnx
+KERN_SRC=../../linux-kernel
 obj-m := v3best-rx.o
  
 all:

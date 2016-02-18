@@ -6,7 +6,7 @@ Flow: ise
 ModuleSearchPath: pcores/pldma_mwr_v2_00_a/../../../
 MHS File: cpu0.mhs
 Architecture: zynq
-Device: xc7z010
+Device: xc7z020
 Package: clg400
 SpeedGrade: -1
 UserCmd1: 
@@ -25,10 +25,10 @@ UcfFile: data/cpu0.ucf
 EnableParTimingError: 1
 ShowLicenseDialog: 1
 BInfo: 
-LockAddr: pldma_mwr_0,C_BASEADDR
 LockAddr: pldma_mrd_0,C_BASEADDR
 LockAddr: axi_hdmi_tx_16b_0,C_BASEADDR
 LockAddr: axi_vdma_0,C_BASEADDR
+LockAddr: pldma_mwr_0,C_BASEADDR
 Processor: processing_system7_0
 ElfImp: 
 ElfSim: 

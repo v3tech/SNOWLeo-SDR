@@ -198,7 +198,7 @@ vhdl axi_master_burst_v1_00_a H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib
 vhdl axi_master_burst_v1_00_a H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_llink.vhd
 vhdl axi_master_burst_v1_00_a H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_llink.vhd
 vhdl axi_master_burst_v1_00_a H:\IDE14_7\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst.vhd
-vhdl pldma_mrd_v2_00_a J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\pcores\pldma_mrd_v2_00_a/hdl/vhdl/pldma_mrd.vhd
-verilog pldma_mrd_v2_00_a J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\pcores\pldma_mrd_v2_00_a/hdl/verilog/user_logic.v
-verilog pldma_mrd_v2_00_a J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls\pldma.srcs\sources_1\edk\cpu0\pcores\pldma_mrd_v2_00_a/hdl/verilog/fifo_8192x64_16384x32.v
+vhdl pldma_mrd_v2_00_a J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\pcores\pldma_mrd_v2_00_a/hdl/vhdl/pldma_mrd.vhd
+verilog pldma_mrd_v2_00_a J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\pcores\pldma_mrd_v2_00_a/hdl/verilog/user_logic.v
+verilog pldma_mrd_v2_00_a J:\zing_pro\snowleo\SnowLeo_SDR_v14_7_rls2.0_int\pldma.srcs\sources_1\edk\cpu0\pcores\pldma_mrd_v2_00_a/hdl/verilog/fifo_8192x64_16384x32.v
 verilog work ../hdl/cpu0_pldma_mrd_0_wrapper.v

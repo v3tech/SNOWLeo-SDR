@@ -2,11 +2,11 @@
 ##
 ##  Xilinx, Inc. 2006            www.xilinx.com
 ############################################################################
-##  File name :       J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls/pldma.srcs/sources_1/edk/cpu0/implementation/processing_system7_0_wrapper/processing_system7_0.xdc
+##  File name :       J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/implementation/processing_system7_0_wrapper/processing_system7_0.xdc
 ##
 ##  Details :     Constraints file
 ##                    FPGA family:       zynq
-##                    FPGA:              xc7z010clg400-1
+##                    FPGA:              xc7z020clg400-1
 ##                    Device Size:        
 ##                    Package:            
 ##                    Speedgrade:         -1
