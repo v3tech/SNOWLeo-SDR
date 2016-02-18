@@ -1,4 +1,4 @@
-12:57:19 **** Auto Build of configuration Debug for project snowleo_fsbl ****
+14:38:54 **** Auto Build of configuration Debug for project snowleo_fsbl ****
 make all 
 'Building file: ../src/ps7_init.c'
 'Invoking: ARM gcc compiler'
@@ -17,5 +17,5 @@ arm-xilinx-eabi-size snowleo_fsbl.elf  |tee "snowleo_fsbl.elf.size"
 'Finished building: snowleo_fsbl.elf.size'
 ' '
 
-12:57:20 Build Finished (took 1s.109ms)
+14:38:55 Build Finished (took 899ms)
 

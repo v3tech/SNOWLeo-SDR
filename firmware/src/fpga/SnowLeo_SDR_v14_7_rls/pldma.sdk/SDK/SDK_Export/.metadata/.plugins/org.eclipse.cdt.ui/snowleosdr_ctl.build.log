@@ -1,4 +1,4 @@
-12:58:05 **** Build of configuration Debug for project snowleosdr_ctl ****
+14:39:29 **** Build of configuration Debug for project snowleosdr_ctl ****
 make all 
 'Building file: ../src/snowleo_clt_main.c'
 'Invoking: ARM Linux gcc compiler'
@@ -17,5 +17,5 @@ arm-xilinx-linux-gnueabi-size snowleosdr_ctl.elf  |tee "snowleosdr_ctl.elf.size"
 'Finished building: snowleosdr_ctl.elf.size'
 ' '
 
-12:58:06 Build Finished (took 1s.319ms)
+14:39:29 Build Finished (took 858ms)
 

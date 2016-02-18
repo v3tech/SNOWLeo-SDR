@@ -61,20 +61,19 @@
 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
 
 18:08:45.474 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
-12:56:46.186 INFO  - Processing command line option -hwspec D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.sdk/SDK/SDK_Export/hw/cpu0.xml. 
-12:56:48.217 INFO  - The hardware specification for project 'cpu0_hw_platform' is different from D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.sdk/SDK/SDK_Export/hw/cpu0.xml. 
-12:56:48.609 INFO  - Copied contents of D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.sdk/SDK/SDK_Export/hw/cpu0.xml into \cpu0_hw_platform\system.xml. 
-12:56:48.613 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\hw\ps7_init.c into \cpu0_hw_platform\ps7_init.c. 
-12:56:48.614 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\hw\ps7_init.h into \cpu0_hw_platform\ps7_init.h. 
-12:56:48.616 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\hw\ps7_init.html into \cpu0_hw_platform\ps7_init.html. 
-12:56:48.617 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \cpu0_hw_platform\ps7_init.tcl. 
-12:56:49.029 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
-12:57:16.011 INFO  - Updating hardware inferred compiler options for pldma_int. 
-12:57:16.768 INFO  - Updating hardware inferred compiler options for snowleo_fsbl. 
-12:57:16.836 INFO  - Clearing existing target manager status. 
-12:57:19.465 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\cpu0_hw_platform\ps7_init.c into \snowleo_fsbl\src\ps7_init.c. 
-12:57:19.468 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\cpu0_hw_platform\ps7_init.h into \snowleo_fsbl\src\ps7_init.h. 
-12:57:19.472 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\cpu0_hw_platform\ps7_init.html into \snowleo_fsbl\src\ps7_init.html. 
-12:57:19.473 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\cpu0_hw_platform\ps7_init.tcl into \snowleo_fsbl\src\ps7_init.tcl. 
-13:25:06.389 INFO  - Invoking Bootgen:  
-13:25:07.030 INFO  - Bootgen command execution is done. 
+14:38:28.612 INFO  - Processing command line option -hwspec D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.sdk/SDK/SDK_Export/hw/cpu0.xml. 
+14:38:30.187 INFO  - The hardware specification for project 'cpu0_hw_platform' is different from D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.sdk/SDK/SDK_Export/hw/cpu0.xml. 
+14:38:30.571 INFO  - Copied contents of D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.sdk/SDK/SDK_Export/hw/cpu0.xml into \cpu0_hw_platform\system.xml. 
+14:38:30.574 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\hw\ps7_init.c into \cpu0_hw_platform\ps7_init.c. 
+14:38:30.575 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\hw\ps7_init.h into \cpu0_hw_platform\ps7_init.h. 
+14:38:30.577 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\hw\ps7_init.html into \cpu0_hw_platform\ps7_init.html. 
+14:38:30.578 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \cpu0_hw_platform\ps7_init.tcl. 
+14:38:30.751 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:38:52.276 INFO  - Updating hardware inferred compiler options for pldma_int. 
+14:38:53.034 INFO  - Updating hardware inferred compiler options for snowleo_fsbl. 
+14:38:53.099 INFO  - Clearing existing target manager status. 
+14:38:54.293 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\cpu0_hw_platform\ps7_init.c into \snowleo_fsbl\src\ps7_init.c. 
+14:38:54.295 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\cpu0_hw_platform\ps7_init.h into \snowleo_fsbl\src\ps7_init.h. 
+14:38:54.299 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\cpu0_hw_platform\ps7_init.html into \snowleo_fsbl\src\ps7_init.html. 
+14:38:54.300 INFO  - Copied contents of D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\cpu0_hw_platform\ps7_init.tcl into \snowleo_fsbl\src\ps7_init.tcl. 
+14:40:06.185 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

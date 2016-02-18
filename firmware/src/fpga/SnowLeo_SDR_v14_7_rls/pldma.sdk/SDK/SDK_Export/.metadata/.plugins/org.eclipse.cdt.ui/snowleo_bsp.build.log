@@ -1,4 +1,4 @@
-12:56:48 **** Auto Build of project snowleo_bsp ****
+14:38:30 **** Auto Build of project snowleo_bsp ****
 make -k all 
 libgen -hw ../cpu0_hw_platform/system.xml\
 	       -lp J:/\
@@ -47,5 +47,5 @@ arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
 Running execs_generate.
 'Finished building libraries'
 
-12:57:13 Build Finished (took 24s.941ms)
+14:38:50 Build Finished (took 19s.453ms)
 

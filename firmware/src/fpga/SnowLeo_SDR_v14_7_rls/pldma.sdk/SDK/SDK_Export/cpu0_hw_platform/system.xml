@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Thu Feb 18 12:56:30 2016">
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Thu Feb 18 14:37:08 2016">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="xc7z020" PACKAGE="clg400" PART="xc7z020clg400-1" SOURCE="D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.srcs/sources_1/edk/cpu0/cpu0.xmp" SPEEDGRADE="-1"/>
 

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-02-18T13:27:08</DateModified>
+  <DateModified>2014-12-31T16:53:01</DateModified>
   <ModuleName>cpu0</ModuleName>
-  <SummaryTimeStamp>2016-02-18T13:27:08</SummaryTimeStamp>
-  <SavedFilePath>D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.srcs/sources_1/edk/cpu0/__xps/ise/cpu0.xreport</SavedFilePath>
+  <SummaryTimeStamp>2014-12-31T16:53:01</SummaryTimeStamp>
+  <SavedFilePath>J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/__xps/ise/cpu0.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
-  <SavedFilterFilePath>D:/my_work/Zing-project/SnowLeo_SDR_v14_7_rls2.0_int_7020_src/pldma.srcs/sources_1/edk/cpu0/__xps/ise</SavedFilterFilePath>
+  <SavedFilterFilePath>J:/zing_pro/snowleo/SnowLeo_SDR_v14_7_rls2.0_int/pldma.srcs/sources_1/edk/cpu0/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2013-12-24T17:14:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

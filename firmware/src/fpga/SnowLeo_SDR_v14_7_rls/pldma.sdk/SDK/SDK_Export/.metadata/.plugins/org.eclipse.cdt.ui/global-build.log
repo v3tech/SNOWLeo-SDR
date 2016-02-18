@@ -1,32 +1,141 @@
-12:58:09 **** Clean-only build of configuration Release for project snowleosdr ****
-make clean 
-rm -rf  ./src/si5351.o ./src/snowleo_hw.o ./src/snowleo_i2c_ops.o ./src/snowleo_spi_ops.o  ./src/si5351.d ./src/snowleo_hw.d ./src/snowleo_i2c_ops.d ./src/snowleo_spi_ops.d  libsnowleosdr.a
-' '
-12:58:09 **** Build of configuration Release for project snowleosdr ****
+13:45:13 **** Incremental Build of configuration Debug for project snowleo_fsbl ****
 make all 
-'Building file: ../src/si5351.c'
-'Invoking: ARM Linux gcc compiler'
-arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MMD -MP -MF"src/si5351.d" -MT"src/si5351.d" -o "src/si5351.o" "../src/si5351.c"
-'Finished building: ../src/si5351.c'
+make: Nothing to be done for `all'.
+14:38:30 **** Auto Build of project snowleo_bsp ****
+make -k all 
+libgen -hw ../cpu0_hw_platform/system.xml\
+	       -lp J:/\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../cpu0_hw_platform/system.xml -lp J:/ -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling axivdma"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling iicps"
+"Compiling nandps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling spips"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling wdtps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:38:51 **** Auto Build of configuration Debug for project pldma_int ****
+make all 
+make: Nothing to be done for `all'.
+14:38:53 **** Auto Build of configuration Debug for project snowleo_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+14:38:54 **** Auto Build of configuration Debug for project snowleo_fsbl ****
+make all 
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../snowleo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
 ' '
-'Building file: ../src/snowleo_hw.c'
-'Invoking: ARM Linux gcc compiler'
-arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_hw.d" -MT"src/snowleo_hw.d" -o "src/snowleo_hw.o" "../src/snowleo_hw.c"
-'Finished building: ../src/snowleo_hw.c'
+'Building target: snowleo_fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\snowleo_fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../snowleo_bsp/ps7_cortexa9_0/lib -o "snowleo_fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: snowleo_fsbl.elf'
 ' '
-'Building file: ../src/snowleo_i2c_ops.c'
-'Invoking: ARM Linux gcc compiler'
-arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_i2c_ops.d" -MT"src/snowleo_i2c_ops.d" -o "src/snowleo_i2c_ops.o" "../src/snowleo_i2c_ops.c"
-'Finished building: ../src/snowleo_i2c_ops.c'
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size snowleo_fsbl.elf  |tee "snowleo_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78644	  11712	  96716	 187072	  2dac0	snowleo_fsbl.elf
+'Finished building: snowleo_fsbl.elf.size'
 ' '
-'Building file: ../src/snowleo_spi_ops.c'
-'Invoking: ARM Linux gcc compiler'
-arm-xilinx-linux-gnueabi-gcc -Wall -O2 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_spi_ops.d" -MT"src/snowleo_spi_ops.d" -o "src/snowleo_spi_ops.o" "../src/snowleo_spi_ops.c"
-'Finished building: ../src/snowleo_spi_ops.c'
+14:39:28 **** Clean-only build of configuration Debug for project snowleosdr_ctl ****
+make clean 
+rm -rf  ./src/snowleo_clt_main.o  ./src/snowleo_clt_main.d  snowleosdr_ctl.elf.size  snowleosdr_ctl.elf
 ' '
-'Building target: libsnowleosdr.a'
-'Invoking: ARM Linux archiver'
-arm-xilinx-linux-gnueabi-ar -r  "libsnowleosdr.a"  ./src/si5351.o ./src/snowleo_hw.o ./src/snowleo_i2c_ops.o ./src/snowleo_spi_ops.o   
-arm-xilinx-linux-gnueabi-ar: creating libsnowleosdr.a
-'Finished building target: libsnowleosdr.a'
+14:39:29 **** Build of configuration Debug for project snowleosdr_ctl ****
+make all 
+'Building file: ../src/snowleo_clt_main.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_clt_main.d" -MT"src/snowleo_clt_main.d" -o "src/snowleo_clt_main.o" "../src/snowleo_clt_main.c"
+'Finished building: ../src/snowleo_clt_main.c'
+' '
+'Building target: snowleosdr_ctl.elf'
+'Invoking: ARM Linux gcc linker'
+arm-xilinx-linux-gnueabi-gcc -L"D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\snowleosdr\Release" -o "snowleosdr_ctl.elf"  ./src/snowleo_clt_main.o   -lpthread -lsnowleosdr -lm
+'Finished building target: snowleosdr_ctl.elf'
+' '
+'Invoking: ARM Linux Print Size'
+arm-xilinx-linux-gnueabi-size snowleosdr_ctl.elf  |tee "snowleosdr_ctl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15220	   1356	    176	  16752	   4170	snowleosdr_ctl.elf
+'Finished building: snowleosdr_ctl.elf.size'
+' '
+14:39:29 **** Clean-only build of configuration Debug for project snowleosdr_rx ****
+make clean 
+rm -rf  ./src/snowleo_rx_main.o  ./src/snowleo_rx_main.d  snowleosdr_rx.elf.size  snowleosdr_rx.elf
+' '
+14:39:30 **** Build of configuration Debug for project snowleosdr_rx ****
+make all 
+'Building file: ../src/snowleo_rx_main.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -DFNAME=memcpy_neon -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_rx_main.d" -MT"src/snowleo_rx_main.d" -o "src/snowleo_rx_main.o" "../src/snowleo_rx_main.c"
+'Finished building: ../src/snowleo_rx_main.c'
+' '
+'Building target: snowleosdr_rx.elf'
+'Invoking: ARM Linux gcc linker'
+arm-xilinx-linux-gnueabi-gcc -L"D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\snowleosdr\Release" -o "snowleosdr_rx.elf"  ./src/snowleo_rx_main.o   -lpthread -lsnowleosdr -lm
+'Finished building target: snowleosdr_rx.elf'
+' '
+'Invoking: ARM Linux Print Size'
+arm-xilinx-linux-gnueabi-size snowleosdr_rx.elf  |tee "snowleosdr_rx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9124	    456	  16552	  26132	   6614	snowleosdr_rx.elf
+'Finished building: snowleosdr_rx.elf.size'
+' '
+14:39:30 **** Clean-only build of configuration Debug for project snowleosdr_tx ****
+make clean 
+rm -rf  ./src/snowleo_tx_main.o  ./src/snowleo_tx_main.d  snowleosdr_tx.elf.size  snowleosdr_tx.elf
+' '
+14:39:31 **** Build of configuration Debug for project snowleosdr_tx ****
+make all 
+'Building file: ../src/snowleo_tx_main.c'
+'Invoking: ARM Linux gcc compiler'
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/snowleo_tx_main.d" -MT"src/snowleo_tx_main.d" -o "src/snowleo_tx_main.o" "../src/snowleo_tx_main.c"
+'Finished building: ../src/snowleo_tx_main.c'
+' '
+'Building target: snowleosdr_tx.elf'
+'Invoking: ARM Linux gcc linker'
+arm-xilinx-linux-gnueabi-gcc -L"D:\my_work\Zing-project\SnowLeo_SDR_v14_7_rls2.0_int_7020_src\pldma.sdk\SDK\SDK_Export\snowleosdr\Release" -o "snowleosdr_tx.elf"  ./src/snowleo_tx_main.o   -lpthread -lsnowleosdr -lm
+'Finished building target: snowleosdr_tx.elf'
+' '
+'Invoking: ARM Linux Print Size'
+arm-xilinx-linux-gnueabi-size snowleosdr_tx.elf  |tee "snowleosdr_tx.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8573	    440	    168	   9181	   23dd	snowleosdr_tx.elf
+'Finished building: snowleosdr_tx.elf.size'
 ' '
